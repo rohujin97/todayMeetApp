@@ -1,0 +1,7 @@
+{
+    "enabled" : [
+        { "code" : 200, "name" : "success"},
+        { "code" : 400, "name" : "요청을 다시 확인하세요"}
+    ]
+
+}
