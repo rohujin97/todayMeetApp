@@ -5,13 +5,14 @@ const errorParms = req => {
     console.info("### Error API Parameters List ###")
 }
 
-const json = {
-    async NotFound(req, res, next) { // 내용 없음
+const message = {
+    async notFound(req, res, next) { // 내용 없음
         next(result.error.NotFound())
     },
     async result(data, req, res, next){ // 내용 있음
-        if (data instanceof Success) {
-
-        }
+        res.status(500).json(`error 발생`)
     }
 }
+
+module.exports = { message }
+
