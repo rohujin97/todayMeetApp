@@ -1,6 +1,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 import React from 'react';
 import { StyleSheet, View, Text, ScrollView, Dimensions } from 'react-native';
 =======
@@ -8,6 +9,8 @@ import { StyleSheet, View, Text, ScrollView, Dimensions } from 'react-native';
 >>>>>>> b62a2012 (use ChatListStyles)
 =======
 >>>>>>> 54193eb1 (Update App.js)
+=======
+>>>>>>> 7a12147d (login, signup Screen transition)
 <<<<<<< HEAD
 import React from 'react';
 import { StyleSheet, View, Text, ScrollView } from 'react-native';
@@ -262,4 +265,29 @@ const styles = StyleSheet.create({
 =======
 });
 >>>>>>> 5fcd1055 (still move page from chatlist to chatroom)
+<<<<<<< HEAD
 >>>>>>> b2069f84 (still move page from chatlist to chatroom)
+=======
+=======
+
+import * as React from 'react'; import { NavigationContainer } from '@react-navigation/native'; 
+import { createStackNavigator } from '@react-navigation/stack'; 
+import LoginScreen from './src/component/login/login'; 
+import SignUpScreen from './src/component/login/signup'; 
+import SignUp2Screen from './src/component/login/signup2'; 
+const Stack = createStackNavigator(); 
+
+function App() { 
+  return ( 
+    <NavigationContainer> 
+      <Stack.Navigator initialRouteName="MAIN"> 
+      <Stack.Screen name="MAIN" component={LoginScreen} options={{ title: '로그인' }}/>
+      <Stack.Screen name="SIGNUP" component={SignUpScreen} options={{ title: '회원가입1' }}/> 
+      <Stack.Screen name="SIGNUP2" component={SignUp2Screen} options={{ title: '회원가입2' }}/> 
+      </Stack.Navigator> 
+    </NavigationContainer> ); 
+    } 
+
+export default App;
+>>>>>>> 292ae0a7 (login, signup Screen transition)
+>>>>>>> 7a12147d (login, signup Screen transition)
