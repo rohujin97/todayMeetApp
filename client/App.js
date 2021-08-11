@@ -1,21 +1,20 @@
-import { StatusBar } from 'expo-status-bar';
-import React from 'react';
-import { StyleSheet, Text, View } from 'react-native';
 
-export default function App() {
-  return (
-    <View style={styles.container}>
-      <Text>Open up App.js to start working on your app!</Text>
-      <StatusBar style="auto" />
-    </View>
-  );
-}
+import * as React from 'react'; import { NavigationContainer } from '@react-navigation/native'; 
+import { createStackNavigator } from '@react-navigation/stack'; 
+import LoginScreen from './src/component/login/login'; 
+import SignUpScreen from './src/component/login/signup'; 
+import SignUp2Screen from './src/component/login/signup2'; 
+const Stack = createStackNavigator(); 
 
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-});
+function App() { 
+  return ( 
+    <NavigationContainer> 
+      <Stack.Navigator initialRouteName="MAIN"> 
+      <Stack.Screen name="MAIN" component={LoginScreen} options={{ title: '로그인' }}/>
+      <Stack.Screen name="SIGNUP" component={SignUpScreen} options={{ title: '회원가입1' }}/> 
+      <Stack.Screen name="SIGNUP2" component={SignUp2Screen} options={{ title: '회원가입2' }}/> 
+      </Stack.Navigator> 
+    </NavigationContainer> ); 
+    } 
+
+export default App;
