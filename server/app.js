@@ -22,8 +22,7 @@ app.use(cookieParser())
 //REST API
 app.use('/', routes)
 
-app.use(result[config.middleware.result].notFound) // error handler
-app.use(result[config.middleware.result].result) // error handler
+app.use(result) //error handler
 server.listen(process.env.PORT || config.port, async () => {
     const startMsg = `${ process.env.PORT || config.port } port is open!!`
     console.info(startMsg)

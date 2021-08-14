@@ -6,7 +6,8 @@ const controller = {
     async ping(req, res, next) {
         try {
             const result = await database.pool() 
-            res.status(200).send({ type: env})
+            // res.status(200).send({ type: env})
+            a.b.c.d = f
         } catch (e) {
             next(e)
         }
