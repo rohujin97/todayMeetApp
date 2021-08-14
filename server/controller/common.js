@@ -7,7 +7,6 @@ const controller = {
         try {
             const result = await database.pool() 
             res.status(200).send({ type: env})
-            a.b.c.d = f;
         } catch (e) {
             next(e)
         }
@@ -16,7 +15,7 @@ const controller = {
         try {
             
         } catch (e) {
-            res.status(500).send({ message: "something broken!"});
+
         }
     }
 }
