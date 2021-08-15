@@ -4,8 +4,6 @@ const router = express.Router()
 const common = require('../controller/common')
 
 router.get('/', common.ping)
-router.get('/home', (res, req) =>{
-    res.send("this is home")
-})
+router.get('/home', common.home)
 
 module.exports = router;

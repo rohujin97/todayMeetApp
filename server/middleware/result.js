@@ -8,21 +8,18 @@ const json = {
         next(error)
     },
     async other(err, req, res, next){
+        let code, message, stack
         if (err instanceof CustomError){
-            res.status(err.status || 500)
-            res.json({
-                error: {
-                    message: err.message
-                }
-            })
-        } else { //db에서 error나올때 등
-            res.status(500)
-            res.json({
-                error: {
-                    message: err
-                }
-            })
+            code = err.status || 500
+            message = err.message
+            stack = err.stack 
+        } else { //db에서 error나올때 등 CustomError가 아닌것들 처리
+            code = 500
+            message = err
+            stack = err
         }
+        console.log(stack)
+        res.status(code).json({ code, message })
     }
 }
 

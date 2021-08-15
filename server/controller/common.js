@@ -7,12 +7,11 @@ const controller = {
     async ping(req, res, next) {
         try {
             const result = await database.pool() 
-            // res.status(200).send({ type: env})
-            a.b.c.d = f
+            res.status(200).send({ type: env})
+            // a.b.c.d = f
         } catch (e) {
             const error = new CustomError(e.code, '잘못된 연산입니다.')
             next(error)
-            // next(e)
         }
     },
     async home(res, req, next) {

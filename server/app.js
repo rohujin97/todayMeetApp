@@ -23,18 +23,6 @@ app.use(cookieParser())
 //REST API
 app.use('/', routes)
 
-// app.use((req, res, next) => {
-//     const error = new CustomError(404, 'notFound')
-//     next(error)
-// })
-// app.use((error, req, res, next) => {
-//     res.status(error.status || 500)
-//     res.json({
-//         error: {
-//             message: error.message
-//         }
-//     })
-// })
 app.use(result[config.middleware.result].notFound) // notFoundError
 app.use(result[config.middleware.result].other) //error handler
 server.listen(process.env.PORT || config.port, async () => {
