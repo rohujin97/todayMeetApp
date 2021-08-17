@@ -5,7 +5,7 @@ import { SearchBar } from 'react-native-elements';
 
 let imagePath = require('./chunsikfriend.png');
 
-class UserListScreen extends Component{
+class FriendListScreen extends Component{
     state = {
         search:'',
     };
@@ -92,4 +92,4 @@ userDecs:{
 }
 });
   
-export default UserListScreen;
+export default FriendListScreen;

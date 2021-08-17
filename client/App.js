@@ -1,6 +1,6 @@
 import React from 'react';
 
-import UserListScreen from './src/component/newuserlist/userlist'
+import FriendListScreen from './src/component/friendlist/friendlist'
 function App(){
  //getLocation = async () => {
  //  const location = await Location.getCurrentPositionAsync();
@@ -11,7 +11,7 @@ function App(){
  //}
  console.disableYellowBox = true;
 return(
-<UserListScreen/>)
+<FriendListScreen/>)
  // return (<NavigationContainer>
 
  //   <StackNavigator/>
