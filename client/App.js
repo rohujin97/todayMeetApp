@@ -1,9 +1,22 @@
 import React from 'react';
-import UserList from './src/component/UserList/UserList';
-import MeetingDetail from './src/component/MeetingDetail/MeetingDetail';
 
+import UserListScreen from './src/component/newuserlist/userlist'
+function App(){
+ //getLocation = async () => {
+ //  const location = await Location.getCurrentPositionAsync();
+  // console.log(location);
+ //};
+// componentDidMount() =>{
+ //  this.getLocation();
+ //}
+ console.disableYellowBox = true;
+return(
+<UserListScreen/>)
+ // return (<NavigationContainer>
 
-export default function App(){
-  return (<MeetingDetail/>)
- 
+ //   <StackNavigator/>
+ // </NavigationContainer>)
+
 }
+
+export default App;
