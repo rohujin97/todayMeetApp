@@ -17,10 +17,18 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
 
+// init our socket
+const io = socketio(server).sockets;
+
 //REST API
 app.use('/', routes); 
 
-app.use(result[config.middleware.result].result) // error handler
+
+require("./middleware/socket")(io)
+
+app.use(result[config.middleware.result].notFound) // notFoundError
+app.use(result[config.middleware.result].other) //error handler
+
 server.listen(process.env.PORT || config.port, async () => {
     const startMsg = `${ process.env.PORT || config.port } port is open!!`
     console.info(startMsg)

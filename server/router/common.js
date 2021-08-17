@@ -8,4 +8,4 @@ router.get('/home', (res, req) =>{
     res.send("this is home")
 })
 
-module.exports = router;
+module.exports = router
