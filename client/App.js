@@ -1,6 +1,7 @@
 import React from 'react';
+import DetailMeetingScreen from './src/component/detailmeeting/detailmeeting';
 
-import FriendListScreen from './src/component/friendlist/friendlist'
+import MeetingDetailScreen from './src/component/detailmeeting/detailmeeting';
 function App(){
  //getLocation = async () => {
  //  const location = await Location.getCurrentPositionAsync();
@@ -11,7 +12,7 @@ function App(){
  //}
  console.disableYellowBox = true;
 return(
-<FriendListScreen/>)
+<DetailMeetingScreen/>)
  // return (<NavigationContainer>
 
  //   <StackNavigator/>
