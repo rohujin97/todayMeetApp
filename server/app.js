@@ -23,7 +23,6 @@ const io = socketio(server).sockets;
 //REST API
 app.use('/', routes); 
 
-
 require("./middleware/socket")(io)
 
 app.use(result[config.middleware.result].notFound) // notFoundError
