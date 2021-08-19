@@ -1012,6 +1012,7 @@
   dependencies:
     "@types/hammerjs" "^2.0.36"
 
+<<<<<<< HEAD
 "@emotion/is-prop-valid@^0.8.8":
   "integrity" "sha512-u5WtneEAr5IDG2Wv65yhunPSMLIpuKsbuOktRojfrEiEvRyC85LgPMZI63cr7NUqT8ZIGdSVg8ZKGxIug4lXcA=="
   "resolved" "https://registry.npmjs.org/@emotion/is-prop-valid/-/is-prop-valid-0.8.8.tgz"
@@ -1034,6 +1035,8 @@
   "resolved" "https://registry.npmjs.org/@emotion/unitless/-/unitless-0.7.5.tgz"
   "version" "0.7.5"
 
+=======
+>>>>>>> 87cf17d1 (revise App.js package.json package-lock.json)
 "@expo/config-plugins@^1.0.18", "@expo/config-plugins@1.0.31":
   "integrity" "sha512-fouUPEXPhMcrxLL9SnbtJc9AtRW2Olt0Qrv6O0OqspwMt6g5DwG4qtRnoUdGNVHAQ3X3YskESd8bw6VGT6QA3A=="
   "resolved" "https://registry.npmjs.org/@expo/config-plugins/-/config-plugins-1.0.31.tgz"
@@ -1932,6 +1935,8 @@
     "react-native-iphone-x-helper" "^1.3.0"
 >>>>>>> experiment
 
+=======
+>>>>>>> 87cf17d1 (revise App.js package.json package-lock.json)
 "@react-navigation/core@^6.0.1":
   "integrity" "sha512-mVdvBDYdz8uzLQHokmVdX/xC4rS7NIkD1FN/yaGdovVzYApAhM+UGd3w1zskjyCSyXaVHHOwV59ZGVew+84xfQ=="
   "resolved" "https://registry.npmjs.org/@react-navigation/core/-/core-6.0.1.tgz"
@@ -2057,11 +2062,13 @@
   "resolved" "https://registry.npmjs.org/@types/bluebird/-/bluebird-3.5.36.tgz"
   "version" "3.5.36"
 
+<<<<<<< HEAD
 "@types/component-emitter@^1.2.10":
   "integrity" "sha512-bsjleuRKWmGqajMerkzox19aGbscQX5rmmvvXl3wlIp5gMG1HgkiwPxsN5p070fBDKTNSPgojVbuY1+HWMbFhg=="
   "resolved" "https://registry.npmjs.org/@types/component-emitter/-/component-emitter-1.2.10.tgz"
   "version" "1.2.10"
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
 "@types/glob@^7.1.1":
@@ -2080,6 +2087,10 @@
     "@types/node" "*"
 
 >>>>>>> experiment
+=======
+=======
+>>>>>>> 87cf17d1 (revise App.js package.json package-lock.json)
+>>>>>>> e726473d (revise App.js package.json package-lock.json)
 "@types/hammerjs@^2.0.36":
   "integrity" "sha512-VbjwR1fhsn2h2KXAY4oy1fm7dCxaKy0D+deTb8Ilc3Eo3rc5+5eA4rfYmZaHgNJKxVyI0f6WIXzO2zLkVmQPHA=="
   "resolved" "https://registry.npmjs.org/@types/hammerjs/-/hammerjs-2.0.40.tgz"
@@ -4003,8 +4014,13 @@
 <<<<<<< HEAD
 "debug@^4.1.0", "debug@^4.1.1", "debug@^4.3.2", "debug@~4.3.1":
 =======
+<<<<<<< HEAD
 "debug@^4.1.0", "debug@^4.1.1", "debug@^4.3.1", "debug@~4.3.1", "debug@4":
 >>>>>>> experiment
+=======
+"debug@^4.1.0", "debug@^4.1.1", "debug@^4.3.2":
+>>>>>>> 87cf17d1 (revise App.js package.json package-lock.json)
+>>>>>>> e726473d (revise App.js package.json package-lock.json)
   "integrity" "sha512-mOp8wKcvj7XxC78zLgw/ZA+6TSgkoE2C/ienthhRD298T7UNwAg9diBpLRxC0mOezLl4B0xV7M0cCO6P/O0Xhw=="
   "resolved" "https://registry.npmjs.org/debug/-/debug-4.3.2.tgz"
   "version" "4.3.2"
@@ -5676,7 +5692,11 @@
   dependencies:
     "source-map" "^0.7.3"
 
+<<<<<<< HEAD
 "hoist-non-react-statics@^3.0.0", "hoist-non-react-statics@^3.3.0":
+=======
+"hoist-non-react-statics@^3.3.0":
+>>>>>>> 87cf17d1 (revise App.js package.json package-lock.json)
   "integrity" "sha512-/gGivxi8JPKWNm/W0jSmzcMPpfpPLc3dY/6GxhX2hQ9iGj3aDfklV4ET7NjKpSinLpJ5vafa9iiGIEZg10SfBw=="
   "resolved" "https://registry.npmjs.org/hoist-non-react-statics/-/hoist-non-react-statics-3.3.2.tgz"
   "version" "3.3.2"
@@ -10305,12 +10325,20 @@
   "resolved" "https://registry.npmjs.org/react-is/-/react-is-16.13.1.tgz"
   "version" "16.13.1"
 
+<<<<<<< HEAD
 "react-is@^17.0.1", "react-is@>= 16.8.0":
+=======
+"react-is@^17.0.1":
+>>>>>>> 87cf17d1 (revise App.js package.json package-lock.json)
   "integrity" "sha512-w2GsyukL62IJnlaff/nRegPQR94C/XXamvMWmSHRJ4y7Ts/4ocGRmTHvOs8PSE6pB3dWOrD/nueuU5sduBsQ4w=="
   "resolved" "https://registry.npmjs.org/react-is/-/react-is-17.0.2.tgz"
   "version" "17.0.2"
 
+<<<<<<< HEAD
 "react-native-gesture-handler@^1.10.3", "react-native-gesture-handler@>= 1.0.0":
+=======
+"react-native-gesture-handler@>= 1.0.0":
+>>>>>>> 87cf17d1 (revise App.js package.json package-lock.json)
   "integrity" "sha512-cBGMi1IEsIVMgoox4RvMx7V2r6bNKw0uR1Mu1o7NbuHS6BRSVLq0dP34l2ecnPlC+jpWd3le6Yg1nrdCjby2Mw=="
   "resolved" "https://registry.npmjs.org/react-native-gesture-handler/-/react-native-gesture-handler-1.10.3.tgz"
   "version" "1.10.3"
@@ -10347,6 +10375,7 @@
   dependencies:
     "warn-once" "^0.1.0"
 
+<<<<<<< HEAD
 "react-native-vector-icons@^8.1.0":
   "integrity" "sha512-sHIdBB6Y0dHaot2fMXgy5J/hhCn5YuyN7SKDNFgPzL8KA1oF2/v7mgYMavnK7LIIs2dJoGnDANKf61dsU+TZlg=="
   "resolved" "https://registry.npmjs.org/react-native-vector-icons/-/react-native-vector-icons-8.1.0.tgz"
@@ -10372,6 +10401,8 @@
   "version" "0.1.7"
 >>>>>>> experiment
 
+=======
+>>>>>>> 87cf17d1 (revise App.js package.json package-lock.json)
 "react-native-web@~0.13.12":
   "integrity" "sha512-WR/0ECAmwLQ2+2cL2Ur+0/swXFAtcSM0URoADJmG6D4MnY+wGc91JO8LoOTlgY0USBOY+qG/beRrjFa+RAuOiA=="
   "resolved" "https://registry.npmjs.org/react-native-web/-/react-native-web-0.13.18.tgz"
@@ -11559,7 +11590,11 @@
     "is-fullwidth-code-point" "^2.0.0"
     "strip-ansi" "^5.1.0"
 
+<<<<<<< HEAD
 "string-width@^4.0.0":
+=======
+"string-width@^4.1.0":
+>>>>>>> e726473d (revise App.js package.json package-lock.json)
   "integrity" "sha512-XBJbT3N4JhVumXE0eoLU9DCjcaF92KLNqTmFCnG1pf8duUxFGwtP6AD6nkjw9a3IdiRtL3E2w3JDiE/xi3vOeA=="
   "resolved" "https://registry.npmjs.org/string-width/-/string-width-4.2.2.tgz"
   "version" "4.2.2"
@@ -11568,7 +11603,11 @@
     "is-fullwidth-code-point" "^3.0.0"
     "strip-ansi" "^6.0.0"
 
+<<<<<<< HEAD
 "string-width@^4.1.0", "string-width@^4.2.0":
+=======
+"string-width@^4.2.0":
+>>>>>>> e726473d (revise App.js package.json package-lock.json)
   "integrity" "sha512-XBJbT3N4JhVumXE0eoLU9DCjcaF92KLNqTmFCnG1pf8duUxFGwtP6AD6nkjw9a3IdiRtL3E2w3JDiE/xi3vOeA=="
   "resolved" "https://registry.npmjs.org/string-width/-/string-width-4.2.2.tgz"
   "version" "4.2.2"
