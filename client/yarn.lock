@@ -1012,6 +1012,7 @@
   dependencies:
     "@types/hammerjs" "^2.0.36"
 
+<<<<<<< HEAD
 "@emotion/is-prop-valid@^0.8.8":
   "integrity" "sha512-u5WtneEAr5IDG2Wv65yhunPSMLIpuKsbuOktRojfrEiEvRyC85LgPMZI63cr7NUqT8ZIGdSVg8ZKGxIug4lXcA=="
   "resolved" "https://registry.npmjs.org/@emotion/is-prop-valid/-/is-prop-valid-0.8.8.tgz"
@@ -1034,6 +1035,8 @@
   "resolved" "https://registry.npmjs.org/@emotion/unitless/-/unitless-0.7.5.tgz"
   "version" "0.7.5"
 
+=======
+>>>>>>> a26c2c8e (delete local folder and reclone project)
 "@expo/config-plugins@^1.0.18", "@expo/config-plugins@1.0.31":
   "integrity" "sha512-fouUPEXPhMcrxLL9SnbtJc9AtRW2Olt0Qrv6O0OqspwMt6g5DwG4qtRnoUdGNVHAQ3X3YskESd8bw6VGT6QA3A=="
   "resolved" "https://registry.npmjs.org/@expo/config-plugins/-/config-plugins-1.0.31.tgz"
@@ -1909,6 +1912,7 @@
     "wcwidth" "^1.0.1"
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 "@react-navigation/bottom-tabs@^6.0.5":
   "integrity" "sha512-GytjJUzacHhe3C24HFrPl881Donrw2m+3JBNqMJALxMRjSA8yY72+l16bZR9YFsrywSHVSbjxIfzqtGb8rIVJg=="
   "resolved" "https://registry.npmjs.org/@react-navigation/bottom-tabs/-/bottom-tabs-6.0.5.tgz"
@@ -1932,6 +1936,8 @@
     "react-native-iphone-x-helper" "^1.3.0"
 >>>>>>> experiment
 
+=======
+>>>>>>> a26c2c8e (delete local folder and reclone project)
 "@react-navigation/core@^6.0.1":
   "integrity" "sha512-mVdvBDYdz8uzLQHokmVdX/xC4rS7NIkD1FN/yaGdovVzYApAhM+UGd3w1zskjyCSyXaVHHOwV59ZGVew+84xfQ=="
   "resolved" "https://registry.npmjs.org/@react-navigation/core/-/core-6.0.1.tgz"
@@ -1949,6 +1955,9 @@
   "version" "1.1.0"
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> a26c2c8e (delete local folder and reclone project)
 "@react-navigation/native-stack@^6.1.0":
   "integrity" "sha512-ta8JQ9n6e7pxrXJ9/MYH57g0xhlV8rzGvQtni6KvBdWqqk0M5QDqIXaUkzXp2wvLMZp7LQmnD4FI/TGG2mQOKA=="
   "resolved" "https://registry.npmjs.org/@react-navigation/native-stack/-/native-stack-6.1.0.tgz"
@@ -1958,9 +1967,12 @@
     "warn-once" "^0.1.0"
 
 "@react-navigation/native@^6.0.0", "@react-navigation/native@^6.0.2":
+<<<<<<< HEAD
 =======
 "@react-navigation/native@^5.0.5", "@react-navigation/native@^6.0.0", "@react-navigation/native@^6.0.2":
 >>>>>>> experiment
+=======
+>>>>>>> a26c2c8e (delete local folder and reclone project)
   "integrity" "sha512-HDqEwgvQ4Cu16vz8jQ55lfyNK9CGbECI1wM9cPOcUa+gkOQEDZ/95VFfFjGGflXZs3ybPvGXlMC4ZAyh1CcO6w=="
   "resolved" "https://registry.npmjs.org/@react-navigation/native/-/native-6.0.2.tgz"
   "version" "6.0.2"
@@ -1985,6 +1997,7 @@
     "color" "^3.1.3"
     "warn-once" "^0.1.0"
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
 "@sindresorhus/is@^0.14.0":
@@ -2052,11 +2065,14 @@
     "@babel/types" "^7.3.0"
 
 >>>>>>> experiment
+=======
+>>>>>>> a26c2c8e (delete local folder and reclone project)
 "@types/bluebird@^3.5.26":
   "integrity" "sha512-HBNx4lhkxN7bx6P0++W8E289foSu8kO8GCk2unhuVggO+cE7rh9DhZUyPhUxNRG9m+5B5BTKxZQ5ZP92x/mx9Q=="
   "resolved" "https://registry.npmjs.org/@types/bluebird/-/bluebird-3.5.36.tgz"
   "version" "3.5.36"
 
+<<<<<<< HEAD
 "@types/component-emitter@^1.2.10":
   "integrity" "sha512-bsjleuRKWmGqajMerkzox19aGbscQX5rmmvvXl3wlIp5gMG1HgkiwPxsN5p070fBDKTNSPgojVbuY1+HWMbFhg=="
   "resolved" "https://registry.npmjs.org/@types/component-emitter/-/component-emitter-1.2.10.tgz"
@@ -2080,12 +2096,17 @@
     "@types/node" "*"
 
 >>>>>>> experiment
+=======
+>>>>>>> a26c2c8e (delete local folder and reclone project)
 "@types/hammerjs@^2.0.36":
   "integrity" "sha512-VbjwR1fhsn2h2KXAY4oy1fm7dCxaKy0D+deTb8Ilc3Eo3rc5+5eA4rfYmZaHgNJKxVyI0f6WIXzO2zLkVmQPHA=="
   "resolved" "https://registry.npmjs.org/@types/hammerjs/-/hammerjs-2.0.40.tgz"
   "version" "2.0.40"
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> a26c2c8e (delete local folder and reclone project)
 "@types/istanbul-lib-coverage@*", "@types/istanbul-lib-coverage@^2.0.0":
 =======
 "@types/hoist-non-react-statics@^3.3.1":
@@ -2925,6 +2946,7 @@
     "file-uri-to-path" "1.0.0"
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 "bl@^4.1.0":
   "integrity" "sha512-1W07cM9gS6DcLperZfFSj+bWLtaPGSOHWhPiGzXmvVJbRLdG82sH/Kn8EtW1VqWVA54AKf2h5k5BbnIbwF3h6w=="
@@ -2936,6 +2958,8 @@
     "readable-stream" "^3.4.0"
 
 >>>>>>> experiment
+=======
+>>>>>>> a26c2c8e (delete local folder and reclone project)
 "bluebird@^3.5.1":
   "integrity" "sha512-XpNj6GDQzdfW+r2Wnn7xiSAd7TM3jzkxGXBGTtWKuSXv1xUV+azxAm8jdWZN06QTQk+2N2XB9jRDkvbmQmcRtg=="
   "resolved" "https://registry.npmjs.org/bluebird/-/bluebird-3.7.2.tgz"
@@ -3220,6 +3244,7 @@
     "rsvp" "^4.8.4"
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 "caseless@^0.12.0", "caseless@~0.12.0":
   "integrity" "sha1-G2gcIf+EAzyCZUMJBolCDRhxUdw="
@@ -3227,6 +3252,8 @@
   "version" "0.12.0"
 
 >>>>>>> experiment
+=======
+>>>>>>> a26c2c8e (delete local folder and reclone project)
 "chalk@^2.0.0", "chalk@^2.0.1", "chalk@^2.4.1", "chalk@^2.4.2":
   "integrity" "sha512-Mti+f9lpJNcwF4tWV8/OrTTtF1gZi+f8FqlyAdouralcFWFQWF2+NgCHShjkCb+IFBLq9buZwE1xckQU4peSuQ=="
   "resolved" "https://registry.npmjs.org/chalk/-/chalk-2.4.2.tgz"
@@ -3451,6 +3478,9 @@
     "color-string" "^1.6.0"
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> a26c2c8e (delete local folder and reclone project)
 "colorette@^1.0.7", "colorette@^1.2.2":
 =======
 "colorette@^1.0.7", "colorette@^1.2.1", "colorette@^1.2.2":
@@ -3831,6 +3861,7 @@
     "node-fetch" "2.6.1"
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 "cross-spawn@^5.0.1":
   "integrity" "sha1-6L0O/uWPz/b4+UUQoKVUu/ojVEk="
@@ -3842,6 +3873,8 @@
     "which" "^1.2.9"
 
 >>>>>>> experiment
+=======
+>>>>>>> a26c2c8e (delete local folder and reclone project)
 "cross-spawn@^5.1.0":
   "integrity" "sha1-6L0O/uWPz/b4+UUQoKVUu/ojVEk="
   "resolved" "https://registry.npmjs.org/cross-spawn/-/cross-spawn-5.1.0.tgz"
@@ -4001,10 +4034,14 @@
     "ms" "2.0.0"
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 "debug@^4.1.0", "debug@^4.1.1", "debug@^4.3.2", "debug@~4.3.1":
 =======
 "debug@^4.1.0", "debug@^4.1.1", "debug@^4.3.1", "debug@~4.3.1", "debug@4":
 >>>>>>> experiment
+=======
+"debug@^4.1.0", "debug@^4.1.1", "debug@^4.3.2":
+>>>>>>> a26c2c8e (delete local folder and reclone project)
   "integrity" "sha512-mOp8wKcvj7XxC78zLgw/ZA+6TSgkoE2C/ienthhRD298T7UNwAg9diBpLRxC0mOezLl4B0xV7M0cCO6P/O0Xhw=="
   "resolved" "https://registry.npmjs.org/debug/-/debug-4.3.2.tgz"
   "version" "4.3.2"
@@ -4415,6 +4452,9 @@
   "version" "4.0.0"
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> a26c2c8e (delete local folder and reclone project)
 "esprima@^4.0.0":
 =======
 "escape-string-regexp@2.0.0":
@@ -5025,14 +5065,19 @@
   "version" "9.0.0"
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 "file-uri-to-path@1.0.0":
 =======
 "file-uri-to-path@^1.0.0", "file-uri-to-path@1.0.0":
 >>>>>>> experiment
+=======
+"file-uri-to-path@1.0.0":
+>>>>>>> a26c2c8e (delete local folder and reclone project)
   "integrity" "sha512-0Zt+s3L7Vf1biwWZ29aARiVYLx7iMGnEUl9x33fbB/j3jR81u/O2LbqK+Bm1CDSNDKVtJ/YjwY7TUd5SkeLQLw=="
   "resolved" "https://registry.npmjs.org/file-uri-to-path/-/file-uri-to-path-1.0.0.tgz"
   "version" "1.0.0"
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
 "filelist@^1.0.1":
@@ -5043,6 +5088,8 @@
     "minimatch" "^3.0.4"
 
 >>>>>>> experiment
+=======
+>>>>>>> a26c2c8e (delete local folder and reclone project)
 "fill-range@^4.0.0":
   "integrity" "sha1-1USBHUKPmOsGpj3EAtJAPDKMOPc="
   "resolved" "https://registry.npmjs.org/fill-range/-/fill-range-4.0.0.tgz"
@@ -5054,6 +5101,7 @@
     "to-regex-range" "^2.1.0"
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 "fill-range@^7.0.1":
   "integrity" "sha512-qOo9F+dMUmC2Lcb4BbVvnKJxTPjCm+RRpe4gDuGrzkL7mEVl/djYSu2OdQ2Pa302N4oqkSg9ir6jaLWJ2USVpQ=="
@@ -5063,12 +5111,17 @@
     "to-regex-range" "^5.0.1"
 
 >>>>>>> experiment
+=======
+>>>>>>> a26c2c8e (delete local folder and reclone project)
 "filter-obj@^1.1.0":
   "integrity" "sha1-mzERErxsYSehbgFsbF1/GeCAXFs="
   "resolved" "https://registry.npmjs.org/filter-obj/-/filter-obj-1.1.0.tgz"
   "version" "1.1.0"
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> a26c2c8e (delete local folder and reclone project)
 "finalhandler@1.1.2":
 =======
 "finalhandler@^1.1.2", "finalhandler@1.1.2":
@@ -5260,6 +5313,7 @@
     "nan" "^2.12.1"
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 "fsevents@^2.1.2", "fsevents@^2.1.3":
   "integrity" "sha512-xiqMQR4xAeHTuB9uWm+fFRcIOgKBMiOBP+eXiyT7jsgVCq1bkVygt00oASowB7EdtpOHaaPgKt812P9ab+DDKA=="
@@ -5267,6 +5321,8 @@
   "version" "2.3.2"
 
 >>>>>>> experiment
+=======
+>>>>>>> a26c2c8e (delete local folder and reclone project)
 "function-bind@^1.1.1":
   "integrity" "sha512-yIovAzMX49sF8Yl58fSCWJ5svSLuaibPxXQJFLmBObTuCr0Mf1KiPopGM9NiFjiYBCbfaa2Fh6breQ6ANVTI0A=="
   "resolved" "https://registry.npmjs.org/function-bind/-/function-bind-1.1.1.tgz"
@@ -5676,7 +5732,11 @@
   dependencies:
     "source-map" "^0.7.3"
 
+<<<<<<< HEAD
 "hoist-non-react-statics@^3.0.0", "hoist-non-react-statics@^3.3.0":
+=======
+"hoist-non-react-statics@^3.3.0":
+>>>>>>> a26c2c8e (delete local folder and reclone project)
   "integrity" "sha512-/gGivxi8JPKWNm/W0jSmzcMPpfpPLc3dY/6GxhX2hQ9iGj3aDfklV4ET7NjKpSinLpJ5vafa9iiGIEZg10SfBw=="
   "resolved" "https://registry.npmjs.org/hoist-non-react-statics/-/hoist-non-react-statics-3.3.2.tgz"
   "version" "3.3.2"
@@ -5684,6 +5744,9 @@
     "react-is" "^16.7.0"
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> a26c2c8e (delete local folder and reclone project)
 "http-errors@~1.7.2":
 =======
 "hosted-git-info@^2.1.4", "hosted-git-info@^2.8.8":
@@ -7185,8 +7248,12 @@
   "resolved" "https://registry.npmjs.org/kind-of/-/kind-of-1.1.0.tgz"
   "version" "1.1.0"
 
+<<<<<<< HEAD
 "kind-of@^3.0.2", "kind-of@^3.0.3", "kind-of@^3.2.2":
 >>>>>>> experiment
+=======
+"kind-of@^3.0.2", "kind-of@^3.0.3":
+>>>>>>> a26c2c8e (delete local folder and reclone project)
   "integrity" "sha1-MeohpzS6ubuw8yRm2JOupR5KPGQ="
   "resolved" "https://registry.npmjs.org/kind-of/-/kind-of-3.2.2.tgz"
   "version" "3.2.2"
@@ -8245,10 +8312,14 @@
     "sqlstring" "2.3.1"
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 "nan@^2.12.1":
 =======
 "nan@^2.12.1", "nan@^2.14.1":
 >>>>>>> experiment
+=======
+"nan@^2.12.1":
+>>>>>>> a26c2c8e (delete local folder and reclone project)
   "integrity" "sha512-M2ufzIiINKCuDfBSAUr1vWQ+vuVcA9kqx8JJUsbQi6yf1uGRyb7HfpdfUr5qLXf3B/t8dPvcjhKMmlfnP47EzQ=="
   "resolved" "https://registry.npmjs.org/nan/-/nan-2.14.2.tgz"
   "version" "2.14.2"
@@ -8259,6 +8330,9 @@
   "version" "3.1.25"
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> a26c2c8e (delete local folder and reclone project)
 "nanomatch@^1.2.9":
 =======
 "nanomatch@^1.2.13", "nanomatch@^1.2.9":
@@ -8313,10 +8387,14 @@
     "is-stream" "^1.0.1"
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 "node-fetch@^2.2.0", "node-fetch@^2.6.0", "node-fetch@2.6.1":
 =======
 "node-fetch@^2.2.0", "node-fetch@^2.6.0", "node-fetch@^2.6.1", "node-fetch@2.6.1":
 >>>>>>> experiment
+=======
+"node-fetch@^2.2.0", "node-fetch@^2.6.0", "node-fetch@2.6.1":
+>>>>>>> a26c2c8e (delete local folder and reclone project)
   "integrity" "sha512-V4aYg89jEoVRxRb2fJdAg8FHvI7cEyYdVAh94HH0UIK8oJxUfkjlDQN9RbMx+bEjP7+ggMiFRprSti032Oipxw=="
   "resolved" "https://registry.npmjs.org/node-fetch/-/node-fetch-2.6.1.tgz"
   "version" "2.6.1"
@@ -10246,6 +10324,16 @@
     "split-on-first" "^1.0.0"
     "strict-uri-encode" "^2.0.0"
 
+"query-string@^7.0.0":
+  "integrity" "sha512-uIw3iRvHnk9to1blJCG3BTc+Ro56CBowJXKmNNAm3RulvPBzWLRqKSiiDk+IplJhsydwtuNMHi8UGQFcCLVfkA=="
+  "resolved" "https://registry.npmjs.org/query-string/-/query-string-7.0.1.tgz"
+  "version" "7.0.1"
+  dependencies:
+    "decode-uri-component" "^0.2.0"
+    "filter-obj" "^1.1.0"
+    "split-on-first" "^1.0.0"
+    "strict-uri-encode" "^2.0.0"
+
 "querystringify@^2.1.1":
   "integrity" "sha512-FIqgj2EUvTa7R50u0rGsyTftzjYmv/a3hO345bZNrqabNqjtgiDMgmo4mkUjd+nzU5oF3dClKqFIPUKybUyqoQ=="
   "resolved" "https://registry.npmjs.org/querystringify/-/querystringify-2.2.0.tgz"
@@ -10305,12 +10393,20 @@
   "resolved" "https://registry.npmjs.org/react-is/-/react-is-16.13.1.tgz"
   "version" "16.13.1"
 
+<<<<<<< HEAD
 "react-is@^17.0.1", "react-is@>= 16.8.0":
+=======
+"react-is@^17.0.1":
+>>>>>>> a26c2c8e (delete local folder and reclone project)
   "integrity" "sha512-w2GsyukL62IJnlaff/nRegPQR94C/XXamvMWmSHRJ4y7Ts/4ocGRmTHvOs8PSE6pB3dWOrD/nueuU5sduBsQ4w=="
   "resolved" "https://registry.npmjs.org/react-is/-/react-is-17.0.2.tgz"
   "version" "17.0.2"
 
+<<<<<<< HEAD
 "react-native-gesture-handler@^1.10.3", "react-native-gesture-handler@>= 1.0.0":
+=======
+"react-native-gesture-handler@>= 1.0.0":
+>>>>>>> a26c2c8e (delete local folder and reclone project)
   "integrity" "sha512-cBGMi1IEsIVMgoox4RvMx7V2r6bNKw0uR1Mu1o7NbuHS6BRSVLq0dP34l2ecnPlC+jpWd3le6Yg1nrdCjby2Mw=="
   "resolved" "https://registry.npmjs.org/react-native-gesture-handler/-/react-native-gesture-handler-1.10.3.tgz"
   "version" "1.10.3"
@@ -10322,6 +10418,7 @@
     "prop-types" "^15.7.2"
 
 "react-native-safe-area-context@>= 3.0.0", "react-native-safe-area-context@3.2.0":
+<<<<<<< HEAD
 =======
 "react-native-reanimated@~2.1.0":
   "integrity" "sha512-tlPvvcdf+X7HGQ7g/7npBFhwMznfdk7MHUc9gUB/kp2abSscXNe/kOVKlrNEOO4DS11rNOXc+llFxVFMuNk0zA=="
@@ -10335,11 +10432,16 @@
 
 "react-native-safe-area-context@^3.2.0", "react-native-safe-area-context@>= 0.6.0", "react-native-safe-area-context@>= 3.0.0", "react-native-safe-area-context@3.2.0":
 >>>>>>> experiment
+=======
+>>>>>>> a26c2c8e (delete local folder and reclone project)
   "integrity" "sha512-k2Nty4PwSnrg9HwrYeeE+EYqViYJoOFwEy9LxL5RIRfoqxAq/uQXNGwpUg2/u4gnKpBbEPa9eRh15KKMe/VHkA=="
   "resolved" "https://registry.npmjs.org/react-native-safe-area-context/-/react-native-safe-area-context-3.2.0.tgz"
   "version" "3.2.0"
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> a26c2c8e (delete local folder and reclone project)
 "react-native-screens@>= 3.0.0":
   "integrity" "sha512-xew4x0YX0RaDduNYM4gZXkphPwGZIbbu9fTU85xOtT1tOUPm3OU4pFMiN6PF54haMCsaMQRvdOXvLicUVRiptA=="
   "resolved" "https://registry.npmjs.org/react-native-screens/-/react-native-screens-3.5.0.tgz"
@@ -10347,6 +10449,7 @@
   dependencies:
     "warn-once" "^0.1.0"
 
+<<<<<<< HEAD
 "react-native-vector-icons@^8.1.0":
   "integrity" "sha512-sHIdBB6Y0dHaot2fMXgy5J/hhCn5YuyN7SKDNFgPzL8KA1oF2/v7mgYMavnK7LIIs2dJoGnDANKf61dsU+TZlg=="
   "resolved" "https://registry.npmjs.org/react-native-vector-icons/-/react-native-vector-icons-8.1.0.tgz"
@@ -10372,6 +10475,8 @@
   "version" "0.1.7"
 >>>>>>> experiment
 
+=======
+>>>>>>> a26c2c8e (delete local folder and reclone project)
 "react-native-web@~0.13.12":
   "integrity" "sha512-WR/0ECAmwLQ2+2cL2Ur+0/swXFAtcSM0URoADJmG6D4MnY+wGc91JO8LoOTlgY0USBOY+qG/beRrjFa+RAuOiA=="
   "resolved" "https://registry.npmjs.org/react-native-web/-/react-native-web-0.13.18.tgz"
@@ -10999,6 +11104,7 @@
     "object-assign" "^4.1.1"
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 "semver@^5.1.0", "semver@^5.4.1", "semver@^5.5.0", "semver@^5.6.0":
 =======
 "semver-compare@^1.0.0":
@@ -11020,6 +11126,9 @@
 
 "semver@^5.1.0", "semver@^5.4.1", "semver@^5.5.0", "semver@^5.6.0", "semver@^5.7.1", "semver@2 || 3 || 4 || 5":
 >>>>>>> experiment
+=======
+"semver@^5.1.0", "semver@^5.4.1", "semver@^5.5.0", "semver@^5.6.0":
+>>>>>>> a26c2c8e (delete local folder and reclone project)
   "integrity" "sha512-sauaDf/PZdVgrLTNYHRtpXa1iRiKcaebiKQ1BJdpQlWH2lCvexQdX55snPFyK7QzpudqbCI0qXFfOasHdyNDGQ=="
   "resolved" "https://registry.npmjs.org/semver/-/semver-5.7.1.tgz"
   "version" "5.7.1"
@@ -11374,6 +11483,7 @@
   "version" "0.6.1"
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 "spdx-correct@^3.0.0", "spdx-correct@^3.1.1":
   "integrity" "sha512-cOYcUWwhCuHCXi49RhFRCyJEK3iPj1Ziz9DpViV3tbZOwXD49QzIN3MpOLJNxh2qwq2lJJZaKMVw9qNi4jTC0w=="
@@ -11402,12 +11512,17 @@
   "version" "3.0.10"
 
 >>>>>>> experiment
+=======
+>>>>>>> a26c2c8e (delete local folder and reclone project)
 "split-on-first@^1.0.0":
   "integrity" "sha512-43ZssAJaMusuKWL8sKUBQXHWOpq8d6CfN/u1p4gUzfJkM05C8rxTmYrkIPTXapZpORA6LkkzcUulJ8FqA7Uudw=="
   "resolved" "https://registry.npmjs.org/split-on-first/-/split-on-first-1.1.0.tgz"
   "version" "1.1.0"
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> a26c2c8e (delete local folder and reclone project)
 "split-string@^3.0.1", "split-string@^3.0.2":
 =======
 "split-string@^3.0.1", "split-string@^3.0.2", "split-string@^3.1.0":
@@ -11519,6 +11634,9 @@
   "version" "2.0.0"
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> a26c2c8e (delete local folder and reclone project)
 "string_decoder@~1.1.1":
 =======
 "string_decoder@^1.1.1", "string_decoder@~1.1.1":
@@ -11559,7 +11677,11 @@
     "is-fullwidth-code-point" "^2.0.0"
     "strip-ansi" "^5.1.0"
 
+<<<<<<< HEAD
 "string-width@^4.0.0":
+=======
+"string-width@^4.1.0":
+>>>>>>> a26c2c8e (delete local folder and reclone project)
   "integrity" "sha512-XBJbT3N4JhVumXE0eoLU9DCjcaF92KLNqTmFCnG1pf8duUxFGwtP6AD6nkjw9a3IdiRtL3E2w3JDiE/xi3vOeA=="
   "resolved" "https://registry.npmjs.org/string-width/-/string-width-4.2.2.tgz"
   "version" "4.2.2"
@@ -11568,7 +11690,11 @@
     "is-fullwidth-code-point" "^3.0.0"
     "strip-ansi" "^6.0.0"
 
+<<<<<<< HEAD
 "string-width@^4.1.0", "string-width@^4.2.0":
+=======
+"string-width@^4.2.0":
+>>>>>>> a26c2c8e (delete local folder and reclone project)
   "integrity" "sha512-XBJbT3N4JhVumXE0eoLU9DCjcaF92KLNqTmFCnG1pf8duUxFGwtP6AD6nkjw9a3IdiRtL3E2w3JDiE/xi3vOeA=="
   "resolved" "https://registry.npmjs.org/string-width/-/string-width-4.2.2.tgz"
   "version" "4.2.2"
