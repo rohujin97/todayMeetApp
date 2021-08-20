@@ -2073,11 +2073,15 @@
   "version" "3.5.36"
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> fa0fa0aa (db connect with pool and get data from todaymeet schema)
 "@types/component-emitter@^1.2.10":
   "integrity" "sha512-bsjleuRKWmGqajMerkzox19aGbscQX5rmmvvXl3wlIp5gMG1HgkiwPxsN5p070fBDKTNSPgojVbuY1+HWMbFhg=="
   "resolved" "https://registry.npmjs.org/@types/component-emitter/-/component-emitter-1.2.10.tgz"
   "version" "1.2.10"
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
 "@types/glob@^7.1.1":
@@ -2098,6 +2102,8 @@
 >>>>>>> experiment
 =======
 >>>>>>> a26c2c8e (delete local folder and reclone project)
+=======
+>>>>>>> fa0fa0aa (db connect with pool and get data from todaymeet schema)
 "@types/hammerjs@^2.0.36":
   "integrity" "sha512-VbjwR1fhsn2h2KXAY4oy1fm7dCxaKy0D+deTb8Ilc3Eo3rc5+5eA4rfYmZaHgNJKxVyI0f6WIXzO2zLkVmQPHA=="
   "resolved" "https://registry.npmjs.org/@types/hammerjs/-/hammerjs-2.0.40.tgz"
@@ -2865,6 +2871,7 @@
     "babel-plugin-syntax-trailing-function-commas" "^7.0.0-beta.0"
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 "babel-preset-jest@^26.3.0", "babel-preset-jest@^26.6.2":
   "integrity" "sha512-YvdtlVm9t3k777c5NPQIv6cxFFFapys25HiUmuSgHwIZhfifweR5c5Sf5nwE3MAbfu327CYSvps8Yx6ANLyleQ=="
@@ -2883,6 +2890,8 @@
     "regenerator-runtime" "^0.11.0"
 
 >>>>>>> experiment
+=======
+>>>>>>> fa0fa0aa (db connect with pool and get data from todaymeet schema)
 "backo2@~1.0.2":
   "integrity" "sha1-MasayLEpNjRj41s+u2n038+6eUc="
   "resolved" "https://registry.npmjs.org/backo2/-/backo2-1.0.2.tgz"
@@ -3540,10 +3549,14 @@
   "version" "3.6.0"
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 "component-emitter@^1.2.1", "component-emitter@~1.3.0":
 =======
 "component-emitter@^1.2.1", "component-emitter@^1.3.0", "component-emitter@~1.3.0":
 >>>>>>> experiment
+=======
+"component-emitter@^1.2.1", "component-emitter@~1.3.0":
+>>>>>>> fa0fa0aa (db connect with pool and get data from todaymeet schema)
   "integrity" "sha512-Rd3se6QB+sO1TwqZjscQrurpEPIfO0/yYnSin6Q/rD3mOutHvUrCAhJub3r90uNb+SESBuE0QYoB90YdfatsRg=="
   "resolved" "https://registry.npmjs.org/component-emitter/-/component-emitter-1.3.0.tgz"
   "version" "1.3.0"
@@ -4035,6 +4048,7 @@
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 "debug@^4.1.0", "debug@^4.1.1", "debug@^4.3.2", "debug@~4.3.1":
 =======
 "debug@^4.1.0", "debug@^4.1.1", "debug@^4.3.1", "debug@~4.3.1", "debug@4":
@@ -4042,6 +4056,9 @@
 =======
 "debug@^4.1.0", "debug@^4.1.1", "debug@^4.3.2":
 >>>>>>> a26c2c8e (delete local folder and reclone project)
+=======
+"debug@^4.1.0", "debug@^4.1.1", "debug@^4.3.2", "debug@~4.3.1":
+>>>>>>> fa0fa0aa (db connect with pool and get data from todaymeet schema)
   "integrity" "sha512-mOp8wKcvj7XxC78zLgw/ZA+6TSgkoE2C/ienthhRD298T7UNwAg9diBpLRxC0mOezLl4B0xV7M0cCO6P/O0Xhw=="
   "resolved" "https://registry.npmjs.org/debug/-/debug-4.3.2.tgz"
   "version" "4.3.2"
@@ -4352,6 +4369,9 @@
     "base64-arraybuffer" "0.1.4"
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> fa0fa0aa (db connect with pool and get data from todaymeet schema)
 "envinfo@^7.7.2":
 =======
 "enquirer@^2.3.6":
@@ -5596,6 +5616,7 @@
   "version" "4.2.6"
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 "graphql@^14.0.0 || ^15.0.0", "graphql@^14.7.0":
   "integrity" "sha512-l0xWZpoPKpppFzMfvVyFmp9vLN7w/ZZJPefUicMCepfJeQ8sMcztloGYY9DfjVPo6tIUDzU5Hw3MUbIjj9AVVA=="
@@ -5645,6 +5666,8 @@
   "version" "1.0.1"
 
 >>>>>>> experiment
+=======
+>>>>>>> fa0fa0aa (db connect with pool and get data from todaymeet schema)
 "has-cors@1.1.0":
   "integrity" "sha1-XkdHk/fqmEPRu5nCPu9J/xJv/zk="
   "resolved" "https://registry.npmjs.org/has-cors/-/has-cors-1.1.0.tgz"
@@ -8906,6 +8929,7 @@
     "pngjs" "^3.3.0"
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 "parse-url@^5.0.2":
   "integrity" "sha512-CgbjyWT6aOh2oNSUS0cioYQsGysj9hQ2IdbOfeNwq5KOaKM7dOw/yTupiI0cnJhaDHJEIGybPkQz7LF9WNIhyw=="
@@ -8938,6 +8962,8 @@
   "version" "6.0.1"
 
 >>>>>>> experiment
+=======
+>>>>>>> fa0fa0aa (db connect with pool and get data from todaymeet schema)
 "parseqs@0.0.6":
   "integrity" "sha512-jeAGzMDbfSHHA091hr0r31eYfTig+29g3GKKE/PPbEQ65X0lmMwlEoqmhzu0iztID5uJpZsFlUPDP8ThPL7M8w=="
   "resolved" "https://registry.npmjs.org/parseqs/-/parseqs-0.0.6.tgz"
@@ -8949,6 +8975,9 @@
   "version" "0.0.6"
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> fa0fa0aa (db connect with pool and get data from todaymeet schema)
 "parseurl@~1.3.3":
 =======
 "parseurl@^1.3.3", "parseurl@~1.3.3":
@@ -11435,6 +11464,9 @@
     "debug" "~4.3.1"
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> fa0fa0aa (db connect with pool and get data from todaymeet schema)
 "source-map-resolve@^0.5.0":
 =======
 "source-map-resolve@^0.5.0", "source-map-resolve@^0.5.3":
@@ -12899,6 +12931,7 @@
     "yargs-parser" "^18.1.2"
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 "yargs@^16.1.1":
   "integrity" "sha512-D1mvvtDG0L5ft/jGWkLpG1+m0eQxOfaBvTNELraWj22wSVUMWxZUvYgJYcKh6jGGIkJFhH4IZPQhR4TKpc8mBw=="
   "resolved" "https://registry.npmjs.org/yargs/-/yargs-16.2.0.tgz"
@@ -12914,6 +12947,8 @@
 
 =======
 >>>>>>> experiment
+=======
+>>>>>>> fa0fa0aa (db connect with pool and get data from todaymeet schema)
 "yeast@0.1.2":
   "integrity" "sha1-AI4G2AlDIMNy28L47XagymyKxBk="
   "resolved" "https://registry.npmjs.org/yeast/-/yeast-0.1.2.tgz"
