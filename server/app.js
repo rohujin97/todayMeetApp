@@ -17,6 +17,8 @@ const routes = require('./router/common');
 const config = require('./config/index')
 const pool = require('./middleware/pool')
 
+const favicon = require('serve-favicon')
+app.use(favicon(path.join(__dirname, 'public/images', 'favicon.ico'))) //favicon 설정
 
 if (config.middleware.cors) app.use(cors())
 app.use(logger('dev'));
@@ -28,7 +30,6 @@ app.use(cookieParser());
 app.use('/', routes); 
 
 const io = socketio(server)
-// console.log('socket io 요청 받아들일 준비가 됨')
 // require('./middleware/socket')(io)
 // const io = socketio(server, { path: '/io' })
 // io.adapter(redisAdapter({ host: 'localhost', port: 6379 }))
