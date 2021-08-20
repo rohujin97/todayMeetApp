@@ -2163,15 +2163,21 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 9cbf13ff (db connect with pool and get data from todaymeet schema)
 =======
 >>>>>>> 442fe2e6 (delete local folder and reclone project)
+=======
+=======
+>>>>>>> fa0fa0aa (db connect with pool and get data from todaymeet schema)
+>>>>>>> 1b5461e3 (db connect with pool and get data from todaymeet schema)
 "@types/component-emitter@^1.2.10":
   "integrity" "sha512-bsjleuRKWmGqajMerkzox19aGbscQX5rmmvvXl3wlIp5gMG1HgkiwPxsN5p070fBDKTNSPgojVbuY1+HWMbFhg=="
   "resolved" "https://registry.npmjs.org/@types/component-emitter/-/component-emitter-1.2.10.tgz"
   "version" "1.2.10"
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -2201,12 +2207,16 @@
 =======
 >>>>>>> b62a2012 (use ChatListStyles)
 =======
+>>>>>>> 148973cd (db connect with pool and get data from todaymeet schema)
+=======
 >>>>>>> 87cf17d1 (revise App.js package.json package-lock.json)
 =======
 >>>>>>> 9cbf13ff (db connect with pool and get data from todaymeet schema)
 <<<<<<< HEAD
 >>>>>>> 395d211b (db connect with pool and get data from todaymeet schema)
 =======
+=======
+>>>>>>> 1b5461e3 (db connect with pool and get data from todaymeet schema)
 =======
 "@types/glob@^7.1.1":
   "integrity" "sha512-w+LsMxKyYQm347Otw+IfBXOv9UWVjpHpCDdbBMt8Kz/xbvCYNjP+0qPh91Km3iKfSRLBB0P7fAMf0KHrPu+MyA=="
@@ -2232,8 +2242,16 @@
 >>>>>>> experiment
 =======
 >>>>>>> a26c2c8e (delete local folder and reclone project)
+<<<<<<< HEAD
 >>>>>>> 442fe2e6 (delete local folder and reclone project)
+<<<<<<< HEAD
 >>>>>>> a8a2bd36 (delete local folder and reclone project)
+=======
+=======
+=======
+>>>>>>> fa0fa0aa (db connect with pool and get data from todaymeet schema)
+>>>>>>> 1b5461e3 (db connect with pool and get data from todaymeet schema)
+>>>>>>> 148973cd (db connect with pool and get data from todaymeet schema)
 "@types/hammerjs@^2.0.36":
   "integrity" "sha512-VbjwR1fhsn2h2KXAY4oy1fm7dCxaKy0D+deTb8Ilc3Eo3rc5+5eA4rfYmZaHgNJKxVyI0f6WIXzO2zLkVmQPHA=="
   "resolved" "https://registry.npmjs.org/@types/hammerjs/-/hammerjs-2.0.40.tgz"
@@ -3065,9 +3083,17 @@
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> b62a2012 (use ChatListStyles)
+=======
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 1b5461e3 (db connect with pool and get data from todaymeet schema)
+>>>>>>> 148973cd (db connect with pool and get data from todaymeet schema)
 "babel-preset-jest@^26.3.0", "babel-preset-jest@^26.6.2":
   "integrity" "sha512-YvdtlVm9t3k777c5NPQIv6cxFFFapys25HiUmuSgHwIZhfifweR5c5Sf5nwE3MAbfu327CYSvps8Yx6ANLyleQ=="
   "resolved" "https://registry.npmjs.org/babel-preset-jest/-/babel-preset-jest-26.6.2.tgz"
@@ -3085,9 +3111,17 @@
     "regenerator-runtime" "^0.11.0"
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> experiment
 =======
 >>>>>>> b62a2012 (use ChatListStyles)
+=======
+=======
+>>>>>>> experiment
+=======
+>>>>>>> fa0fa0aa (db connect with pool and get data from todaymeet schema)
+>>>>>>> 1b5461e3 (db connect with pool and get data from todaymeet schema)
+>>>>>>> 148973cd (db connect with pool and get data from todaymeet schema)
 "backo2@~1.0.2":
   "integrity" "sha1-MasayLEpNjRj41s+u2n038+6eUc="
   "resolved" "https://registry.npmjs.org/backo2/-/backo2-1.0.2.tgz"
@@ -3797,6 +3831,7 @@
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 "component-emitter@^1.2.1", "component-emitter@~1.3.0":
 =======
 "component-emitter@^1.2.1", "component-emitter@^1.3.0", "component-emitter@~1.3.0":
@@ -3804,6 +3839,20 @@
 =======
 "component-emitter@^1.2.1", "component-emitter@^1.3.0", "component-emitter@~1.3.0":
 >>>>>>> b62a2012 (use ChatListStyles)
+=======
+"component-emitter@^1.2.1", "component-emitter@^1.3.0", "component-emitter@~1.3.0":
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+"component-emitter@^1.2.1", "component-emitter@~1.3.0":
+=======
+"component-emitter@^1.2.1", "component-emitter@^1.3.0", "component-emitter@~1.3.0":
+>>>>>>> experiment
+=======
+"component-emitter@^1.2.1", "component-emitter@~1.3.0":
+>>>>>>> fa0fa0aa (db connect with pool and get data from todaymeet schema)
+>>>>>>> 1b5461e3 (db connect with pool and get data from todaymeet schema)
+>>>>>>> 148973cd (db connect with pool and get data from todaymeet schema)
   "integrity" "sha512-Rd3se6QB+sO1TwqZjscQrurpEPIfO0/yYnSin6Q/rD3mOutHvUrCAhJub3r90uNb+SESBuE0QYoB90YdfatsRg=="
   "resolved" "https://registry.npmjs.org/component-emitter/-/component-emitter-1.3.0.tgz"
   "version" "1.3.0"
@@ -4344,6 +4393,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 "debug@^4.1.0", "debug@^4.1.1", "debug@^4.3.2", "debug@~4.3.1":
 =======
 <<<<<<< HEAD
@@ -4358,6 +4408,8 @@
 =======
 =======
 >>>>>>> 442fe2e6 (delete local folder and reclone project)
+=======
+>>>>>>> 1b5461e3 (db connect with pool and get data from todaymeet schema)
 "debug@^4.1.0", "debug@^4.1.1", "debug@^4.3.2", "debug@~4.3.1":
 >>>>>>> 9cbf13ff (db connect with pool and get data from todaymeet schema)
 <<<<<<< HEAD
@@ -4375,8 +4427,17 @@
 =======
 "debug@^4.1.0", "debug@^4.1.1", "debug@^4.3.2":
 >>>>>>> a26c2c8e (delete local folder and reclone project)
+<<<<<<< HEAD
 >>>>>>> 442fe2e6 (delete local folder and reclone project)
+<<<<<<< HEAD
 >>>>>>> a8a2bd36 (delete local folder and reclone project)
+=======
+=======
+=======
+"debug@^4.1.0", "debug@^4.1.1", "debug@^4.3.2", "debug@~4.3.1":
+>>>>>>> fa0fa0aa (db connect with pool and get data from todaymeet schema)
+>>>>>>> 1b5461e3 (db connect with pool and get data from todaymeet schema)
+>>>>>>> 148973cd (db connect with pool and get data from todaymeet schema)
   "integrity" "sha512-mOp8wKcvj7XxC78zLgw/ZA+6TSgkoE2C/ienthhRD298T7UNwAg9diBpLRxC0mOezLl4B0xV7M0cCO6P/O0Xhw=="
   "resolved" "https://registry.npmjs.org/debug/-/debug-4.3.2.tgz"
   "version" "4.3.2"
@@ -4740,10 +4801,21 @@
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 "envinfo@^7.7.2":
 =======
 =======
 >>>>>>> b62a2012 (use ChatListStyles)
+=======
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> fa0fa0aa (db connect with pool and get data from todaymeet schema)
+"envinfo@^7.7.2":
+=======
+>>>>>>> 1b5461e3 (db connect with pool and get data from todaymeet schema)
+>>>>>>> 148973cd (db connect with pool and get data from todaymeet schema)
 "enquirer@^2.3.6":
   "integrity" "sha512-yjNnPr315/FjS4zIsUxYguYUPP2e1NK4d7E7ZOLiyYCcbFBiTMyID+2wvm2w6+pZ/odMA7cRkjhsPbltwBOrLg=="
   "resolved" "https://registry.npmjs.org/enquirer/-/enquirer-2.3.6.tgz"
@@ -6088,9 +6160,17 @@
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> b62a2012 (use ChatListStyles)
+=======
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 1b5461e3 (db connect with pool and get data from todaymeet schema)
+>>>>>>> 148973cd (db connect with pool and get data from todaymeet schema)
 "graphql@^14.0.0 || ^15.0.0", "graphql@^14.7.0":
   "integrity" "sha512-l0xWZpoPKpppFzMfvVyFmp9vLN7w/ZZJPefUicMCepfJeQ8sMcztloGYY9DfjVPo6tIUDzU5Hw3MUbIjj9AVVA=="
   "resolved" "https://registry.npmjs.org/graphql/-/graphql-14.7.0.tgz"
@@ -6139,9 +6219,17 @@
   "version" "1.0.1"
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> experiment
 =======
 >>>>>>> b62a2012 (use ChatListStyles)
+=======
+=======
+>>>>>>> experiment
+=======
+>>>>>>> fa0fa0aa (db connect with pool and get data from todaymeet schema)
+>>>>>>> 1b5461e3 (db connect with pool and get data from todaymeet schema)
+>>>>>>> 148973cd (db connect with pool and get data from todaymeet schema)
 "has-cors@1.1.0":
   "integrity" "sha1-XkdHk/fqmEPRu5nCPu9J/xJv/zk="
   "resolved" "https://registry.npmjs.org/has-cors/-/has-cors-1.1.0.tgz"
@@ -9735,9 +9823,17 @@
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> b62a2012 (use ChatListStyles)
+=======
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 1b5461e3 (db connect with pool and get data from todaymeet schema)
+>>>>>>> 148973cd (db connect with pool and get data from todaymeet schema)
 "parse-url@^5.0.2":
   "integrity" "sha512-CgbjyWT6aOh2oNSUS0cioYQsGysj9hQ2IdbOfeNwq5KOaKM7dOw/yTupiI0cnJhaDHJEIGybPkQz7LF9WNIhyw=="
   "resolved" "https://registry.npmjs.org/parse-url/-/parse-url-5.0.7.tgz"
@@ -9769,9 +9865,17 @@
   "version" "6.0.1"
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> experiment
 =======
 >>>>>>> b62a2012 (use ChatListStyles)
+=======
+=======
+>>>>>>> experiment
+=======
+>>>>>>> fa0fa0aa (db connect with pool and get data from todaymeet schema)
+>>>>>>> 1b5461e3 (db connect with pool and get data from todaymeet schema)
+>>>>>>> 148973cd (db connect with pool and get data from todaymeet schema)
 "parseqs@0.0.6":
   "integrity" "sha512-jeAGzMDbfSHHA091hr0r31eYfTig+29g3GKKE/PPbEQ65X0lmMwlEoqmhzu0iztID5uJpZsFlUPDP8ThPL7M8w=="
   "resolved" "https://registry.npmjs.org/parseqs/-/parseqs-0.0.6.tgz"
@@ -9784,11 +9888,22 @@
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 "parseurl@~1.3.3":
 =======
 "parseurl@^1.3.3", "parseurl@~1.3.3":
 >>>>>>> experiment
 =======
+=======
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> fa0fa0aa (db connect with pool and get data from todaymeet schema)
+"parseurl@~1.3.3":
+=======
+>>>>>>> 1b5461e3 (db connect with pool and get data from todaymeet schema)
+>>>>>>> 148973cd (db connect with pool and get data from todaymeet schema)
 "parseurl@^1.3.3", "parseurl@~1.3.3":
 >>>>>>> b62a2012 (use ChatListStyles)
   "integrity" "sha512-CiyeOxFT/JZyN5m0z9PfXw4SCBJ6Sygz1Dpl0wqjlhDEGGBP1GnsUVEL0p63hoG1fcj3fHynXi9NYO4nWOL+qQ=="
@@ -13418,8 +13533,19 @@
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 "source-map-resolve@^0.5.0":
 =======
+=======
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> fa0fa0aa (db connect with pool and get data from todaymeet schema)
+"source-map-resolve@^0.5.0":
+=======
+>>>>>>> 1b5461e3 (db connect with pool and get data from todaymeet schema)
+>>>>>>> 148973cd (db connect with pool and get data from todaymeet schema)
 "source-map-resolve@^0.5.0", "source-map-resolve@^0.5.3":
 >>>>>>> experiment
 =======
@@ -14968,8 +15094,11 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 11d516c4 (still move page from chatlist to chatroom)
+=======
+>>>>>>> 1b5461e3 (db connect with pool and get data from todaymeet schema)
 "yargs@^16.1.1":
   "integrity" "sha512-D1mvvtDG0L5ft/jGWkLpG1+m0eQxOfaBvTNELraWj22wSVUMWxZUvYgJYcKh6jGGIkJFhH4IZPQhR4TKpc8mBw=="
   "resolved" "https://registry.npmjs.org/yargs/-/yargs-16.2.0.tgz"
@@ -14986,8 +15115,11 @@
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> experiment
 =======
+=======
+>>>>>>> 148973cd (db connect with pool and get data from todaymeet schema)
 >>>>>>> 9cbf13ff (db connect with pool and get data from todaymeet schema)
 <<<<<<< HEAD
 >>>>>>> 395d211b (db connect with pool and get data from todaymeet schema)
@@ -14999,7 +15131,15 @@
 =======
 =======
 >>>>>>> 3c57a5a8 (use ChatListStyles)
+<<<<<<< HEAD
 >>>>>>> b62a2012 (use ChatListStyles)
+=======
+=======
+>>>>>>> experiment
+=======
+>>>>>>> fa0fa0aa (db connect with pool and get data from todaymeet schema)
+>>>>>>> 1b5461e3 (db connect with pool and get data from todaymeet schema)
+>>>>>>> 148973cd (db connect with pool and get data from todaymeet schema)
 "yeast@0.1.2":
   "integrity" "sha1-AI4G2AlDIMNy28L47XagymyKxBk="
   "resolved" "https://registry.npmjs.org/yeast/-/yeast-0.1.2.tgz"

@@ -205,6 +205,7 @@ const styles = StyleSheet.create({
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> 645ebf9b (현재 위치 표시)
 <<<<<<< HEAD
 >>>>>>> e924ffea (현재 위치 표시)
@@ -226,4 +227,10 @@ const styles = StyleSheet.create({
 =======
 });
 >>>>>>> a578b8d1 (Update App.js)
+<<<<<<< HEAD
 >>>>>>> 54193eb1 (Update App.js)
+=======
+=======
+});
+>>>>>>> 1b5461e3 (db connect with pool and get data from todaymeet schema)
+>>>>>>> 148973cd (db connect with pool and get data from todaymeet schema)
