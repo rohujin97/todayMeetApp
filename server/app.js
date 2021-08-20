@@ -18,10 +18,15 @@ const config = require('./config/index')
 const pool = require('./middleware/pool')
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 const favicon = require('serve-favicon')
 app.use(favicon(path.join(__dirname, 'public/images', 'favicon.ico'))) //favicon 설정
 =======
 >>>>>>> 87cf17d1 (revise App.js package.json package-lock.json)
+=======
+const favicon = require('serve-favicon')
+app.use(favicon(path.join(__dirname, 'public/images', 'favicon.ico'))) //favicon 설정
+>>>>>>> 9cbf13ff (db connect with pool and get data from todaymeet schema)
 
 if (config.middleware.cors) app.use(cors())
 app.use(logger('dev'));
@@ -34,15 +39,20 @@ app.use('/', routes);
 
 const io = socketio(server)
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 app.use((req, res, next) => {
     res.io = io;
     next();
 =======
+=======
+>>>>>>> 395d211b (db connect with pool and get data from todaymeet schema)
 <<<<<<< HEAD
 =======
 // console.log('socket io 요청 받아들일 준비가 됨')
 >>>>>>> 87cf17d1 (revise App.js package.json package-lock.json)
+=======
+>>>>>>> 9cbf13ff (db connect with pool and get data from todaymeet schema)
 // require('./middleware/socket')(io)
 // const io = socketio(server, { path: '/io' })
 // io.adapter(redisAdapter({ host: 'localhost', port: 6379 }))

@@ -2063,11 +2063,15 @@
   "version" "3.5.36"
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 9cbf13ff (db connect with pool and get data from todaymeet schema)
 "@types/component-emitter@^1.2.10":
   "integrity" "sha512-bsjleuRKWmGqajMerkzox19aGbscQX5rmmvvXl3wlIp5gMG1HgkiwPxsN5p070fBDKTNSPgojVbuY1+HWMbFhg=="
   "resolved" "https://registry.npmjs.org/@types/component-emitter/-/component-emitter-1.2.10.tgz"
   "version" "1.2.10"
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -2091,6 +2095,12 @@
 =======
 >>>>>>> 87cf17d1 (revise App.js package.json package-lock.json)
 >>>>>>> e726473d (revise App.js package.json package-lock.json)
+=======
+=======
+>>>>>>> 87cf17d1 (revise App.js package.json package-lock.json)
+=======
+>>>>>>> 9cbf13ff (db connect with pool and get data from todaymeet schema)
+>>>>>>> 395d211b (db connect with pool and get data from todaymeet schema)
 "@types/hammerjs@^2.0.36":
   "integrity" "sha512-VbjwR1fhsn2h2KXAY4oy1fm7dCxaKy0D+deTb8Ilc3Eo3rc5+5eA4rfYmZaHgNJKxVyI0f6WIXzO2zLkVmQPHA=="
   "resolved" "https://registry.npmjs.org/@types/hammerjs/-/hammerjs-2.0.40.tgz"
@@ -4012,6 +4022,7 @@
     "ms" "2.0.0"
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 "debug@^4.1.0", "debug@^4.1.1", "debug@^4.3.2", "debug@~4.3.1":
 =======
 <<<<<<< HEAD
@@ -4020,7 +4031,13 @@
 =======
 "debug@^4.1.0", "debug@^4.1.1", "debug@^4.3.2":
 >>>>>>> 87cf17d1 (revise App.js package.json package-lock.json)
+<<<<<<< HEAD
 >>>>>>> e726473d (revise App.js package.json package-lock.json)
+=======
+=======
+"debug@^4.1.0", "debug@^4.1.1", "debug@^4.3.2", "debug@~4.3.1":
+>>>>>>> 9cbf13ff (db connect with pool and get data from todaymeet schema)
+>>>>>>> 395d211b (db connect with pool and get data from todaymeet schema)
   "integrity" "sha512-mOp8wKcvj7XxC78zLgw/ZA+6TSgkoE2C/ienthhRD298T7UNwAg9diBpLRxC0mOezLl4B0xV7M0cCO6P/O0Xhw=="
   "resolved" "https://registry.npmjs.org/debug/-/debug-4.3.2.tgz"
   "version" "4.3.2"
@@ -12826,7 +12843,11 @@
     "yargs-parser" "^20.2.2"
 
 =======
+<<<<<<< HEAD
 >>>>>>> experiment
+=======
+>>>>>>> 9cbf13ff (db connect with pool and get data from todaymeet schema)
+>>>>>>> 395d211b (db connect with pool and get data from todaymeet schema)
 "yeast@0.1.2":
   "integrity" "sha1-AI4G2AlDIMNy28L47XagymyKxBk="
   "resolved" "https://registry.npmjs.org/yeast/-/yeast-0.1.2.tgz"

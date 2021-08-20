@@ -153,6 +153,14 @@ const styles = StyleSheet.create({
     fontSize: 20,
     fontWeight: 'bold',
   },
+<<<<<<< HEAD
 >>>>>>> 645ebf9b (현재 위치 표시)
+<<<<<<< HEAD
 >>>>>>> e924ffea (현재 위치 표시)
 });
+=======
+});
+=======
+});
+>>>>>>> 9cbf13ff (db connect with pool and get data from todaymeet schema)
+>>>>>>> 395d211b (db connect with pool and get data from todaymeet schema)
