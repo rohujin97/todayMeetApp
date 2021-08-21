@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { View, Text, StyleSheet}  from 'react-native';
 import Icon from 'react-native-vector-icons/Ionicons';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
-import { createStackNavigator, createAppContainer } from '@react-navigation/stack';
+
 // 하단 탭에 들어갈 컴포넌트들
 import HomeTab from './AppTabNavigator/HomeTab'
 import MapTab from './AppTabNavigator/MapTab'

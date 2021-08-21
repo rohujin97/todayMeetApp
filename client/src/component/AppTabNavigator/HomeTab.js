@@ -20,21 +20,20 @@ const GetDate = () => {
   let today = new Date();   
   let month = today.getMonth() + 1;  // 월
   let date = today.getDate();  // 날짜
-  return (<Text style={styles.text}>{month} / {date}  Meeting</Text>
+  return (
+    <View style={styles.getD}>
+      <Text style={styles.text}>{month} / {date}  Meeting</Text>
+      <Icon name="thunderstorm-outline" size={30} style={{ paddingLeft: deviceWidth - 235}}></Icon>
+    </View>
   );
 }
 
 export default class HomeTab extends Component{
-  static navigationOptions = {
-    tabBarIcon: ({ tintColor }) => (
-        <Icon name='home-outline' style={{ color: tintColor }} />
-    )
-}
+
   render() {
     return (
         <View style={styles.date}>
             <GetDate />
-            <Icon name="thunderstorm-outline" size={30} style={{ paddingLeft: deviceWidth - 80}}></Icon>
             <ScrollView>
               <MeetingList />
             </ScrollView>
@@ -49,10 +48,13 @@ const styles = StyleSheet.create({
     flexDirection: 'row',
     flexWrap: 'wrap',
   },
+  getD:{
+    flexDirection: 'row',
+  },
   row: {
     flexWrap: 'wrap',
     backgroundColor: '#E8E8E8',
-    borderRadius: 10,
+    borderRadius: 12,
     width: deviceWidth - 80,
     height: deviceWidth / 4,
     paddingTop: 10,
@@ -64,8 +66,8 @@ const styles = StyleSheet.create({
 
   },
   text: {
-    marginLeft: 30,
-    justifyContent: 'space-between',
+    marginLeft: 40,
+    alignItems: 'flex-start',
     fontSize: 20,
   },
   date: {
