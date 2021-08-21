@@ -44,8 +44,6 @@ const ChatRoomScreen = ({navigation}) => {
       setMessages(previousMessages => GiftedChat.append(previousMessages, messages))
     }, [])
 
-      
-
     const renderBubble = (props) => {
         return (
         <Bubble 
