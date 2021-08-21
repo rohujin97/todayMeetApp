@@ -2,10 +2,13 @@ import React, { Component } from 'react';
 import { View, Text, StyleSheet } from 'react-native';
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 import Loca from '../Loca.js'
 =======
 =======
 >>>>>>> 8c273178 (still move page from chatlist to chatroom)
+=======
+>>>>>>> b62a2012 (use ChatListStyles)
 <<<<<<< HEAD
 // import Location from '../Location.js'
 =======
@@ -20,17 +23,26 @@ import Loca from '../Loca.js'
 // import Location from '../Location.js'
 >>>>>>> 7102a15a (still move page from chatlist to chatroom)
 >>>>>>> 11d516c4 (still move page from chatlist to chatroom)
+<<<<<<< HEAD
 >>>>>>> 8c273178 (still move page from chatlist to chatroom)
+=======
+=======
+import Loca from '../Loca.js'
+>>>>>>> 3c57a5a8 (use ChatListStyles)
+>>>>>>> b62a2012 (use ChatListStyles)
 
 export default class MapTab extends Component {
   render() {
     return (
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
       <Loca />
 =======
 =======
 >>>>>>> 8c273178 (still move page from chatlist to chatroom)
+=======
+>>>>>>> b62a2012 (use ChatListStyles)
 <<<<<<< HEAD
         <View>
             <Text>Map</Text>
@@ -51,7 +63,13 @@ export default class MapTab extends Component {
     //   <Location />
 >>>>>>> 7102a15a (still move page from chatlist to chatroom)
 >>>>>>> 11d516c4 (still move page from chatlist to chatroom)
+<<<<<<< HEAD
 >>>>>>> 8c273178 (still move page from chatlist to chatroom)
+=======
+=======
+      <Loca />
+>>>>>>> 3c57a5a8 (use ChatListStyles)
+>>>>>>> b62a2012 (use ChatListStyles)
     );
   }
 }
@@ -63,6 +81,7 @@ const style = StyleSheet.create({
         justifyContent: 'center',
     }
 <<<<<<< HEAD
+<<<<<<< HEAD
 });
 =======
 <<<<<<< HEAD
@@ -75,4 +94,10 @@ const style = StyleSheet.create({
 });
 >>>>>>> 7102a15a (still move page from chatlist to chatroom)
 >>>>>>> 11d516c4 (still move page from chatlist to chatroom)
+<<<<<<< HEAD
 >>>>>>> 8c273178 (still move page from chatlist to chatroom)
+=======
+=======
+});
+>>>>>>> 3c57a5a8 (use ChatListStyles)
+>>>>>>> b62a2012 (use ChatListStyles)

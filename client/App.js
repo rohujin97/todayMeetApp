@@ -1,7 +1,10 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 import React from 'react';
 import { StyleSheet, View, Text, ScrollView, Dimensions } from 'react-native';
 =======
+=======
+>>>>>>> b62a2012 (use ChatListStyles)
 <<<<<<< HEAD
 import React from 'react';
 import { StyleSheet, View, Text, ScrollView } from 'react-native';
@@ -55,6 +58,7 @@ import { NavigationContainer } from '@react-navigation/native';
 import { createStackNavigator } from '@react-navigation/stack';
 import * as Location from 'expo-location';
 <<<<<<< HEAD
+<<<<<<< HEAD
 import Icon from 'react-native-vector-icons/Ionicons';
 const deviceWidth = Dimensions.get('window').width;
 import { createStore, applyMiddleware } from 'redux';
@@ -83,11 +87,22 @@ store.subscribe(() => {
 store.dispatch({type: "server/hello", data: "Hello!"})
 =======
 >>>>>>> e924ffea (현재 위치 표시)
+=======
+=======
+import React from 'react';
+import { StyleSheet, View, Text, ScrollView, Dimensions } from 'react-native';
+import MainScreen from './src/component/MainScreen';
+import { NavigationContainer } from '@react-navigation/native';
+import Icon from 'react-native-vector-icons/Ionicons';
+const deviceWidth = Dimensions.get('window').width;
+>>>>>>> 3c57a5a8 (use ChatListStyles)
+>>>>>>> b62a2012 (use ChatListStyles)
 
 const Title = () => {
   return (
     <View style={styles.title}>
       <Text style={styles.text}>TodayMeet</Text>
+<<<<<<< HEAD
 <<<<<<< HEAD
       <Icon name='location-outline' size={30} style={{ paddingLeft: deviceWidth - 190 }}></Icon>
     </View>
@@ -105,9 +120,15 @@ export default function App() {
   );
 }
 =======
+=======
+=======
+      <Icon name='location-outline' size={30} style={{ paddingLeft: deviceWidth - 190 }}></Icon>
+>>>>>>> 3c57a5a8 (use ChatListStyles)
+>>>>>>> b62a2012 (use ChatListStyles)
     </View>
   );
 };
+
 export default function App() {
   return (
     <NavigationContainer>
@@ -125,6 +146,7 @@ const styles = StyleSheet.create({
   },
   title: {
 <<<<<<< HEAD
+<<<<<<< HEAD
     height: 65,
     flexDirection: 'row',
     backgroundColor: 'white',
@@ -140,17 +162,30 @@ const styles = StyleSheet.create({
     fontWeight: 'bold',
   },
 =======
+=======
+>>>>>>> b62a2012 (use ChatListStyles)
     alignSelf: 'stretch',
     height: 50,
     flexDirection: 'row',
     backgroundColor: 'white',
     alignItems: 'center',
     justifyContent: 'center', 
+=======
+    height: 65,
+    flexDirection: 'row',
+    backgroundColor: 'white',
+    alignItems: 'center',
+>>>>>>> 3c57a5a8 (use ChatListStyles)
     paddingLeft: 10,
     paddingRight: 10,
   },
   text: {
     fontSize: 20,
+<<<<<<< HEAD
+=======
+    paddingLeft: 20,
+    alignItems: 'flex-start',
+>>>>>>> 3c57a5a8 (use ChatListStyles)
     fontWeight: 'bold',
   },
 <<<<<<< HEAD

@@ -1,14 +1,24 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 import React from 'react';
 import { FlatList } from 'react-native';
 =======
+=======
+>>>>>>> b62a2012 (use ChatListStyles)
 import React, { Component } from 'react';
 <<<<<<< HEAD
 <<<<<<< HEAD
 import { View, Text, Button, StyleSheet, TextInput, Image, FlatList } from 'react-native';
 import { NavigationContainer } from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/stack';
+<<<<<<< HEAD
 >>>>>>> 395d211b (db connect with pool and get data from todaymeet schema)
+=======
+=======
+import React from 'react';
+import { FlatList } from 'react-native';
+>>>>>>> 3c57a5a8 (use ChatListStyles)
+>>>>>>> b62a2012 (use ChatListStyles)
 import 'react-native-gesture-handler';
 import {
     Container,
@@ -21,6 +31,7 @@ import {
     MessageText,
     TextSection,
     UserInfoText,
+<<<<<<< HEAD
 <<<<<<< HEAD
 } from '../styles/ChatListStyles';
 
@@ -110,6 +121,9 @@ import ChatRoomScreen from './ChatRoomScreen';
 =======
 } from '../styles/ChatRoomStyles';
 >>>>>>> d09848b7 (use ChatListStyles)
+=======
+} from '../styles/ChatListStyles';
+>>>>>>> 3c57a5a8 (use ChatListStyles)
 
 const Lists = [
     {
@@ -149,6 +163,7 @@ const Lists = [
     }
 ];
 
+<<<<<<< HEAD
 export default class ChatListScreen extends Component {
     // navigationOptions 코드
 <<<<<<< HEAD
@@ -265,4 +280,40 @@ export default ChatListScreen;
 =======
 });
 >>>>>>> cec1bc15 (make chatlist ui)
+<<<<<<< HEAD
 >>>>>>> 2bb49246 (make chatlist ui)
+=======
+=======
+const ChatListScreen = ({navigation}) => {
+    return (
+        <Container>
+            <FlatList
+                data={Lists}
+                keyExtractor={item=>item.id}
+                renderItem={({item}) => (
+                    <Card onPress={() => 
+                            navigation.navigate('Chat', {
+                            userName: item.userName
+                            })}>
+                        <UserInfo>
+                            <UserImgWrapper>
+                                <UserImg source={item.userImg}/>
+                            </UserImgWrapper>
+                            <TextSection>
+                                <UserInfoText>
+                                    <UserName>{item.userName}</UserName>
+                                    <PostTime>{item.messageTime}</PostTime>
+                                </UserInfoText>
+                                <MessageText>{item.messageText}</MessageText>
+                            </TextSection>
+                        </UserInfo>
+                    </Card>
+                )}
+            />
+        </Container>
+    );
+}
+
+export default ChatListScreen;
+>>>>>>> 3c57a5a8 (use ChatListStyles)
+>>>>>>> b62a2012 (use ChatListStyles)

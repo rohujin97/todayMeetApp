@@ -21,33 +21,52 @@ const GetDate = () => {
   let month = today.getMonth() + 1;  // 월
   let date = today.getDate();  // 날짜
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> b62a2012 (use ChatListStyles)
 <<<<<<< HEAD
   return (<Text style={styles.text}>{month} / {date}  Meeting</Text>
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> 8c273178 (still move page from chatlist to chatroom)
+=======
+=======
+>>>>>>> 3c57a5a8 (use ChatListStyles)
+>>>>>>> b62a2012 (use ChatListStyles)
   return (
     <View style={styles.getD}>
       <Text style={styles.text}>{month} / {date}  Meeting</Text>
       <Icon name="thunderstorm-outline" size={30} style={{ paddingLeft: deviceWidth - 235}}></Icon>
     </View>
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> b62a2012 (use ChatListStyles)
 =======
   return (<Text style={styles.text}>{month} / {date}  Meeting</Text>
 >>>>>>> 7102a15a (still move page from chatlist to chatroom)
 >>>>>>> 11d516c4 (still move page from chatlist to chatroom)
+<<<<<<< HEAD
 >>>>>>> 8c273178 (still move page from chatlist to chatroom)
+=======
+=======
+>>>>>>> 3c57a5a8 (use ChatListStyles)
+>>>>>>> b62a2012 (use ChatListStyles)
   );
 }
 
 export default class HomeTab extends Component{
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 8c273178 (still move page from chatlist to chatroom)
+=======
+>>>>>>> b62a2012 (use ChatListStyles)
   static navigationOptions = {
     tabBarIcon: ({ tintColor }) => (
         <Icon name='home-outline' style={{ color: tintColor }} />
@@ -67,13 +86,22 @@ export default class HomeTab extends Component{
 }
 >>>>>>> 7102a15a (still move page from chatlist to chatroom)
 >>>>>>> 11d516c4 (still move page from chatlist to chatroom)
+<<<<<<< HEAD
 >>>>>>> 8c273178 (still move page from chatlist to chatroom)
+=======
+=======
+
+>>>>>>> 3c57a5a8 (use ChatListStyles)
+>>>>>>> b62a2012 (use ChatListStyles)
   render() {
     return (
         <View style={styles.date}>
             <GetDate />
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> b62a2012 (use ChatListStyles)
 <<<<<<< HEAD
             <Icon name="thunderstorm-outline" size={30} style={{ paddingLeft: deviceWidth - 80}}></Icon>
 =======
@@ -82,7 +110,12 @@ export default class HomeTab extends Component{
             <Icon name="thunderstorm-outline" size={30} style={{ paddingLeft: deviceWidth - 80}}></Icon>
 >>>>>>> 7102a15a (still move page from chatlist to chatroom)
 >>>>>>> 11d516c4 (still move page from chatlist to chatroom)
+<<<<<<< HEAD
 >>>>>>> 8c273178 (still move page from chatlist to chatroom)
+=======
+=======
+>>>>>>> 3c57a5a8 (use ChatListStyles)
+>>>>>>> b62a2012 (use ChatListStyles)
             <ScrollView>
               <MeetingList />
             </ScrollView>
@@ -98,6 +131,7 @@ const styles = StyleSheet.create({
     flexWrap: 'wrap',
   },
 <<<<<<< HEAD
+<<<<<<< HEAD
   getD:{
     flexDirection: 'row',
   },
@@ -106,6 +140,8 @@ const styles = StyleSheet.create({
     backgroundColor: '#E8E8E8',
     borderRadius: 12,
 =======
+=======
+>>>>>>> b62a2012 (use ChatListStyles)
 <<<<<<< HEAD
   row: {
     flexWrap: 'wrap',
@@ -113,6 +149,8 @@ const styles = StyleSheet.create({
     borderRadius: 10,
 =======
 <<<<<<< HEAD
+=======
+>>>>>>> 3c57a5a8 (use ChatListStyles)
   getD:{
     flexDirection: 'row',
   },
@@ -120,6 +158,7 @@ const styles = StyleSheet.create({
     flexWrap: 'wrap',
     backgroundColor: '#E8E8E8',
     borderRadius: 12,
+<<<<<<< HEAD
 =======
   row: {
     flexWrap: 'wrap',
@@ -127,7 +166,12 @@ const styles = StyleSheet.create({
     borderRadius: 10,
 >>>>>>> 7102a15a (still move page from chatlist to chatroom)
 >>>>>>> 11d516c4 (still move page from chatlist to chatroom)
+<<<<<<< HEAD
 >>>>>>> 8c273178 (still move page from chatlist to chatroom)
+=======
+=======
+>>>>>>> 3c57a5a8 (use ChatListStyles)
+>>>>>>> b62a2012 (use ChatListStyles)
     width: deviceWidth - 80,
     height: deviceWidth / 4,
     paddingTop: 10,
@@ -140,9 +184,12 @@ const styles = StyleSheet.create({
   },
   text: {
 <<<<<<< HEAD
+<<<<<<< HEAD
     marginLeft: 40,
     alignItems: 'flex-start',
 =======
+=======
+>>>>>>> b62a2012 (use ChatListStyles)
 <<<<<<< HEAD
     marginLeft: 30,
     justifyContent: 'space-between',
@@ -155,13 +202,21 @@ const styles = StyleSheet.create({
     justifyContent: 'space-between',
 >>>>>>> 7102a15a (still move page from chatlist to chatroom)
 >>>>>>> 11d516c4 (still move page from chatlist to chatroom)
+<<<<<<< HEAD
 >>>>>>> 8c273178 (still move page from chatlist to chatroom)
+=======
+=======
+    marginLeft: 40,
+    alignItems: 'flex-start',
+>>>>>>> 3c57a5a8 (use ChatListStyles)
+>>>>>>> b62a2012 (use ChatListStyles)
     fontSize: 20,
   },
   date: {
     marginTop: 20,
   },
 <<<<<<< HEAD
+<<<<<<< HEAD
 });
 =======
 <<<<<<< HEAD
@@ -170,3 +225,6 @@ const styles = StyleSheet.create({
 });
 >>>>>>> 7102a15a (still move page from chatlist to chatroom)
 >>>>>>> 11d516c4 (still move page from chatlist to chatroom)
+=======
+});
+>>>>>>> 3c57a5a8 (use ChatListStyles)

@@ -15,16 +15,36 @@ import { View, Text, StyleSheet}  from 'react-native';
 >>>>>>> 11d516c4 (still move page from chatlist to chatroom)
 import Icon from 'react-native-vector-icons/Ionicons';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
-import { createStackNavigator, createAppContainer } from '@react-navigation/stack';
-const Stack = createStackNavigator();
-import io, { Socket } from 'socket.io-client';
+import { createStackNavigator } from '@react-navigation/stack';
+import io from 'socket.io-client';
 // 하단 탭에 들어갈 컴포넌트들
 import HomeTab from './AppTabNavigator/HomeTab'
 import MapTab from './AppTabNavigator/MapTab'
-import ChatTab from './chat/ChatListScreen'
 import SetTab from './AppTabNavigator/SetTab'
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+import ChatListScreen from './chat/ChatListScreen';
+>>>>>>> 3c57a5a8 (use ChatListStyles)
 import ChatRoomScreen from './chat/ChatRoomScreen';
+// import ChatStack from '../navigation/ChatStack'
+
+const ChatStack = createStackNavigator();
+
+const ChatStackScreen = () => {
+  return(
+    <ChatStack.Navigator>
+        <ChatStack.Screen name="List" component={ChatListScreen} />
+        <ChatStack.Screen 
+          name="Chat" 
+          component={ChatRoomScreen} 
+          options={({route}) => ({
+            title: route.params.userName,
+            headerBackTitleVisible: false
+          })}/>
+    </ChatStack.Navigator>
+  )
+};
 
 =======
 =======
@@ -78,6 +98,7 @@ const ChatStackScreen = ({navigation}) => {
 >>>>>>> cec1bc15 (make chatlist ui)
 const Tab = createBottomTabNavigator();
 const MyTabs = () => {
+<<<<<<< HEAD
   const getTabBarVisibility = (route) => {
     const routeName = route.state ? route.state.routes[route.state.index].name : '';
     if(routeName === 'Chat'){
@@ -85,6 +106,8 @@ const MyTabs = () => {
     }
     return true;
   };
+=======
+>>>>>>> b62a2012 (use ChatListStyles)
   return (
     <Tab.Navigator initialRouteName="Home" tabBarOptions={{activeTintColor: '#54D2AC', }}>
       <Tab.Screen name="Home" component={HomeTab} options={{
@@ -118,6 +141,7 @@ const MyTabs = () => {
             <Icon name='navigate-circle-outline' size={22} color={color} />
           ),
         }}
+<<<<<<< HEAD
       />
       <Tab.Screen 
         name="Messages" 
@@ -127,6 +151,20 @@ const MyTabs = () => {
           // tabBarVisible: route.state @ route.state.index === 0,
           tabBarIcon: ({ color }) => (
             <Icon name='chatbubble-outline' size={22} color={color} />
+=======
+<<<<<<< HEAD
+        />
+      <Tab.Screen name="Chat" component={ChatTab}  options={{
+        tabBarLabel: 'Chat',
+        tabBarIcon: ({ color }) => (
+          <Icon name='chatbubble-outline' size={22} color={color} />
+=======
+      />
+      <Tab.Screen name="Chat" component={ChatStackScreen} options={{
+          tabBarIcon: ({ color }) => (
+            <Icon name='chatbubble-outline' size={22} color={color} />
+>>>>>>> 3c57a5a8 (use ChatListStyles)
+>>>>>>> b62a2012 (use ChatListStyles)
           ),
         })}
       />
@@ -247,6 +285,7 @@ export default function MainScreen() {
       
     return (
       <MyTabs />
+<<<<<<< HEAD
     )
 <<<<<<< HEAD
 >>>>>>> 7102a15a (still move page from chatlist to chatroom)
@@ -256,7 +295,13 @@ export default function MainScreen() {
 =======
 =======
 >>>>>>> cec1bc15 (make chatlist ui)
+<<<<<<< HEAD
 >>>>>>> 2bb49246 (make chatlist ui)
+=======
+=======
+    );
+>>>>>>> 3c57a5a8 (use ChatListStyles)
+>>>>>>> b62a2012 (use ChatListStyles)
 }
 
 const styles = StyleSheet.create({
