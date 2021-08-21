@@ -27,7 +27,7 @@ const GetDate = () => {
 export default class HomeTab extends Component{
   static navigationOptions = {
     tabBarIcon: ({ tintColor }) => (
-        <Icon name='home-outline' size={30} style={{ color: tintColor }} />
+        <Icon name='home-outline' style={{ color: tintColor }} />
     )
 }
   render() {

@@ -46,12 +46,10 @@ function MyTabs() {
 }
 
 
-export default class MainScreen extends Component{
-  render() {
-      return (
-        <MyTabs />
-      );
-    }
+function MainScreen () {
+  return (
+      <MyTabs />
+    );
 }
 
 const styles = StyleSheet.create({
@@ -71,3 +69,4 @@ const styles = StyleSheet.create({
     fontWeight: 'bold',
   },
 });
+export default MainScreen;
