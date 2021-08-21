@@ -4,6 +4,7 @@ import { View, Text, StyleSheet } from 'react-native';
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 import Loca from '../Loca.js'
 =======
 =======
@@ -12,6 +13,8 @@ import Loca from '../Loca.js'
 >>>>>>> b62a2012 (use ChatListStyles)
 =======
 >>>>>>> a7009bf8 (chat ui 95% complete)
+=======
+>>>>>>> b2069f84 (still move page from chatlist to chatroom)
 <<<<<<< HEAD
 // import Location from '../Location.js'
 =======
@@ -38,7 +41,16 @@ import Loca from '../Loca.js'
 =======
 import Loca from '../Loca.js'
 >>>>>>> 0c539009 (chat ui 95% complete)
+<<<<<<< HEAD
 >>>>>>> a7009bf8 (chat ui 95% complete)
+=======
+=======
+import Loca from '../Loca.js'
+=======
+// import Location from '../Location.js'
+>>>>>>> 7102a15a (still move page from chatlist to chatroom)
+>>>>>>> 5fcd1055 (still move page from chatlist to chatroom)
+>>>>>>> b2069f84 (still move page from chatlist to chatroom)
 
 export default class MapTab extends Component {
   render() {
@@ -47,6 +59,7 @@ export default class MapTab extends Component {
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
       <Loca />
 =======
 =======
@@ -55,6 +68,8 @@ export default class MapTab extends Component {
 >>>>>>> b62a2012 (use ChatListStyles)
 =======
 >>>>>>> a7009bf8 (chat ui 95% complete)
+=======
+>>>>>>> b2069f84 (still move page from chatlist to chatroom)
 <<<<<<< HEAD
         <View>
             <Text>Map</Text>
@@ -67,6 +82,8 @@ export default class MapTab extends Component {
 >>>>>>> e924ffea (현재 위치 표시)
 =======
 =======
+=======
+>>>>>>> 5fcd1055 (still move page from chatlist to chatroom)
       <Loca />
 =======
         <View>
@@ -74,6 +91,7 @@ export default class MapTab extends Component {
         </View>
     //   <Location />
 >>>>>>> 7102a15a (still move page from chatlist to chatroom)
+<<<<<<< HEAD
 >>>>>>> 11d516c4 (still move page from chatlist to chatroom)
 <<<<<<< HEAD
 >>>>>>> 8c273178 (still move page from chatlist to chatroom)
@@ -87,7 +105,12 @@ export default class MapTab extends Component {
 =======
       <Loca />
 >>>>>>> 0c539009 (chat ui 95% complete)
+<<<<<<< HEAD
 >>>>>>> a7009bf8 (chat ui 95% complete)
+=======
+=======
+>>>>>>> 5fcd1055 (still move page from chatlist to chatroom)
+>>>>>>> b2069f84 (still move page from chatlist to chatroom)
     );
   }
 }
@@ -100,6 +123,9 @@ const style = StyleSheet.create({
     }
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 5fcd1055 (still move page from chatlist to chatroom)
 });
 =======
 <<<<<<< HEAD
@@ -111,6 +137,7 @@ const style = StyleSheet.create({
 =======
 });
 >>>>>>> 7102a15a (still move page from chatlist to chatroom)
+<<<<<<< HEAD
 >>>>>>> 11d516c4 (still move page from chatlist to chatroom)
 <<<<<<< HEAD
 >>>>>>> 8c273178 (still move page from chatlist to chatroom)
@@ -118,4 +145,10 @@ const style = StyleSheet.create({
 =======
 });
 >>>>>>> 3c57a5a8 (use ChatListStyles)
+<<<<<<< HEAD
 >>>>>>> b62a2012 (use ChatListStyles)
+=======
+=======
+>>>>>>> 226015e0 (still move page from chatlist to chatroom)
+>>>>>>> 5fcd1055 (still move page from chatlist to chatroom)
+>>>>>>> b2069f84 (still move page from chatlist to chatroom)

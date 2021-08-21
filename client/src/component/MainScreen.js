@@ -362,5 +362,8 @@ export default MainScreen;
 >>>>>>> 11d516c4 (still move page from chatlist to chatroom)
 =======
 });
+<<<<<<< HEAD
 
 >>>>>>> cec1bc15 (make chatlist ui)
+=======
+>>>>>>> 5fcd1055 (still move page from chatlist to chatroom)

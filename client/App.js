@@ -206,6 +206,7 @@ const styles = StyleSheet.create({
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> 645ebf9b (현재 위치 표시)
 <<<<<<< HEAD
 >>>>>>> e924ffea (현재 위치 표시)
@@ -233,4 +234,10 @@ const styles = StyleSheet.create({
 =======
 });
 >>>>>>> 1b5461e3 (db connect with pool and get data from todaymeet schema)
+<<<<<<< HEAD
 >>>>>>> 148973cd (db connect with pool and get data from todaymeet schema)
+=======
+=======
+});
+>>>>>>> 5fcd1055 (still move page from chatlist to chatroom)
+>>>>>>> b2069f84 (still move page from chatlist to chatroom)
