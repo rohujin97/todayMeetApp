@@ -4,6 +4,7 @@ import { FlatList } from 'react-native';
 =======
 import React, { Component } from 'react';
 <<<<<<< HEAD
+<<<<<<< HEAD
 import { View, Text, Button, StyleSheet, TextInput, Image, FlatList } from 'react-native';
 import { NavigationContainer } from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/stack';
@@ -98,15 +99,53 @@ export default class ChatListScreen extends Component {
     static navigationOptions={
 =======
 import { View, Text, Button, StyleSheet, TextInput, Image } from 'react-native';
+=======
+import { View, Text, Button, StyleSheet, TextInput, Image, FlatList } from 'react-native';
+>>>>>>> cec1bc15 (make chatlist ui)
 import { NavigationContainer } from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/stack';
 import 'react-native-gesture-handler';
 import ChatRoomScreen from './ChatRoomScreen';
 
-class ChatListScreen extends Component {
-    // constructor(props) {
-    //     super(props);
-    // }
+const Lists = [
+    {
+        id: '1',
+        userName: '노유진',
+        userImg: require('../../assets/zing.jpeg'),
+        messageTime: '4 mins ago',
+        messageText: 'Hey there, this is my test for a post of my social app in React Native'
+    },
+    {
+        id: '2',
+        userName: '김지후',
+        userImg: require('../../assets/bob.jpeg'),
+        messageTime: '2 hourss ago',
+        messageText: 'Hey there, this is my test for a post of my social app in React Native'
+    },
+    {
+        id: '3',
+        userName: '김민정',
+        userImg: require('../../assets/chicken.jpeg'),
+        messageTime: '8 mins ago',
+        messageText: 'Hey there, this is my test for a post of my social app in React Native'
+    },
+    {
+        id: '4',
+        userName: '강나임',
+        userImg: require('../../assets/person.jpeg'),
+        messageTime: '3 hours ago',
+        messageText: 'Hey there, this is my test for a post of my social app in React Native'
+    },
+    {
+        id: '5',
+        userName: '윤건희',
+        userImg: require('../../assets/bear.jpeg'),
+        messageTime: '4 days ago',
+        messageText: 'Hey there, this is my test for a post of my social app in React Native'
+    }
+];
+
+export default class ChatListScreen extends Component {
     // navigationOptions 코드
 <<<<<<< HEAD
     static navigationOptions ={
@@ -160,19 +199,20 @@ const style = StyleSheet.create({
                 <Text>ChatListScreen</Text>
 =======
             <View style={style.container}>
-                <Text>ChatList</Text>
-                <Button
-                    title="Go to ChatRoom"
-                    onPress={() => this.props.navigation.navigate('ChatRoomScreen', {
-                        screen: 'ChatRoomScreen',
-                        info: 'message'
-                    })}
+                <FlatList
+                    data={Lists}
+                    keyExtractor={item=>item.id}
+                    renderItem={({item}) => (
+                        <View>
+                            <Text>{item.userName}</Text>
+                        </View>
+                    )}
                 />
 >>>>>>> 11d516c4 (still move page from chatlist to chatroom)
             </View>
-        )
-    }
-}
+        );
+    };
+};
 
 <<<<<<< HEAD
 export default ChatListScreen;
@@ -187,8 +227,15 @@ const style = StyleSheet.create({
         alignItems: 'center',
         justifyContent: 'center',
     }
+<<<<<<< HEAD
 });
 
 export default ChatListScreen;
 >>>>>>> 11d516c4 (still move page from chatlist to chatroom)
+<<<<<<< HEAD
 >>>>>>> 8c273178 (still move page from chatlist to chatroom)
+=======
+=======
+});
+>>>>>>> cec1bc15 (make chatlist ui)
+>>>>>>> 2bb49246 (make chatlist ui)

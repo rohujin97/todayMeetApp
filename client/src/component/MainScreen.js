@@ -1,6 +1,9 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 import React, { useEffect, useRef, useState } from 'react';
 =======
+=======
+>>>>>>> 2bb49246 (make chatlist ui)
 <<<<<<< HEAD
 import React, { useEffect } from 'react';
 import { NavigationContainer } from '@react-navigation/native';
@@ -25,6 +28,8 @@ import ChatRoomScreen from './chat/ChatRoomScreen';
 
 =======
 =======
+=======
+>>>>>>> cec1bc15 (make chatlist ui)
 import React, { useEffect } from 'react';
 >>>>>>> 8c273178 (still move page from chatlist to chatroom)
 import { NavigationContainer } from '@react-navigation/native';
@@ -65,9 +70,12 @@ const ChatStackScreen = ({navigation}) => {
   )
 };
 
+<<<<<<< HEAD
 >>>>>>> 7102a15a (still move page from chatlist to chatroom)
 >>>>>>> 11d516c4 (still move page from chatlist to chatroom)
 
+=======
+>>>>>>> cec1bc15 (make chatlist ui)
 const Tab = createBottomTabNavigator();
 const MyTabs = () => {
   const getTabBarVisibility = (route) => {
@@ -81,16 +89,21 @@ const MyTabs = () => {
     <Tab.Navigator initialRouteName="Home" tabBarOptions={{activeTintColor: '#54D2AC', }}>
       <Tab.Screen name="Home" component={HomeTab} options={{
 <<<<<<< HEAD
+<<<<<<< HEAD
           tabBarLabel: 'Home',
           tabBarIcon: ({ color }) => (
             <Icon name='home-outline' size={22} color={color} />
 =======
+=======
+>>>>>>> 2bb49246 (make chatlist ui)
 <<<<<<< HEAD
         tabBarLabel: 'Home',
         tabBarIcon: ({ color }) => (
           <Icon name='home-outline' size={22} color={color} />
 =======
 <<<<<<< HEAD
+=======
+>>>>>>> cec1bc15 (make chatlist ui)
           tabBarLabel: 'Home',
           tabBarIcon: ({ color }) => (
             <Icon name='home-outline' size={22} color={color} />
@@ -130,6 +143,7 @@ const MyTabs = () => {
         />
 =======
       />
+<<<<<<< HEAD
 =======
         tabBarLabel: 'Home',
         tabBarIcon: ({ color }) => (
@@ -160,7 +174,12 @@ const MyTabs = () => {
         />
 >>>>>>> 7102a15a (still move page from chatlist to chatroom)
 >>>>>>> 11d516c4 (still move page from chatlist to chatroom)
+<<<<<<< HEAD
 >>>>>>> 8c273178 (still move page from chatlist to chatroom)
+=======
+=======
+>>>>>>> cec1bc15 (make chatlist ui)
+>>>>>>> 2bb49246 (make chatlist ui)
     </Tab.Navigator>
   );
 }
@@ -185,6 +204,7 @@ export default function MainScreen({ navigation }) {
     );
 =======
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 const MessageStack = ({navigation}) => (
   <Stack.Navigator>
@@ -217,6 +237,8 @@ function MainScreen () {
 =======
 =======
 =======
+=======
+>>>>>>> cec1bc15 (make chatlist ui)
 const socket = io("http://172.30.1.29:3001"); // server 포트 사용
 export default function MainScreen() {
       useEffect(function () {
@@ -224,12 +246,17 @@ export default function MainScreen() {
       }, []);
       
     return (
-
       <MyTabs />
     )
+<<<<<<< HEAD
 >>>>>>> 7102a15a (still move page from chatlist to chatroom)
 >>>>>>> 11d516c4 (still move page from chatlist to chatroom)
+<<<<<<< HEAD
 >>>>>>> 8c273178 (still move page from chatlist to chatroom)
+=======
+=======
+>>>>>>> cec1bc15 (make chatlist ui)
+>>>>>>> 2bb49246 (make chatlist ui)
 }
 
 const styles = StyleSheet.create({
@@ -249,6 +276,7 @@ const styles = StyleSheet.create({
     fontWeight: 'bold',
   },
 <<<<<<< HEAD
+<<<<<<< HEAD
 });
 <<<<<<< HEAD
 =======
@@ -261,3 +289,7 @@ export default MainScreen;
 });
 >>>>>>> 7102a15a (still move page from chatlist to chatroom)
 >>>>>>> 11d516c4 (still move page from chatlist to chatroom)
+=======
+});
+
+>>>>>>> cec1bc15 (make chatlist ui)
