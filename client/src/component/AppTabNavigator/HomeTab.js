@@ -20,21 +20,36 @@ const GetDate = () => {
   let today = new Date();   
   let month = today.getMonth() + 1;  // 월
   let date = today.getDate();  // 날짜
+<<<<<<< HEAD
   return (<Text style={styles.text}>{month} / {date}  Meeting</Text>
+=======
+  return (
+    <View style={styles.getD}>
+      <Text style={styles.text}>{month} / {date}  Meeting</Text>
+      <Icon name="thunderstorm-outline" size={30} style={{ paddingLeft: deviceWidth - 235}}></Icon>
+    </View>
+>>>>>>> experiment
   );
 }
 
 export default class HomeTab extends Component{
+<<<<<<< HEAD
   static navigationOptions = {
     tabBarIcon: ({ tintColor }) => (
         <Icon name='home-outline' size={30} style={{ color: tintColor }} />
     )
 }
+=======
+
+>>>>>>> experiment
   render() {
     return (
         <View style={styles.date}>
             <GetDate />
+<<<<<<< HEAD
             <Icon name="thunderstorm-outline" size={30} style={{ paddingLeft: deviceWidth - 80}}></Icon>
+=======
+>>>>>>> experiment
             <ScrollView>
               <MeetingList />
             </ScrollView>
@@ -49,10 +64,20 @@ const styles = StyleSheet.create({
     flexDirection: 'row',
     flexWrap: 'wrap',
   },
+<<<<<<< HEAD
   row: {
     flexWrap: 'wrap',
     backgroundColor: '#E8E8E8',
     borderRadius: 10,
+=======
+  getD:{
+    flexDirection: 'row',
+  },
+  row: {
+    flexWrap: 'wrap',
+    backgroundColor: '#E8E8E8',
+    borderRadius: 12,
+>>>>>>> experiment
     width: deviceWidth - 80,
     height: deviceWidth / 4,
     paddingTop: 10,
@@ -64,8 +89,13 @@ const styles = StyleSheet.create({
 
   },
   text: {
+<<<<<<< HEAD
     marginLeft: 30,
     justifyContent: 'space-between',
+=======
+    marginLeft: 40,
+    alignItems: 'flex-start',
+>>>>>>> experiment
     fontSize: 20,
   },
   date: {

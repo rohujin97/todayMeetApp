@@ -1,9 +1,6 @@
-import React, { Component } from 'react';
-import { View, Text, Button, StyleSheet, TextInput, Image, FlatList } from 'react-native';
-import { NavigationContainer } from '@react-navigation/native';
-import { createNativeStackNavigator } from '@react-navigation/stack';
+import React from 'react';
+import { FlatList } from 'react-native';
 import 'react-native-gesture-handler';
-import ChatRoomScreen from './ChatRoomScreen';
 import {
     Container,
     Card,
@@ -55,45 +52,34 @@ const Lists = [
     }
 ];
 
-export default class ChatListScreen extends Component {
-    // navigationOptions 코드
-    static navigationOptions={
-        title: 'TodayMeet'
-    }
-    
-    render(){
-        return (
-            <Container>
-                <FlatList
-                    data={Lists}
-                    keyExtractor={item=>item.id}
-                    renderItem={({item}) => (
-                        <Card onPress={() => this.props.navigation.navigate('Chat', {userName: item.userName})}>
-                            <UserInfo>
-                                <UserImgWrapper>
-                                    <UserImg source={item.userImg}/>
-                                </UserImgWrapper>
-                                <TextSection>
-                                    <UserInfoText>
-                                        <UserName>{item.userName}</UserName>
-                                        <PostTime>{item.messageTime}</PostTime>
-                                    </UserInfoText>
-                                    <MessageText>{item.messageText}</MessageText>
-                                </TextSection>
-                            </UserInfo>
-                        </Card>
-                    )}
-                />
-            </Container>
-        );
-    };
-};
+const ChatListScreen = ({navigation}) => {
+    return (
+        <Container>
+            <FlatList
+                data={Lists}
+                keyExtractor={item=>item.id}
+                renderItem={({item}) => (
+                    <Card onPress={() => 
+                            navigation.navigate('Chat', {
+                            userName: item.userName
+                            })}>
+                        <UserInfo>
+                            <UserImgWrapper>
+                                <UserImg source={item.userImg}/>
+                            </UserImgWrapper>
+                            <TextSection>
+                                <UserInfoText>
+                                    <UserName>{item.userName}</UserName>
+                                    <PostTime>{item.messageTime}</PostTime>
+                                </UserInfoText>
+                                <MessageText>{item.messageText}</MessageText>
+                            </TextSection>
+                        </UserInfo>
+                    </Card>
+                )}
+            />
+        </Container>
+    );
+}
 
-
-const style = StyleSheet.create({
-    container: {
-        flex: 1,
-        alignItems: 'center',
-        justifyContent: 'center',
-    }
-});
+export default ChatListScreen;
