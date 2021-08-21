@@ -84,6 +84,7 @@ const MyTabs = () => {
     </Tab.Navigator>
   );
 }
+<<<<<<< HEAD
 const Stack = createStackNavigator();
 export default function MainScreen({ navigation }) {
     const [hasJoined, setHasJoined] = useState(false);
@@ -102,6 +103,31 @@ export default function MainScreen({ navigation }) {
           <Stack.Screen name="DONE" component={DoneScreen} options={{ title: '완료' }}/> 
       </Stack.Navigator>
     );
+=======
+
+const MessageStack = ({navigation}) => (
+  <Stack.Navigator>
+    <Stack.Screen name="Chat" component={ChatRoomScreen} />
+  </Stack.Navigator>
+);
+
+<<<<<<< HEAD
+const socket = io("http://172.30.1.29:3001"); // server 포트 사용
+export default function MainScreen() {
+      useEffect(function () {
+          io("http://172.30.1.17:3001")
+      }, []);
+      
+    return (
+      <MyTabs />
+    )
+=======
+function MainScreen () {
+  return (
+      <MyTabs />
+    );
+>>>>>>> 645ebf9b (현재 위치 표시)
+>>>>>>> e924ffea (현재 위치 표시)
 }
 
 const styles = StyleSheet.create({
@@ -120,4 +146,9 @@ const styles = StyleSheet.create({
     fontSize: 20,
     fontWeight: 'bold',
   },
+<<<<<<< HEAD
 });
+=======
+});
+export default MainScreen;
+>>>>>>> 645ebf9b (현재 위치 표시)
