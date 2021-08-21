@@ -967,10 +967,14 @@
     "@babel/types" "^7.12.13"
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 "@babel/traverse@^7.0.0", "@babel/traverse@^7.13.0", "@babel/traverse@^7.13.15", "@babel/traverse@^7.14.0", "@babel/traverse@^7.14.2", "@babel/traverse@^7.4.5", "@babel/traverse@^7.9.0":
 =======
 "@babel/traverse@^7.0.0", "@babel/traverse@^7.1.0", "@babel/traverse@^7.13.0", "@babel/traverse@^7.13.15", "@babel/traverse@^7.14.0", "@babel/traverse@^7.14.2", "@babel/traverse@^7.4.5", "@babel/traverse@^7.7.0", "@babel/traverse@^7.7.4", "@babel/traverse@^7.9.0":
 >>>>>>> experiment
+=======
+"@babel/traverse@^7.0.0", "@babel/traverse@^7.13.0", "@babel/traverse@^7.13.15", "@babel/traverse@^7.14.0", "@babel/traverse@^7.14.2", "@babel/traverse@^7.4.5", "@babel/traverse@^7.9.0":
+>>>>>>> 70a9c01c (use ChatListStyles)
   "integrity" "sha512-TsdRgvBFHMyHOOzcP9S6QU0QQtjxlRpEYOy3mcCO5RgmC305ki42aSAmfZEMSSYBla2oZ9BMqYlncBaKmD/7iA=="
   "resolved" "https://registry.npmjs.org/@babel/traverse/-/traverse-7.14.2.tgz"
   "version" "7.14.2"
@@ -1013,6 +1017,9 @@
     "@types/hammerjs" "^2.0.36"
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 70a9c01c (use ChatListStyles)
 "@emotion/is-prop-valid@^0.8.8":
   "integrity" "sha512-u5WtneEAr5IDG2Wv65yhunPSMLIpuKsbuOktRojfrEiEvRyC85LgPMZI63cr7NUqT8ZIGdSVg8ZKGxIug4lXcA=="
   "resolved" "https://registry.npmjs.org/@emotion/is-prop-valid/-/is-prop-valid-0.8.8.tgz"
@@ -1035,8 +1042,11 @@
   "resolved" "https://registry.npmjs.org/@emotion/unitless/-/unitless-0.7.5.tgz"
   "version" "0.7.5"
 
+<<<<<<< HEAD
 =======
 >>>>>>> a26c2c8e (delete local folder and reclone project)
+=======
+>>>>>>> 70a9c01c (use ChatListStyles)
 "@expo/config-plugins@^1.0.18", "@expo/config-plugins@1.0.31":
   "integrity" "sha512-fouUPEXPhMcrxLL9SnbtJc9AtRW2Olt0Qrv6O0OqspwMt6g5DwG4qtRnoUdGNVHAQ3X3YskESd8bw6VGT6QA3A=="
   "resolved" "https://registry.npmjs.org/@expo/config-plugins/-/config-plugins-1.0.31.tgz"
@@ -3231,6 +3241,7 @@
   "version" "5.3.1"
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 "camelcase@^6.0.0":
   "integrity" "sha512-c7wVvbw3f37nuobQNtgsgG9POC9qMbNuMQmTCqZv23b6MIz0fcYpBiOlv9gEN/hdLdnZTDQhg6e9Dq5M1vKvfg=="
@@ -3238,12 +3249,17 @@
   "version" "6.2.0"
 
 >>>>>>> experiment
+=======
+>>>>>>> 70a9c01c (use ChatListStyles)
 "camelize@^1.0.0":
   "integrity" "sha1-FkpUg+Yw+kMh5a8HAg5TGDGyYJs="
   "resolved" "https://registry.npmjs.org/camelize/-/camelize-1.0.0.tgz"
   "version" "1.0.0"
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 70a9c01c (use ChatListStyles)
 "caniuse-lite@^1.0.30001219":
 =======
 "caniuse-lite@^1.0.30001125", "caniuse-lite@^1.0.30001219":
@@ -3939,6 +3955,7 @@
   "version" "1.0.0"
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 "crypto-random-string@^2.0.0":
   "integrity" "sha512-v1plID3y9r/lPhviJ1wrXpLeyUIGAZ2SHNYTEapm7/8A9nLPoyvVp3RK/EPFqn5kEznyWgYZNsRtYYIWbuG8KA=="
@@ -3946,6 +3963,8 @@
   "version" "2.0.0"
 
 >>>>>>> experiment
+=======
+>>>>>>> 70a9c01c (use ChatListStyles)
 "css-color-keywords@^1.0.0":
   "integrity" "sha1-/qJhbcZ2spYmhrOvjb2+GAskTgU="
   "resolved" "https://registry.npmjs.org/css-color-keywords/-/css-color-keywords-1.0.0.tgz"
@@ -3969,6 +3988,9 @@
     "postcss-value-parser" "^4.0.2"
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 70a9c01c (use ChatListStyles)
 "dayjs@^1.8.15":
 =======
 "cssom@^0.4.4":
@@ -5763,10 +5785,14 @@
     "source-map" "^0.7.3"
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 "hoist-non-react-statics@^3.0.0", "hoist-non-react-statics@^3.3.0":
 =======
 "hoist-non-react-statics@^3.3.0":
 >>>>>>> a26c2c8e (delete local folder and reclone project)
+=======
+"hoist-non-react-statics@^3.0.0", "hoist-non-react-statics@^3.3.0":
+>>>>>>> 70a9c01c (use ChatListStyles)
   "integrity" "sha512-/gGivxi8JPKWNm/W0jSmzcMPpfpPLc3dY/6GxhX2hQ9iGj3aDfklV4ET7NjKpSinLpJ5vafa9iiGIEZg10SfBw=="
   "resolved" "https://registry.npmjs.org/hoist-non-react-statics/-/hoist-non-react-statics-3.3.2.tgz"
   "version" "3.3.2"
@@ -7502,6 +7528,7 @@
   "version" "4.1.1"
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 "lodash@^4.17.11", "lodash@^4.17.13", "lodash@^4.17.14", "lodash@^4.17.15", "lodash@^4.3.0":
 =======
 "lodash.unescape@4.0.1":
@@ -7511,6 +7538,9 @@
 
 "lodash@^4.17.10", "lodash@^4.17.11", "lodash@^4.17.13", "lodash@^4.17.14", "lodash@^4.17.15", "lodash@^4.17.19", "lodash@^4.17.20", "lodash@^4.3.0", "lodash@^4.7.0":
 >>>>>>> experiment
+=======
+"lodash@^4.17.11", "lodash@^4.17.13", "lodash@^4.17.14", "lodash@^4.17.15", "lodash@^4.3.0":
+>>>>>>> 70a9c01c (use ChatListStyles)
   "integrity" "sha512-v2kDEe57lecTulaDIuNTPy3Ry4gLGJ6Z1O3vE1krgXZNrsQ+LFTGHVxVjcXPs17LhbZVGedAJv8XZ1tvj5FvSg=="
   "resolved" "https://registry.npmjs.org/lodash/-/lodash-4.17.21.tgz"
   "version" "4.17.21"
@@ -9201,6 +9231,9 @@
   "version" "4.1.0"
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 70a9c01c (use ChatListStyles)
 "pretty-format@^24.9.0":
 =======
 "prelude-ls@^1.1.2", "prelude-ls@^1.2.1":
@@ -10374,6 +10407,7 @@
   "integrity" "sha512-FIqgj2EUvTa7R50u0rGsyTftzjYmv/a3hO345bZNrqabNqjtgiDMgmo4mkUjd+nzU5oF3dClKqFIPUKybUyqoQ=="
   "resolved" "https://registry.npmjs.org/querystringify/-/querystringify-2.2.0.tgz"
   "version" "2.2.0"
+<<<<<<< HEAD
 =======
 "react-native-maps@0.27.1":
   "integrity" "sha512-HygBkZBecTnIVRYrSiLRAvu4OmXOYso/A7c6Cy73HkOh9CgGV8Ap5eBea24tvmFGptjj5Hg8AJ94/YbmWK1Okw=="
@@ -10394,6 +10428,22 @@
     "prop-types" "^15.7.x"
 
 <<<<<<< HEAD
+=======
+
+"range-parser@~1.2.1":
+  "integrity" "sha512-Hrgsx+orqoygnmhFbKaHE6c296J+HTAQXoxEF6gNupROmmGJRoyzfG3ccAveqCBrwr/2yxQ5BVd/GTl5agOwSg=="
+  "resolved" "https://registry.npmjs.org/range-parser/-/range-parser-1.2.1.tgz"
+  "version" "1.2.1"
+
+"react-devtools-core@^4.6.0":
+  "integrity" "sha512-/lA5FVLMhUHrkQwtEf5wZNCKsXmc2RBZMNS/kkq3WlXPg2Y7COUGMh0Lmz34jjMpM0kvLMDuj+DqsPT/jSADbw=="
+  "resolved" "https://registry.npmjs.org/react-devtools-core/-/react-devtools-core-4.13.2.tgz"
+  "version" "4.13.2"
+  dependencies:
+    "shell-quote" "^1.6.1"
+    "ws" "^7"
+
+>>>>>>> 70a9c01c (use ChatListStyles)
 "react-dom@>= 16.8.0", "react-dom@>=16.5.1", "react-dom@16.13.1":
   "integrity" "sha512-81PIMmVLnCNLO/fFOQxdQkvEq/+Hfpv24XNJfpyZhTRfO0QcmQIF/PgCa1zCOj2w1hrn12MFLyaJ/G0+Mxtfag=="
   "resolved" "https://registry.npmjs.org/react-dom/-/react-dom-16.13.1.tgz"
@@ -10430,19 +10480,27 @@
   "version" "16.13.1"
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 "react-is@^17.0.1", "react-is@>= 16.8.0":
 =======
 "react-is@^17.0.1":
 >>>>>>> a26c2c8e (delete local folder and reclone project)
+=======
+"react-is@^17.0.1", "react-is@>= 16.8.0":
+>>>>>>> 70a9c01c (use ChatListStyles)
   "integrity" "sha512-w2GsyukL62IJnlaff/nRegPQR94C/XXamvMWmSHRJ4y7Ts/4ocGRmTHvOs8PSE6pB3dWOrD/nueuU5sduBsQ4w=="
   "resolved" "https://registry.npmjs.org/react-is/-/react-is-17.0.2.tgz"
   "version" "17.0.2"
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 "react-native-gesture-handler@^1.10.3", "react-native-gesture-handler@>= 1.0.0":
 =======
 "react-native-gesture-handler@>= 1.0.0":
 >>>>>>> a26c2c8e (delete local folder and reclone project)
+=======
+"react-native-gesture-handler@^1.10.3", "react-native-gesture-handler@>= 1.0.0":
+>>>>>>> 70a9c01c (use ChatListStyles)
   "integrity" "sha512-cBGMi1IEsIVMgoox4RvMx7V2r6bNKw0uR1Mu1o7NbuHS6BRSVLq0dP34l2ecnPlC+jpWd3le6Yg1nrdCjby2Mw=="
   "resolved" "https://registry.npmjs.org/react-native-gesture-handler/-/react-native-gesture-handler-1.10.3.tgz"
   "version" "1.10.3"
@@ -10587,10 +10645,14 @@
   "version" "0.13.4"
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 "react@*", "react@^16.13.1", "react@^16.8.0 || ^17.0.0", "react@>= 16.8.0", "react@>=16.5.1", "react@16.13.1":
 =======
 "react@*", "react@^16.0", "react@^16.13.1", "react@^16.8.0 || ^17.0.0", "react@>= 16.0 || < 17.0", "react@>= 16.8.0", "react@>=16.3.0", "react@>=16.5.1", "react@16.13.1", "react@16.8.6":
 >>>>>>> experiment
+=======
+"react@*", "react@^16.13.1", "react@^16.8.0 || ^17.0.0", "react@>= 16.8.0", "react@>=16.5.1", "react@16.13.1":
+>>>>>>> 70a9c01c (use ChatListStyles)
   "integrity" "sha512-YMZQQq32xHLX0bz5Mnibv1/LHb3Sqzngu7xstSM+vrkE5Kzr9xE0yMByK5kMoTK30YVJE61WfbxIFFvfeDKT1w=="
   "resolved" "https://registry.npmjs.org/react/-/react-16.13.1.tgz"
   "version" "16.13.1"
@@ -11827,6 +11889,7 @@
   "version" "1.0.0"
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 "strip-final-newline@^2.0.0":
   "integrity" "sha512-BrpvfNAE3dcvq7ll3xVumzjKjZQ5tI1sEUIKr3Uoks0XUl45St3FlatVqef9prk4jRDzhW6WZg+3bk93y6pLjA=="
@@ -11863,6 +11926,8 @@
   "version" "2.0.1"
 
 >>>>>>> experiment
+=======
+>>>>>>> 70a9c01c (use ChatListStyles)
 "styled-components@^5.3.0", "styled-components@>= 2":
   "integrity" "sha512-bPJKwZCHjJPf/hwTJl6TbkSZg/3evha+XPEizrZUGb535jLImwDUdjTNxXqjjaASt2M4qO4AVfoHJNe3XB/tpQ=="
   "resolved" "https://registry.npmjs.org/styled-components/-/styled-components-5.3.0.tgz"
@@ -11880,6 +11945,9 @@
     "supports-color" "^5.5.0"
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 70a9c01c (use ChatListStyles)
 "sudo-prompt@^9.0.0":
 =======
 "sudo-prompt@^9.0.0", "sudo-prompt@^9.2.1":
