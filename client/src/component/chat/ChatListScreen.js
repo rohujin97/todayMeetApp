@@ -15,7 +15,7 @@ import {
     MessageText,
     TextSection,
     UserInfoText,
-} from '../styles/ChatRoomStyles';
+} from '../styles/ChatListStyles';
 
 const Lists = [
     {
