@@ -21,6 +21,7 @@ import {
     MessageText,
     TextSection,
     UserInfoText,
+<<<<<<< HEAD
 } from '../styles/ChatListStyles';
 
 const Lists = [
@@ -106,40 +107,43 @@ import { NavigationContainer } from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/stack';
 import 'react-native-gesture-handler';
 import ChatRoomScreen from './ChatRoomScreen';
+=======
+} from '../styles/ChatRoomStyles';
+>>>>>>> d09848b7 (use ChatListStyles)
 
 const Lists = [
     {
         id: '1',
         userName: '노유진',
-        userImg: require('../../assets/zing.jpeg'),
+        userImg: require('../../assets/zing.jpg'),
         messageTime: '4 mins ago',
         messageText: 'Hey there, this is my test for a post of my social app in React Native'
     },
     {
         id: '2',
         userName: '김지후',
-        userImg: require('../../assets/bob.jpeg'),
+        userImg: require('../../assets/bob.jpg'),
         messageTime: '2 hourss ago',
         messageText: 'Hey there, this is my test for a post of my social app in React Native'
     },
     {
         id: '3',
         userName: '김민정',
-        userImg: require('../../assets/chicken.jpeg'),
+        userImg: require('../../assets/chicken.jpg'),
         messageTime: '8 mins ago',
         messageText: 'Hey there, this is my test for a post of my social app in React Native'
     },
     {
         id: '4',
         userName: '강나임',
-        userImg: require('../../assets/person.jpeg'),
+        userImg: require('../../assets/person.jpg'),
         messageTime: '3 hours ago',
         messageText: 'Hey there, this is my test for a post of my social app in React Native'
     },
     {
         id: '5',
         userName: '윤건희',
-        userImg: require('../../assets/bear.jpeg'),
+        userImg: require('../../assets/bear.jpg'),
         messageTime: '4 days ago',
         messageText: 'Hey there, this is my test for a post of my social app in React Native'
     }
@@ -158,6 +162,7 @@ export default class ChatListScreen extends Component {
     
     render(){
         return (
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
             <Container>
@@ -199,21 +204,40 @@ const style = StyleSheet.create({
                 <Text>ChatListScreen</Text>
 =======
             <View style={style.container}>
+=======
+            <Container>
+>>>>>>> d09848b7 (use ChatListStyles)
                 <FlatList
                     data={Lists}
                     keyExtractor={item=>item.id}
                     renderItem={({item}) => (
-                        <View>
-                            <Text>{item.userName}</Text>
-                        </View>
+                        <Card onPress={() => this.props.navigation.navigate('Chat', {userName: item.userName})}>
+                            <UserInfo>
+                                <UserImgWrapper>
+                                    <UserImg source={item.userImg}/>
+                                </UserImgWrapper>
+                                <TextSection>
+                                    <UserInfoText>
+                                        <UserName>{item.userName}</UserName>
+                                        <PostTime>{item.messageTime}</PostTime>
+                                    </UserInfoText>
+                                    <MessageText>{item.messageText}</MessageText>
+                                </TextSection>
+                            </UserInfo>
+                        </Card>
                     )}
                 />
+<<<<<<< HEAD
 >>>>>>> 11d516c4 (still move page from chatlist to chatroom)
             </View>
+=======
+            </Container>
+>>>>>>> d09848b7 (use ChatListStyles)
         );
     };
 };
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 export default ChatListScreen;
 >>>>>>> 9cbf13ff (db connect with pool and get data from todaymeet schema)
@@ -221,6 +245,9 @@ export default ChatListScreen;
 >>>>>>> 395d211b (db connect with pool and get data from todaymeet schema)
 =======
 =======
+=======
+
+>>>>>>> d09848b7 (use ChatListStyles)
 const style = StyleSheet.create({
     container: {
         flex: 1,

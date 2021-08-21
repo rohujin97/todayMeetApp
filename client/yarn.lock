@@ -1013,6 +1013,9 @@
     "@types/hammerjs" "^2.0.36"
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> d09848b7 (use ChatListStyles)
 "@emotion/is-prop-valid@^0.8.8":
   "integrity" "sha512-u5WtneEAr5IDG2Wv65yhunPSMLIpuKsbuOktRojfrEiEvRyC85LgPMZI63cr7NUqT8ZIGdSVg8ZKGxIug4lXcA=="
   "resolved" "https://registry.npmjs.org/@emotion/is-prop-valid/-/is-prop-valid-0.8.8.tgz"
@@ -1035,8 +1038,11 @@
   "resolved" "https://registry.npmjs.org/@emotion/unitless/-/unitless-0.7.5.tgz"
   "version" "0.7.5"
 
+<<<<<<< HEAD
 =======
 >>>>>>> 87cf17d1 (revise App.js package.json package-lock.json)
+=======
+>>>>>>> d09848b7 (use ChatListStyles)
 "@expo/config-plugins@^1.0.18", "@expo/config-plugins@1.0.31":
   "integrity" "sha512-fouUPEXPhMcrxLL9SnbtJc9AtRW2Olt0Qrv6O0OqspwMt6g5DwG4qtRnoUdGNVHAQ3X3YskESd8bw6VGT6QA3A=="
   "resolved" "https://registry.npmjs.org/@expo/config-plugins/-/config-plugins-1.0.31.tgz"
@@ -5716,10 +5722,14 @@
     "source-map" "^0.7.3"
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 "hoist-non-react-statics@^3.0.0", "hoist-non-react-statics@^3.3.0":
 =======
 "hoist-non-react-statics@^3.3.0":
 >>>>>>> 87cf17d1 (revise App.js package.json package-lock.json)
+=======
+"hoist-non-react-statics@^3.0.0", "hoist-non-react-statics@^3.3.0":
+>>>>>>> d09848b7 (use ChatListStyles)
   "integrity" "sha512-/gGivxi8JPKWNm/W0jSmzcMPpfpPLc3dY/6GxhX2hQ9iGj3aDfklV4ET7NjKpSinLpJ5vafa9iiGIEZg10SfBw=="
   "resolved" "https://registry.npmjs.org/hoist-non-react-statics/-/hoist-non-react-statics-3.3.2.tgz"
   "version" "3.3.2"
@@ -10349,19 +10359,27 @@
   "version" "16.13.1"
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 "react-is@^17.0.1", "react-is@>= 16.8.0":
 =======
 "react-is@^17.0.1":
 >>>>>>> 87cf17d1 (revise App.js package.json package-lock.json)
+=======
+"react-is@^17.0.1", "react-is@>= 16.8.0":
+>>>>>>> d09848b7 (use ChatListStyles)
   "integrity" "sha512-w2GsyukL62IJnlaff/nRegPQR94C/XXamvMWmSHRJ4y7Ts/4ocGRmTHvOs8PSE6pB3dWOrD/nueuU5sduBsQ4w=="
   "resolved" "https://registry.npmjs.org/react-is/-/react-is-17.0.2.tgz"
   "version" "17.0.2"
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 "react-native-gesture-handler@^1.10.3", "react-native-gesture-handler@>= 1.0.0":
 =======
 "react-native-gesture-handler@>= 1.0.0":
 >>>>>>> 87cf17d1 (revise App.js package.json package-lock.json)
+=======
+"react-native-gesture-handler@^1.10.3", "react-native-gesture-handler@>= 1.0.0":
+>>>>>>> d09848b7 (use ChatListStyles)
   "integrity" "sha512-cBGMi1IEsIVMgoox4RvMx7V2r6bNKw0uR1Mu1o7NbuHS6BRSVLq0dP34l2ecnPlC+jpWd3le6Yg1nrdCjby2Mw=="
   "resolved" "https://registry.npmjs.org/react-native-gesture-handler/-/react-native-gesture-handler-1.10.3.tgz"
   "version" "1.10.3"
