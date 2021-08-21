@@ -50,6 +50,12 @@ function MyTabs() {
   );
 }
 
+const MessageStack = ({navigation}) => (
+  <Stack.Navigator>
+    <Stack.Screen name="Chat" component={ChatRoomScreen} />
+  </Stack.Navigator>
+);
+
 const socket = io("http://172.30.1.29:3001"); // server 포트 사용
 export default function MainScreen() {
       useEffect(function () {
@@ -57,7 +63,6 @@ export default function MainScreen() {
       }, []);
       
     return (
-
       <MyTabs />
     )
 }
