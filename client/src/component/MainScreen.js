@@ -31,7 +31,7 @@ import ChatRoomScreen from './chat/ChatRoomScreen';
 
 const ChatStack = createStackNavigator();
 
-const ChatStackScreen = () => {
+const ChatStackScreen = ({navigation}) => {
   return(
     <ChatStack.Navigator>
         <ChatStack.Screen name="List" component={ChatListScreen} />
@@ -40,12 +40,13 @@ const ChatStackScreen = () => {
           component={ChatRoomScreen} 
           options={({route}) => ({
             title: route.params.userName,
-            headerBackTitleVisible: false
+            headerBackTitleVisible: false,
           })}/>
     </ChatStack.Navigator>
   )
 };
 
+<<<<<<< HEAD
 =======
 =======
 =======
@@ -96,9 +97,15 @@ const ChatStackScreen = ({navigation}) => {
 
 =======
 >>>>>>> cec1bc15 (make chatlist ui)
+=======
+
+>>>>>>> 0c539009 (chat ui 95% complete)
 const Tab = createBottomTabNavigator();
 const MyTabs = () => {
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> a7009bf8 (chat ui 95% complete)
   const getTabBarVisibility = (route) => {
     const routeName = route.state ? route.state.routes[route.state.index].name : '';
     if(routeName === 'Chat'){
@@ -106,8 +113,12 @@ const MyTabs = () => {
     }
     return true;
   };
+<<<<<<< HEAD
 =======
 >>>>>>> b62a2012 (use ChatListStyles)
+=======
+  
+>>>>>>> a7009bf8 (chat ui 95% complete)
   return (
     <Tab.Navigator initialRouteName="Home" tabBarOptions={{activeTintColor: '#54D2AC', }}>
       <Tab.Screen name="Home" component={HomeTab} options={{
@@ -160,14 +171,29 @@ const MyTabs = () => {
           <Icon name='chatbubble-outline' size={22} color={color} />
 =======
       />
-      <Tab.Screen name="Chat" component={ChatStackScreen} options={{
+      <Tab.Screen 
+        name="Messages" 
+        component={ChatStackScreen} 
+        options={({route}) => ({
+          tabBarVisible: getTabBarVisibility(route),
+          // tabBarVisible: route.state @ route.state.index === 0,
           tabBarIcon: ({ color }) => (
             <Icon name='chatbubble-outline' size={22} color={color} />
 >>>>>>> 3c57a5a8 (use ChatListStyles)
 >>>>>>> b62a2012 (use ChatListStyles)
           ),
+<<<<<<< HEAD
         })}
       />
+=======
+<<<<<<< HEAD
+        }}
+        />
+=======
+        })}
+      />
+>>>>>>> 0c539009 (chat ui 95% complete)
+>>>>>>> a7009bf8 (chat ui 95% complete)
       <Tab.Screen name="Settings" component={SetTab}  options={{
           tabBarLabel: 'Settings',
           tabBarIcon: ({ color }) => (

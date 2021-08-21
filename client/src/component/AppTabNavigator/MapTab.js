@@ -3,12 +3,15 @@ import { View, Text, StyleSheet } from 'react-native';
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 import Loca from '../Loca.js'
 =======
 =======
 >>>>>>> 8c273178 (still move page from chatlist to chatroom)
 =======
 >>>>>>> b62a2012 (use ChatListStyles)
+=======
+>>>>>>> a7009bf8 (chat ui 95% complete)
 <<<<<<< HEAD
 // import Location from '../Location.js'
 =======
@@ -29,7 +32,13 @@ import Loca from '../Loca.js'
 =======
 import Loca from '../Loca.js'
 >>>>>>> 3c57a5a8 (use ChatListStyles)
+<<<<<<< HEAD
 >>>>>>> b62a2012 (use ChatListStyles)
+=======
+=======
+import Loca from '../Loca.js'
+>>>>>>> 0c539009 (chat ui 95% complete)
+>>>>>>> a7009bf8 (chat ui 95% complete)
 
 export default class MapTab extends Component {
   render() {
@@ -37,12 +46,15 @@ export default class MapTab extends Component {
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
       <Loca />
 =======
 =======
 >>>>>>> 8c273178 (still move page from chatlist to chatroom)
 =======
 >>>>>>> b62a2012 (use ChatListStyles)
+=======
+>>>>>>> a7009bf8 (chat ui 95% complete)
 <<<<<<< HEAD
         <View>
             <Text>Map</Text>
@@ -69,7 +81,13 @@ export default class MapTab extends Component {
 =======
       <Loca />
 >>>>>>> 3c57a5a8 (use ChatListStyles)
+<<<<<<< HEAD
 >>>>>>> b62a2012 (use ChatListStyles)
+=======
+=======
+      <Loca />
+>>>>>>> 0c539009 (chat ui 95% complete)
+>>>>>>> a7009bf8 (chat ui 95% complete)
     );
   }
 }

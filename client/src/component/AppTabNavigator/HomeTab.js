@@ -22,9 +22,12 @@ const GetDate = () => {
   let date = today.getDate();  // 날짜
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> b62a2012 (use ChatListStyles)
+=======
+>>>>>>> a7009bf8 (chat ui 95% complete)
 <<<<<<< HEAD
   return (<Text style={styles.text}>{month} / {date}  Meeting</Text>
 =======
@@ -34,7 +37,12 @@ const GetDate = () => {
 =======
 =======
 >>>>>>> 3c57a5a8 (use ChatListStyles)
+<<<<<<< HEAD
 >>>>>>> b62a2012 (use ChatListStyles)
+=======
+=======
+>>>>>>> 0c539009 (chat ui 95% complete)
+>>>>>>> a7009bf8 (chat ui 95% complete)
   return (
     <View style={styles.getD}>
       <Text style={styles.text}>{month} / {date}  Meeting</Text>
@@ -42,9 +50,12 @@ const GetDate = () => {
     </View>
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> b62a2012 (use ChatListStyles)
+=======
+>>>>>>> a7009bf8 (chat ui 95% complete)
 =======
   return (<Text style={styles.text}>{month} / {date}  Meeting</Text>
 >>>>>>> 7102a15a (still move page from chatlist to chatroom)
@@ -54,11 +65,17 @@ const GetDate = () => {
 =======
 =======
 >>>>>>> 3c57a5a8 (use ChatListStyles)
+<<<<<<< HEAD
 >>>>>>> b62a2012 (use ChatListStyles)
+=======
+=======
+>>>>>>> 0c539009 (chat ui 95% complete)
+>>>>>>> a7009bf8 (chat ui 95% complete)
   );
 }
 
 export default class HomeTab extends Component{
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -67,6 +84,8 @@ export default class HomeTab extends Component{
 >>>>>>> 8c273178 (still move page from chatlist to chatroom)
 =======
 >>>>>>> b62a2012 (use ChatListStyles)
+=======
+>>>>>>> a7009bf8 (chat ui 95% complete)
   static navigationOptions = {
     tabBarIcon: ({ tintColor }) => (
         <Icon name='home-outline' style={{ color: tintColor }} />
@@ -92,16 +111,24 @@ export default class HomeTab extends Component{
 =======
 
 >>>>>>> 3c57a5a8 (use ChatListStyles)
+<<<<<<< HEAD
 >>>>>>> b62a2012 (use ChatListStyles)
+=======
+=======
+>>>>>>> 0c539009 (chat ui 95% complete)
+>>>>>>> a7009bf8 (chat ui 95% complete)
   render() {
     return (
         <View style={styles.date}>
             <GetDate />
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> b62a2012 (use ChatListStyles)
+=======
+>>>>>>> a7009bf8 (chat ui 95% complete)
 <<<<<<< HEAD
             <Icon name="thunderstorm-outline" size={30} style={{ paddingLeft: deviceWidth - 80}}></Icon>
 =======
@@ -115,7 +142,12 @@ export default class HomeTab extends Component{
 =======
 =======
 >>>>>>> 3c57a5a8 (use ChatListStyles)
+<<<<<<< HEAD
 >>>>>>> b62a2012 (use ChatListStyles)
+=======
+=======
+>>>>>>> 0c539009 (chat ui 95% complete)
+>>>>>>> a7009bf8 (chat ui 95% complete)
             <ScrollView>
               <MeetingList />
             </ScrollView>
@@ -132,6 +164,7 @@ const styles = StyleSheet.create({
   },
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
   getD:{
     flexDirection: 'row',
   },
@@ -142,6 +175,8 @@ const styles = StyleSheet.create({
 =======
 =======
 >>>>>>> b62a2012 (use ChatListStyles)
+=======
+>>>>>>> a7009bf8 (chat ui 95% complete)
 <<<<<<< HEAD
   row: {
     flexWrap: 'wrap',
@@ -151,6 +186,8 @@ const styles = StyleSheet.create({
 <<<<<<< HEAD
 =======
 >>>>>>> 3c57a5a8 (use ChatListStyles)
+=======
+>>>>>>> 0c539009 (chat ui 95% complete)
   getD:{
     flexDirection: 'row',
   },
@@ -158,6 +195,7 @@ const styles = StyleSheet.create({
     flexWrap: 'wrap',
     backgroundColor: '#E8E8E8',
     borderRadius: 12,
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
   row: {
@@ -171,7 +209,12 @@ const styles = StyleSheet.create({
 =======
 =======
 >>>>>>> 3c57a5a8 (use ChatListStyles)
+<<<<<<< HEAD
 >>>>>>> b62a2012 (use ChatListStyles)
+=======
+=======
+>>>>>>> 0c539009 (chat ui 95% complete)
+>>>>>>> a7009bf8 (chat ui 95% complete)
     width: deviceWidth - 80,
     height: deviceWidth / 4,
     paddingTop: 10,
@@ -185,11 +228,14 @@ const styles = StyleSheet.create({
   text: {
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     marginLeft: 40,
     alignItems: 'flex-start',
 =======
 =======
 >>>>>>> b62a2012 (use ChatListStyles)
+=======
+>>>>>>> a7009bf8 (chat ui 95% complete)
 <<<<<<< HEAD
     marginLeft: 30,
     justifyContent: 'space-between',
@@ -209,7 +255,14 @@ const styles = StyleSheet.create({
     marginLeft: 40,
     alignItems: 'flex-start',
 >>>>>>> 3c57a5a8 (use ChatListStyles)
+<<<<<<< HEAD
 >>>>>>> b62a2012 (use ChatListStyles)
+=======
+=======
+    marginLeft: 40,
+    alignItems: 'flex-start',
+>>>>>>> 0c539009 (chat ui 95% complete)
+>>>>>>> a7009bf8 (chat ui 95% complete)
     fontSize: 20,
   },
   date: {
