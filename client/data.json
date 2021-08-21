@@ -1,0 +1,40 @@
+{
+    "freindInfo":[
+        {
+            "idx":0,
+            "name" :"강나임", 
+            "image":"https://cdn.pixabay.com/photo/2018/01/15/07/51/woman-3083386_960_720.jpg",
+            "work":"삼성전자 무선사업부",
+            "position":"대리"
+        },
+        {
+            "idx":1,
+            "name" :"김지후", 
+            "image":"https://cdn.pixabay.com/photo/2020/08/09/12/12/pop-5475382_960_720.jpg",
+            "work":"삼성전자 무선사업부",
+            "position":"과장"
+        },
+        {
+            "idx":2,
+            "name" :"윤건희", 
+            "image":"https://cdn.pixabay.com/photo/2016/07/30/14/26/mario-1557251_960_720.jpg",
+            "work":"당근마켓 마케팅 1팀",
+            "position":"대리"
+        },
+        {
+            "idx":3,
+            "name" :"이민정", 
+            "image":"https://cdn.pixabay.com/photo/2017/08/18/04/11/pokemon-2653752_960_720.jpg",
+            "work":"당근마켓 마케팅 2팀",
+            "position":"대리"
+        },
+        {
+            "idx":4,
+            "name" :"노유진", 
+            "image":"https://cdn.pixabay.com/photo/2021/05/13/16/39/diglett-6251282_960_720.jpg",
+            "work":"카카오 카카오톡 서버담당",
+            "position":"팀장"
+        }
+
+    ]
+}
