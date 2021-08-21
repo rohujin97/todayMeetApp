@@ -1,5 +1,6 @@
 import React, { Component } from 'react'; 
 <<<<<<< HEAD
+<<<<<<< HEAD
 import { View, Text,TextInput,Button,Alert,Image } from 'react-native'; 
 let imagePath = require('./logo.jpeg');
 
@@ -34,11 +35,32 @@ export default class SignUp2Screen extends Component {
             <TextInput style={{width:300,height:40,borderWidth:1, marginBottom:15, borderColor:"gray",color:"gray", alignSelf:'center',textAlign:'center'}}defaultValue="회사번호"></TextInput>
             <TextInput style={{width:300,height:40,borderWidth:1, marginBottom:15, borderColor:"gray",color:"gray", alignSelf:'center',textAlign:'center'}}defaultValue="팩스번호"></TextInput>
 >>>>>>> 7a12147d (login, signup Screen transition)
+=======
+import { View, Text,TextInput,Button,Alert,Image } from 'react-native'; 
+let imagePath = require('./logo.jpeg');
+
+export default class SignUp2Screen extends Component { 
+    render() { 
+        return ( 
+        <View style={{backgroundColor:'white'}}> 
+            <Image
+                style={{height: 100, width: 100, alignSelf:'center', marginTop: 50}}
+                source={imagePath}
+                />
+            <Text style={{fontSize:22 ,textAlign:'center', margin:10,marginBottom:50}}>Sign Up</Text>
+            
+            <TextInput style={{width:263,height:46,borderWidth:1, marginBottom:10, borderColor:"#FFF065",color:"black", alignSelf:'center',padding:10}}placeholder="회사이름"></TextInput>
+            <TextInput style={{width:263,height:46,borderWidth:1, marginBottom:10, borderColor:"#FFF065",color:"black", alignSelf:'center',padding:10}}placeholder="부서"></TextInput>
+            <TextInput style={{width:263,height:46,borderWidth:1, marginBottom:10, borderColor:"#FFF065",color:"black", alignSelf:'center',padding:10}}placeholder="직업/직급"></TextInput>
+            <TextInput style={{width:263,height:46,borderWidth:1, marginBottom:10, borderColor:"#FFF065",color:"black", alignSelf:'center',padding:10}}placeholder="회사번호"></TextInput>
+            <TextInput style={{width:263,height:46,borderWidth:1, marginBottom:15, borderColor:"#FFF065",color:"black", alignSelf:'center',padding:10}}placeholder="팩스번호"></TextInput>
+>>>>>>> f2fb94ae (front-end modified)
             
             <Text style={{textAlign:'center', margin:10}}>
                 2/2
             </Text>
             <Button
+<<<<<<< HEAD
 <<<<<<< HEAD
                 title="등록"
                 color="#54D2AC"
@@ -47,15 +69,26 @@ export default class SignUp2Screen extends Component {
                 title="Done"
                 onPress={() => Alert.alert('Login test!!!!')}
 >>>>>>> 7a12147d (login, signup Screen transition)
+=======
+                title="등록"
+                color="#54D2AC"
+                onPress={() => this.goDoneScreen()}
+>>>>>>> f2fb94ae (front-end modified)
             />
             
         </View> 
         );
     } 
 <<<<<<< HEAD
+<<<<<<< HEAD
     goDoneScreen(){ // DetailScreen으로 화면 이동 
         this.props.navigation.navigate('DONE'); 
     } 
 =======
 >>>>>>> 7a12147d (login, signup Screen transition)
+=======
+    goDoneScreen(){ // DetailScreen으로 화면 이동 
+        this.props.navigation.navigate('DONE'); 
+    } 
+>>>>>>> f2fb94ae (front-end modified)
 }
