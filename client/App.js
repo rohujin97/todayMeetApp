@@ -2,6 +2,8 @@ import React from 'react';
 import { StyleSheet, View, Text, ScrollView, Dimensions } from 'react-native';
 import MainScreen from './src/component/MainScreen';
 import { NavigationContainer } from '@react-navigation/native';
+import { createStackNavigator } from '@react-navigation/stack';
+import * as Location from 'expo-location';
 import Icon from 'react-native-vector-icons/Ionicons';
 const deviceWidth = Dimensions.get('window').width;
 import { createStore, applyMiddleware } from 'redux';
@@ -25,6 +27,9 @@ store.subscribe(() => {
   console.log("new state", store.getState());
 })
 store.dispatch({type: "server/hello", data: "Hello!"})
+
+import Icon from 'react-native-vector-icons/Ionicons';
+const deviceWidth = Dimensions.get('window').width;
 
 const Title = () => {
   return (

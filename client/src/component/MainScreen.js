@@ -40,7 +40,6 @@ const MyTabs = () => {
     }
     return true;
   };
-  
   return (
     <Tab.Navigator initialRouteName="Home" tabBarOptions={{activeTintColor: '#54D2AC', }}>
       <Tab.Screen name="Home" component={HomeTab} options={{

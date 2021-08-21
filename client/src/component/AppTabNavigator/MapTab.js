@@ -1,22 +1,11 @@
 import React, { Component } from 'react';
 import { View, Text, StyleSheet } from 'react-native';
-<<<<<<< HEAD
 import Loca from '../Loca.js'
-=======
-// import Location from '../Location.js'
->>>>>>> 7102a15a (still move page from chatlist to chatroom)
 
 export default class MapTab extends Component {
   render() {
     return (
-<<<<<<< HEAD
       <Loca />
-=======
-        <View>
-            <Text>Map</Text>
-        </View>
-    //   <Location />
->>>>>>> 7102a15a (still move page from chatlist to chatroom)
     );
   }
 }
@@ -28,6 +17,7 @@ const style = StyleSheet.create({
         justifyContent: 'center',
     }
 <<<<<<< HEAD
+<<<<<<< HEAD
 });
 =======
 <<<<<<< HEAD
@@ -37,3 +27,6 @@ const style = StyleSheet.create({
 });
 >>>>>>> 7102a15a (still move page from chatlist to chatroom)
 >>>>>>> 226015e0 (still move page from chatlist to chatroom)
+=======
+});
+>>>>>>> 9767f2b7 (use ChatListStyles)
