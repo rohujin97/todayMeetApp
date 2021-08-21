@@ -172,7 +172,6 @@ const ChatRoomScreen = ({navigation}) => {
         )
     }
 
-
     return (
       <GiftedChat
         messages={messages}

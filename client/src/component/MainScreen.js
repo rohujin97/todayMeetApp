@@ -114,11 +114,14 @@ const MyTabs = () => {
     return true;
   };
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> b62a2012 (use ChatListStyles)
 =======
   
 >>>>>>> a7009bf8 (chat ui 95% complete)
+=======
+>>>>>>> 8aa73639 (use ChatListStyles)
   return (
     <Tab.Navigator initialRouteName="Home" tabBarOptions={{activeTintColor: '#54D2AC', }}>
       <Tab.Screen name="Home" component={HomeTab} options={{

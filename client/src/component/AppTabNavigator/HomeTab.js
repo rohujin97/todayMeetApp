@@ -270,6 +270,7 @@ const styles = StyleSheet.create({
   },
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 });
 =======
 <<<<<<< HEAD
@@ -281,3 +282,6 @@ const styles = StyleSheet.create({
 =======
 });
 >>>>>>> 3c57a5a8 (use ChatListStyles)
+=======
+});
+>>>>>>> 2ac61688 (use ChatListStyles)

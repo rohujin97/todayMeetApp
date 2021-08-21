@@ -5,6 +5,7 @@ import { View, Text, StyleSheet } from 'react-native';
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 import Loca from '../Loca.js'
 =======
 =======
@@ -15,6 +16,8 @@ import Loca from '../Loca.js'
 >>>>>>> a7009bf8 (chat ui 95% complete)
 =======
 >>>>>>> b2069f84 (still move page from chatlist to chatroom)
+=======
+>>>>>>> 8aa73639 (use ChatListStyles)
 <<<<<<< HEAD
 // import Location from '../Location.js'
 =======
@@ -50,7 +53,13 @@ import Loca from '../Loca.js'
 // import Location from '../Location.js'
 >>>>>>> 7102a15a (still move page from chatlist to chatroom)
 >>>>>>> 5fcd1055 (still move page from chatlist to chatroom)
+<<<<<<< HEAD
 >>>>>>> b2069f84 (still move page from chatlist to chatroom)
+=======
+=======
+import Loca from '../Loca.js'
+>>>>>>> 2ac61688 (use ChatListStyles)
+>>>>>>> 8aa73639 (use ChatListStyles)
 
 export default class MapTab extends Component {
   render() {
@@ -60,6 +69,7 @@ export default class MapTab extends Component {
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
       <Loca />
 =======
 =======
@@ -70,6 +80,8 @@ export default class MapTab extends Component {
 >>>>>>> a7009bf8 (chat ui 95% complete)
 =======
 >>>>>>> b2069f84 (still move page from chatlist to chatroom)
+=======
+>>>>>>> 8aa73639 (use ChatListStyles)
 <<<<<<< HEAD
         <View>
             <Text>Map</Text>
@@ -110,7 +122,13 @@ export default class MapTab extends Component {
 =======
 =======
 >>>>>>> 5fcd1055 (still move page from chatlist to chatroom)
+<<<<<<< HEAD
 >>>>>>> b2069f84 (still move page from chatlist to chatroom)
+=======
+=======
+      <Loca />
+>>>>>>> 2ac61688 (use ChatListStyles)
+>>>>>>> 8aa73639 (use ChatListStyles)
     );
   }
 }
@@ -124,8 +142,11 @@ const style = StyleSheet.create({
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 5fcd1055 (still move page from chatlist to chatroom)
+=======
+>>>>>>> 2ac61688 (use ChatListStyles)
 });
 =======
 <<<<<<< HEAD
@@ -150,5 +171,14 @@ const style = StyleSheet.create({
 =======
 =======
 >>>>>>> 226015e0 (still move page from chatlist to chatroom)
+<<<<<<< HEAD
 >>>>>>> 5fcd1055 (still move page from chatlist to chatroom)
+<<<<<<< HEAD
 >>>>>>> b2069f84 (still move page from chatlist to chatroom)
+=======
+=======
+=======
+});
+>>>>>>> 9767f2b7 (use ChatListStyles)
+>>>>>>> 2ac61688 (use ChatListStyles)
+>>>>>>> 8aa73639 (use ChatListStyles)

@@ -96,6 +96,8 @@ import React from 'react';
 import { StyleSheet, View, Text, ScrollView, Dimensions } from 'react-native';
 import MainScreen from './src/component/MainScreen';
 import { NavigationContainer } from '@react-navigation/native';
+import { createStackNavigator } from '@react-navigation/stack';
+import * as Location from 'expo-location';
 import Icon from 'react-native-vector-icons/Ionicons';
 const deviceWidth = Dimensions.get('window').width;
 >>>>>>> 3c57a5a8 (use ChatListStyles)
@@ -110,8 +112,14 @@ import { createStackNavigator } from ‘@react-navigation/stack’;
 import * as Location from ‘expo-location’;
 import Icon from ‘react-native-vector-icons/Ionicons’;
 
+<<<<<<< HEAD
 const deviceWidth = Dimensions.get(‘window’).width;
 >>>>>>> a578b8d1 (Update App.js)
+=======
+import Icon from 'react-native-vector-icons/Ionicons';
+const deviceWidth = Dimensions.get('window').width;
+
+>>>>>>> 2ac61688 (use ChatListStyles)
 const Title = () => {
   return (
     <View style={styles.title}>
