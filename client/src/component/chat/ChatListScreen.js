@@ -314,6 +314,7 @@ const ChatListScreen = ({navigation}) => {
     );
 }
 
+<<<<<<< HEAD
 export default ChatListScreen;
 <<<<<<< HEAD
 >>>>>>> 3c57a5a8 (use ChatListStyles)
@@ -321,6 +322,8 @@ export default ChatListScreen;
 >>>>>>> b62a2012 (use ChatListStyles)
 =======
 =======
+=======
+>>>>>>> e0341b59 (use ChatListStyles)
 
 >>>>>>> 47d06d2f (use ChatListStyles)
 >>>>>>> 23006285 (use ChatListStyles)
