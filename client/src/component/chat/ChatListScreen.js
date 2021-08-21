@@ -98,17 +98,28 @@ export default class ChatListScreen extends Component {
     static navigationOptions={
 =======
 import { View, Text, Button, StyleSheet, TextInput, Image } from 'react-native';
+import { NavigationContainer } from '@react-navigation/native';
+import { createNativeStackNavigator } from '@react-navigation/stack';
+import 'react-native-gesture-handler';
+import ChatRoomScreen from './ChatRoomScreen';
 
 class ChatListScreen extends Component {
-    
+    // constructor(props) {
+    //     super(props);
+    // }
     // navigationOptions 코드
+<<<<<<< HEAD
     static navigationOptions ={
 >>>>>>> 9cbf13ff (db connect with pool and get data from todaymeet schema)
+=======
+    static navigationOptions={
+>>>>>>> 11d516c4 (still move page from chatlist to chatroom)
         title: 'TodayMeet'
     }
     
     render(){
         return (
+<<<<<<< HEAD
 <<<<<<< HEAD
             <Container>
                 <FlatList
@@ -147,11 +158,37 @@ const style = StyleSheet.create({
 =======
             <View>
                 <Text>ChatListScreen</Text>
+=======
+            <View style={style.container}>
+                <Text>ChatList</Text>
+                <Button
+                    title="Go to ChatRoom"
+                    onPress={() => this.props.navigation.navigate('ChatRoomScreen', {
+                        screen: 'ChatRoomScreen',
+                        info: 'message'
+                    })}
+                />
+>>>>>>> 11d516c4 (still move page from chatlist to chatroom)
             </View>
         )
     }
 }
 
+<<<<<<< HEAD
 export default ChatListScreen;
 >>>>>>> 9cbf13ff (db connect with pool and get data from todaymeet schema)
+<<<<<<< HEAD
 >>>>>>> 395d211b (db connect with pool and get data from todaymeet schema)
+=======
+=======
+const style = StyleSheet.create({
+    container: {
+        flex: 1,
+        alignItems: 'center',
+        justifyContent: 'center',
+    }
+});
+
+export default ChatListScreen;
+>>>>>>> 11d516c4 (still move page from chatlist to chatroom)
+>>>>>>> 8c273178 (still move page from chatlist to chatroom)

@@ -1912,6 +1912,9 @@
     "wcwidth" "^1.0.1"
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 11d516c4 (still move page from chatlist to chatroom)
 "@react-navigation/bottom-tabs@^6.0.5":
   "integrity" "sha512-GytjJUzacHhe3C24HFrPl881Donrw2m+3JBNqMJALxMRjSA8yY72+l16bZR9YFsrywSHVSbjxIfzqtGb8rIVJg=="
   "resolved" "https://registry.npmjs.org/@react-navigation/bottom-tabs/-/bottom-tabs-6.0.5.tgz"
@@ -1935,8 +1938,11 @@
     "react-native-iphone-x-helper" "^1.3.0"
 >>>>>>> experiment
 
+<<<<<<< HEAD
 =======
 >>>>>>> 87cf17d1 (revise App.js package.json package-lock.json)
+=======
+>>>>>>> 11d516c4 (still move page from chatlist to chatroom)
 "@react-navigation/core@^6.0.1":
   "integrity" "sha512-mVdvBDYdz8uzLQHokmVdX/xC4rS7NIkD1FN/yaGdovVzYApAhM+UGd3w1zskjyCSyXaVHHOwV59ZGVew+84xfQ=="
   "resolved" "https://registry.npmjs.org/@react-navigation/core/-/core-6.0.1.tgz"
@@ -10393,6 +10399,9 @@
     "warn-once" "^0.1.0"
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 11d516c4 (still move page from chatlist to chatroom)
 "react-native-vector-icons@^8.1.0":
   "integrity" "sha512-sHIdBB6Y0dHaot2fMXgy5J/hhCn5YuyN7SKDNFgPzL8KA1oF2/v7mgYMavnK7LIIs2dJoGnDANKf61dsU+TZlg=="
   "resolved" "https://registry.npmjs.org/react-native-vector-icons/-/react-native-vector-icons-8.1.0.tgz"
@@ -10418,8 +10427,11 @@
   "version" "0.1.7"
 >>>>>>> experiment
 
+<<<<<<< HEAD
 =======
 >>>>>>> 87cf17d1 (revise App.js package.json package-lock.json)
+=======
+>>>>>>> 11d516c4 (still move page from chatlist to chatroom)
 "react-native-web@~0.13.12":
   "integrity" "sha512-WR/0ECAmwLQ2+2cL2Ur+0/swXFAtcSM0URoADJmG6D4MnY+wGc91JO8LoOTlgY0USBOY+qG/beRrjFa+RAuOiA=="
   "resolved" "https://registry.npmjs.org/react-native-web/-/react-native-web-0.13.18.tgz"
@@ -11608,6 +11620,7 @@
     "strip-ansi" "^5.1.0"
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 "string-width@^4.0.0":
 =======
 "string-width@^4.1.0":
@@ -11625,6 +11638,9 @@
 =======
 "string-width@^4.2.0":
 >>>>>>> e726473d (revise App.js package.json package-lock.json)
+=======
+"string-width@^4.1.0", "string-width@^4.2.0":
+>>>>>>> 8c273178 (still move page from chatlist to chatroom)
   "integrity" "sha512-XBJbT3N4JhVumXE0eoLU9DCjcaF92KLNqTmFCnG1pf8duUxFGwtP6AD6nkjw9a3IdiRtL3E2w3JDiE/xi3vOeA=="
   "resolved" "https://registry.npmjs.org/string-width/-/string-width-4.2.2.tgz"
   "version" "4.2.2"
@@ -12829,6 +12845,9 @@
     "yargs-parser" "^18.1.2"
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 11d516c4 (still move page from chatlist to chatroom)
 "yargs@^16.1.1":
   "integrity" "sha512-D1mvvtDG0L5ft/jGWkLpG1+m0eQxOfaBvTNELraWj22wSVUMWxZUvYgJYcKh6jGGIkJFhH4IZPQhR4TKpc8mBw=="
   "resolved" "https://registry.npmjs.org/yargs/-/yargs-16.2.0.tgz"
@@ -12842,12 +12861,18 @@
     "y18n" "^5.0.5"
     "yargs-parser" "^20.2.2"
 
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> experiment
 =======
 >>>>>>> 9cbf13ff (db connect with pool and get data from todaymeet schema)
+<<<<<<< HEAD
 >>>>>>> 395d211b (db connect with pool and get data from todaymeet schema)
+=======
+=======
+>>>>>>> 11d516c4 (still move page from chatlist to chatroom)
+>>>>>>> 8c273178 (still move page from chatlist to chatroom)
 "yeast@0.1.2":
   "integrity" "sha1-AI4G2AlDIMNy28L47XagymyKxBk="
   "resolved" "https://registry.npmjs.org/yeast/-/yeast-0.1.2.tgz"

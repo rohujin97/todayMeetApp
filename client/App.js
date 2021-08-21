@@ -154,6 +154,7 @@ const styles = StyleSheet.create({
     fontWeight: 'bold',
   },
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> 645ebf9b (현재 위치 표시)
 <<<<<<< HEAD
 >>>>>>> e924ffea (현재 위치 표시)
@@ -163,4 +164,10 @@ const styles = StyleSheet.create({
 =======
 });
 >>>>>>> 9cbf13ff (db connect with pool and get data from todaymeet schema)
+<<<<<<< HEAD
 >>>>>>> 395d211b (db connect with pool and get data from todaymeet schema)
+=======
+=======
+});
+>>>>>>> 11d516c4 (still move page from chatlist to chatroom)
+>>>>>>> 8c273178 (still move page from chatlist to chatroom)

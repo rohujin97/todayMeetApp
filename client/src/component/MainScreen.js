@@ -1,4 +1,32 @@
+<<<<<<< HEAD
 import React, { useEffect, useRef, useState } from 'react';
+=======
+<<<<<<< HEAD
+import React, { useEffect } from 'react';
+import { NavigationContainer } from '@react-navigation/native';
+import { StyleSheet, View, Text, ScrollView }  from 'react-native';
+=======
+<<<<<<< HEAD
+import React, { Component } from 'react';
+import { View, Text, StyleSheet}  from 'react-native';
+>>>>>>> 11d516c4 (still move page from chatlist to chatroom)
+import Icon from 'react-native-vector-icons/Ionicons';
+import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
+import { createStackNavigator, createAppContainer } from '@react-navigation/stack';
+const Stack = createStackNavigator();
+import io, { Socket } from 'socket.io-client';
+// 하단 탭에 들어갈 컴포넌트들
+import HomeTab from './AppTabNavigator/HomeTab'
+import MapTab from './AppTabNavigator/MapTab'
+import ChatTab from './chat/ChatListScreen'
+import SetTab from './AppTabNavigator/SetTab'
+<<<<<<< HEAD
+import ChatRoomScreen from './chat/ChatRoomScreen';
+
+=======
+=======
+import React, { useEffect } from 'react';
+>>>>>>> 8c273178 (still move page from chatlist to chatroom)
 import { NavigationContainer } from '@react-navigation/native';
 import { StyleSheet, View, Text, ScrollView }  from 'react-native';
 import Icon from 'react-native-vector-icons/Ionicons';
@@ -37,6 +65,8 @@ const ChatStackScreen = ({navigation}) => {
   )
 };
 
+>>>>>>> 7102a15a (still move page from chatlist to chatroom)
+>>>>>>> 11d516c4 (still move page from chatlist to chatroom)
 
 const Tab = createBottomTabNavigator();
 const MyTabs = () => {
@@ -50,9 +80,22 @@ const MyTabs = () => {
   return (
     <Tab.Navigator initialRouteName="Home" tabBarOptions={{activeTintColor: '#54D2AC', }}>
       <Tab.Screen name="Home" component={HomeTab} options={{
+<<<<<<< HEAD
           tabBarLabel: 'Home',
           tabBarIcon: ({ color }) => (
             <Icon name='home-outline' size={22} color={color} />
+=======
+<<<<<<< HEAD
+        tabBarLabel: 'Home',
+        tabBarIcon: ({ color }) => (
+          <Icon name='home-outline' size={22} color={color} />
+=======
+<<<<<<< HEAD
+          tabBarLabel: 'Home',
+          tabBarIcon: ({ color }) => (
+            <Icon name='home-outline' size={22} color={color} />
+>>>>>>> 11d516c4 (still move page from chatlist to chatroom)
+>>>>>>> 8c273178 (still move page from chatlist to chatroom)
           ),
         }}
       />
@@ -80,7 +123,44 @@ const MyTabs = () => {
             <Icon name='person-outline' size={22} color={color} />
           ),
         }}
+<<<<<<< HEAD
       />
+=======
+<<<<<<< HEAD
+        />
+=======
+      />
+=======
+        tabBarLabel: 'Home',
+        tabBarIcon: ({ color }) => (
+          <Icon name='home-outline' size={22} color={color} />
+          ),
+        }}
+        />
+      <Tab.Screen name="Map" component={MapTab} options={{
+        tabBarLabel: 'Map',
+        tabBarIcon: ({ color }) => (
+          <Icon name='navigate-circle-outline' size={22} color={color} />
+          ),
+        }}
+        />
+      <Tab.Screen name="Chat" component={ChatTab}  options={{
+        tabBarLabel: 'Chat',
+        tabBarIcon: ({ color }) => (
+          <Icon name='chatbubble-outline' size={22} color={color} />
+          ),
+        }}
+        />
+      <Tab.Screen name="Settings" component={SetTab}  options={{
+        tabBarLabel: 'Settings',
+        tabBarIcon: ({ color }) => (
+          <Icon name='person-outline' size={22} color={color} />
+          ),
+        }}
+        />
+>>>>>>> 7102a15a (still move page from chatlist to chatroom)
+>>>>>>> 11d516c4 (still move page from chatlist to chatroom)
+>>>>>>> 8c273178 (still move page from chatlist to chatroom)
     </Tab.Navigator>
   );
 }
@@ -105,11 +185,15 @@ export default function MainScreen({ navigation }) {
     );
 =======
 
+<<<<<<< HEAD
 const MessageStack = ({navigation}) => (
   <Stack.Navigator>
     <Stack.Screen name="Chat" component={ChatRoomScreen} />
   </Stack.Navigator>
 );
+=======
+<<<<<<< HEAD
+>>>>>>> 11d516c4 (still move page from chatlist to chatroom)
 
 <<<<<<< HEAD
 const socket = io("http://172.30.1.29:3001"); // server 포트 사용
@@ -126,8 +210,26 @@ function MainScreen () {
   return (
       <MyTabs />
     );
+<<<<<<< HEAD
 >>>>>>> 645ebf9b (현재 위치 표시)
+<<<<<<< HEAD
 >>>>>>> e924ffea (현재 위치 표시)
+=======
+=======
+=======
+const socket = io("http://172.30.1.29:3001"); // server 포트 사용
+export default function MainScreen() {
+      useEffect(function () {
+          io("http://172.30.1.17:3001")
+      }, []);
+      
+    return (
+
+      <MyTabs />
+    )
+>>>>>>> 7102a15a (still move page from chatlist to chatroom)
+>>>>>>> 11d516c4 (still move page from chatlist to chatroom)
+>>>>>>> 8c273178 (still move page from chatlist to chatroom)
 }
 
 const styles = StyleSheet.create({
@@ -148,7 +250,14 @@ const styles = StyleSheet.create({
   },
 <<<<<<< HEAD
 });
+<<<<<<< HEAD
 =======
 });
 export default MainScreen;
 >>>>>>> 645ebf9b (현재 위치 표시)
+=======
+export default MainScreen;
+=======
+});
+>>>>>>> 7102a15a (still move page from chatlist to chatroom)
+>>>>>>> 11d516c4 (still move page from chatlist to chatroom)
