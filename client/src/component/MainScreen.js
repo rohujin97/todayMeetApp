@@ -1,15 +1,3 @@
-<<<<<<< HEAD
-import React, { Component } from 'react';
-import { View, Text, StyleSheet}  from 'react-native';
-import Icon from 'react-native-vector-icons/Ionicons';
-import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
-
-// 하단 탭에 들어갈 컴포넌트들
-import HomeTab from './AppTabNavigator/HomeTab'
-import MapTab from './AppTabNavigator/MapTab'
-import ChatTab from './AppTabNavigator/ChatTab'
-import SetTab from './AppTabNavigator/SetTab'
-=======
 import React, { useEffect } from 'react';
 import { NavigationContainer } from '@react-navigation/native';
 import { StyleSheet, View, Text, ScrollView }  from 'react-native';
@@ -25,14 +13,11 @@ import ChatTab from './chat/ChatListScreen'
 import SetTab from './AppTabNavigator/SetTab'
 import ChatRoomScreen from './chat/ChatRoomScreen';
 
->>>>>>> 7102a15a (still move page from chatlist to chatroom)
-
 const Tab = createBottomTabNavigator();
 function MyTabs() {
   return (
     <Tab.Navigator initialRouteName="Home" tabBarOptions={{activeTintColor: '#54D2AC', }}>
       <Tab.Screen name="Home" component={HomeTab} options={{
-<<<<<<< HEAD
           tabBarLabel: 'Home',
           tabBarIcon: ({ color }) => (
             <Icon name='home-outline' size={22} color={color} />
@@ -60,46 +45,10 @@ function MyTabs() {
           ),
         }}
       />
-=======
-        tabBarLabel: 'Home',
-        tabBarIcon: ({ color }) => (
-          <Icon name='home-outline' size={22} color={color} />
-          ),
-        }}
-        />
-      <Tab.Screen name="Map" component={MapTab} options={{
-        tabBarLabel: 'Map',
-        tabBarIcon: ({ color }) => (
-          <Icon name='navigate-circle-outline' size={22} color={color} />
-          ),
-        }}
-        />
-      <Tab.Screen name="Chat" component={ChatTab}  options={{
-        tabBarLabel: 'Chat',
-        tabBarIcon: ({ color }) => (
-          <Icon name='chatbubble-outline' size={22} color={color} />
-          ),
-        }}
-        />
-      <Tab.Screen name="Settings" component={SetTab}  options={{
-        tabBarLabel: 'Settings',
-        tabBarIcon: ({ color }) => (
-          <Icon name='person-outline' size={22} color={color} />
-          ),
-        }}
-        />
->>>>>>> 7102a15a (still move page from chatlist to chatroom)
     </Tab.Navigator>
   );
 }
 
-<<<<<<< HEAD
-
-function MainScreen () {
-  return (
-      <MyTabs />
-    );
-=======
 const socket = io("http://172.30.1.29:3001"); // server 포트 사용
 export default function MainScreen() {
       useEffect(function () {
@@ -107,10 +56,8 @@ export default function MainScreen() {
       }, []);
       
     return (
-
       <MyTabs />
     )
->>>>>>> 7102a15a (still move page from chatlist to chatroom)
 }
 
 const styles = StyleSheet.create({
@@ -129,9 +76,5 @@ const styles = StyleSheet.create({
     fontSize: 20,
     fontWeight: 'bold',
   },
-<<<<<<< HEAD
 });
-export default MainScreen;
-=======
-});
->>>>>>> 7102a15a (still move page from chatlist to chatroom)
+
