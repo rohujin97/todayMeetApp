@@ -4,46 +4,31 @@ import { Bubble, GiftedChat, Send } from 'react-native-gifted-chat'
 import MaterialCommunityIcons from 'react-native-vector-icons/MaterialCommunityIcons'
 import FontAwesome from 'react-native-vector-icons/FontAwesome'
 import { io } from 'socket.io-client'
+import JoinScreen from './JoinScreen'
 
 const ChatRoomScreen = ({navigation}) => {
-    // const [messages, setMessages] = useState([]);
     const [messages, setMessages] = useState([]);
+    const [hasJoined, setHasJoined] = useState(false);
     const socket = useRef(null);
 
     useEffect(() => {
-      socket.current = io("http://172.30.1.34:3001")
+      socket.current = io("http://172.30.1.21:3001")
       socket.current.on("message", message => {
-        setMessages(previousMessages => GiftedChat.append(...previousMessages, messages));
+        setMessages(previousMessages => GiftedChat.append(...previousMessages, message));
       })
-      setMessages([
-        {
-          _id: 1,
-          text: 'Hello developer',
-          createdAt: new Date(),
-          user: {
-            _id: 2,
-            name: 'React Native',
-            avatar: 'https://placeimg.com/140/140/any',
-          },
-        },
-        {
-            _id: 2,
-            text: 'Hello world',
-            createdAt: new Date(),
-            user: {
-              _id: 1,
-              name: 'React Native',
-              avatar: 'https://placeimg.com/140/140/any',
-            },
-          },
-        ])
       }, [])
       
     const onSend = useCallback((messages = []) => {
-      socket.current.emit("message", messages);
-      setMessages(previousMessages => GiftedChat.append(previousMessages, messages))
+      console.log(messages);
+      socket.current.emit("message", messages[0].text);
+      setMessages(previousMessages => GiftedChat.append(previousMessages, messages));
     }, [])
 
+    const joinChat = username => {
+      socket.current.emit("join", username);
+      setHasJoined(true);
+    }
+    
     const renderBubble = (props) => {
         return (
         <Bubble 
@@ -83,19 +68,26 @@ const ChatRoomScreen = ({navigation}) => {
     }
 
     return (
-      <GiftedChat
-        messages={messages}
-        onSend={messages => onSend(messages)}
-        user={{
-          _id: 1,
-        }}
-        renderBubble={renderBubble}
-        alwaysShowSend
-        renderSend={renderSend}
-        scrollToBottom
-        scrollToBottomComponent={scrollToBottomComponent}
-    />
-    )
+      <View style={{ flex:1 }}>
+        {hasJoined ? (
+          <GiftedChat
+            renderUsernameOnMessage
+            messages={messages}
+            onSend={messages => onSend(messages)}
+            user={{
+              _id: 1,
+            }}
+            renderBubble={renderBubble}
+            alwaysShowSend
+            renderSend={renderSend}
+            scrollToBottom
+            scrollToBottomComponent={scrollToBottomComponent}
+        />
+        ) : (
+          <JoinScreen joinChat={joinChat}/>
+        )}
+      </View>
+    );
 }
 
 export default ChatRoomScreen

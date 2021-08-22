@@ -31,7 +31,7 @@ const Lists = [
     },
     {
         id: '3',
-        userName: '김민정',
+        userName: '이민정',
         userImg: require('../../assets/chicken.jpg'),
         messageTime: '8 mins ago',
         messageText: 'Hey there, this is my test for a post of my social app in React Native'

@@ -28,8 +28,14 @@ store.subscribe(() => {
 })
 store.dispatch({type: "server/hello", data: "Hello!"})
 
-import Icon from 'react-native-vector-icons/Ionicons';
-const deviceWidth = Dimensions.get('window').width;
+function reducer(state = {}, action) {
+  switch(action.type) {
+    case 'message':
+      return {...state, message: action.data };
+      default:
+        return state;
+  }
+}
 
 const Title = () => {
   return (
