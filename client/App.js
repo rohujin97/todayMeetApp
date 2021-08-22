@@ -5,7 +5,7 @@ import { NavigationContainer } from ‘@react-navigation/native’;
 import { createStackNavigator } from ‘@react-navigation/stack’;
 import * as Location from ‘expo-location’;
 import Icon from ‘react-native-vector-icons/Ionicons’;
-import UserList from ‘./src/component/UserList/UserList’
+
 const deviceWidth = Dimensions.get(‘window’).width;
 const Title = () => {
   return (
