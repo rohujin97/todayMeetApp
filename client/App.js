@@ -113,11 +113,22 @@ import * as Location from ‘expo-location’;
 import Icon from ‘react-native-vector-icons/Ionicons’;
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 const deviceWidth = Dimensions.get(‘window’).width;
 >>>>>>> a578b8d1 (Update App.js)
 =======
 import Icon from 'react-native-vector-icons/Ionicons';
 const deviceWidth = Dimensions.get('window').width;
+=======
+function reducer(state = {}, action) {
+  switch(action.type) {
+    case 'message':
+      return {...state, message: action.data };
+      default:
+        return state;
+  }
+}
+>>>>>>> d45f3edf (adding redux)
 
 >>>>>>> 2ac61688 (use ChatListStyles)
 const Title = () => {

@@ -41,6 +41,7 @@ const io = socketio(server)
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 app.use((req, res, next) => {
     res.io = io;
@@ -50,6 +51,8 @@ app.use((req, res, next) => {
 >>>>>>> 395d211b (db connect with pool and get data from todaymeet schema)
 =======
 >>>>>>> 76053e48 (client send messages to server)
+=======
+>>>>>>> 5387c5b8 (adding redux)
 <<<<<<< HEAD
 =======
 // console.log('socket io 요청 받아들일 준비가 됨')
@@ -62,13 +65,35 @@ app.use((req, res, next) => {
 // require('./middleware/socket')(io)
 =======
 >>>>>>> 0b210839 (client send messages to server)
+=======
+const messageHandler = require("./handlers/message.handler");
+
+let currentUserId = 2;
+const users = {};
+
+function createUserAvatarUrl() {
+    const rand1 = Math.round(Math.random() * 200 + 100);
+    const rand2 = Math.round(Math.random() * 200 + 100);
+    return `https://placeimg.com/${rand1}/${rand2}/any`;
+}
+>>>>>>> d45f3edf (adding redux)
 
 io.on('connection', socket =>  {
     console.log('today connected')
-
-    socket.on('message', message =>  {
-        console.log(message[0].text);
-        io.emit("message", message);
+    console.log(socket.id);
+    users[socket.id] = { userId: currentUserId++ };
+    socket.on("join", username => {
+        // DB에서 useremail과 동일한 data를 찾고 username, url을 가져와서 객체에 저장
+        users[socket.id].username = username;
+        users[socket.id].avatar = createUserAvatarUrl();
+        messageHandler.handleMessage(socket, users);
+    })
+    socket.on("action", action => {
+        switch(action.type){
+            case "server/hello":
+                console.log("Got hello event", action.data);
+                socket.emit("action", {type: "message", data: "Good day!"});
+        }
     })
 >>>>>>> e726473d (revise App.js package.json package-lock.json)
 })
