@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 import React, { useState, useCallback, useEffect, useRef } from 'react'
 import { View } from 'react-native'
 import { Bubble, GiftedChat, Send } from 'react-native-gifted-chat'
@@ -65,14 +66,25 @@ const ChatRoomScreen = ({navigation}) => {
 =======
 import React, { useState, useCallback, useEffect } from 'react'
 import { View, Text } from 'react-native'
+=======
+import React, { useState, useCallback, useEffect, useRef } from 'react'
+import { View } from 'react-native'
+>>>>>>> 76053e48 (client send messages to server)
 import { Bubble, GiftedChat, Send } from 'react-native-gifted-chat'
 import MaterialCommunityIcons from 'react-native-vector-icons/MaterialCommunityIcons'
 import FontAwesome from 'react-native-vector-icons/FontAwesome'
+import { io } from 'socket.io-client'
 
 const ChatRoomScreen = ({navigation}) => {
+    // const [messages, setMessages] = useState([]);
     const [messages, setMessages] = useState([]);
+    const socket = useRef(null);
 
     useEffect(() => {
+      socket.current = io("http://172.30.1.34:3001")
+      socket.current.on("message", message => {
+        setMessages(previousMessages => GiftedChat.append(...previousMessages, messages));
+      })
       setMessages([
         {
           _id: 1,
@@ -94,7 +106,12 @@ const ChatRoomScreen = ({navigation}) => {
               avatar: 'https://placeimg.com/140/140/any',
             },
           },
-      ])
+        ])
+      }, [])
+      
+    const onSend = useCallback((messages = []) => {
+      socket.current.emit("message", messages);
+      setMessages(previousMessages => GiftedChat.append(previousMessages, messages))
     }, [])
 <<<<<<< HEAD
 >>>>>>> b62a2012 (use ChatListStyles)
@@ -115,9 +132,7 @@ const ChatRoomScreen = ({navigation}) => {
     );
 =======
 
-    const onSend = useCallback((messages = []) => {
-        setMessages(previousMessages => GiftedChat.append(previousMessages, messages))
-      }, [])
+      
 
     const renderBubble = (props) => {
         return (
@@ -156,18 +171,20 @@ const ChatRoomScreen = ({navigation}) => {
             <FontAwesome name='angle-double-down' size={22} color='#333' />
         )
     }
+
+
     return (
-        <GiftedChat
-      messages={messages}
-      onSend={messages => onSend(messages)}
-      user={{
-        _id: 1,
-      }}
-      renderBubble={renderBubble}
-      alwaysShowSend
-      renderSend={renderSend}
-      scrollToBottom
-      scrollToBottomComponent={scrollToBottomComponent}
+      <GiftedChat
+        messages={messages}
+        onSend={messages => onSend(messages)}
+        user={{
+          _id: 1,
+        }}
+        renderBubble={renderBubble}
+        alwaysShowSend
+        renderSend={renderSend}
+        scrollToBottom
+        scrollToBottomComponent={scrollToBottomComponent}
     />
     )
 >>>>>>> a7009bf8 (chat ui 95% complete)

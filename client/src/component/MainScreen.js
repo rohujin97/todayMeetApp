@@ -16,7 +16,7 @@ import { View, Text, StyleSheet}  from 'react-native';
 import Icon from 'react-native-vector-icons/Ionicons';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import { createStackNavigator } from '@react-navigation/stack';
-import io from 'socket.io-client';
+
 // 하단 탭에 들어갈 컴포넌트들
 import HomeTab from './AppTabNavigator/HomeTab'
 import MapTab from './AppTabNavigator/MapTab'
@@ -270,6 +270,7 @@ export default function MainScreen({ navigation }) {
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 const MessageStack = ({navigation}) => (
   <Stack.Navigator>
     <Stack.Screen name="Chat" component={ChatRoomScreen} />
@@ -304,10 +305,9 @@ function MainScreen () {
 =======
 >>>>>>> cec1bc15 (make chatlist ui)
 const socket = io("http://172.30.1.29:3001"); // server 포트 사용
+=======
+>>>>>>> 0b210839 (client send messages to server)
 export default function MainScreen() {
-      useEffect(function () {
-          io("http://172.30.1.17:3001")
-      }, []);
       
     return (
       <MyTabs />

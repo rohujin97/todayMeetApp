@@ -40,6 +40,7 @@ app.use('/', routes);
 const io = socketio(server)
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 app.use((req, res, next) => {
     res.io = io;
@@ -47,6 +48,8 @@ app.use((req, res, next) => {
 =======
 =======
 >>>>>>> 395d211b (db connect with pool and get data from todaymeet schema)
+=======
+>>>>>>> 76053e48 (client send messages to server)
 <<<<<<< HEAD
 =======
 // console.log('socket io 요청 받아들일 준비가 됨')
@@ -57,13 +60,15 @@ app.use((req, res, next) => {
 // const io = socketio(server, { path: '/io' })
 // io.adapter(redisAdapter({ host: 'localhost', port: 6379 }))
 // require('./middleware/socket')(io)
+=======
+>>>>>>> 0b210839 (client send messages to server)
 
-io.on('connection', function (socket) {
+io.on('connection', socket =>  {
     console.log('today connected')
-    socket.emit('news', { hello: 'world' })
 
-    socket.on('my other event', function (data) {
-        console.log(data)
+    socket.on('message', message =>  {
+        console.log(message[0].text);
+        io.emit("message", message);
     })
 >>>>>>> e726473d (revise App.js package.json package-lock.json)
 })
