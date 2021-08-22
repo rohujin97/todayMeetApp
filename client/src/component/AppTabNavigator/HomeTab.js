@@ -29,7 +29,6 @@ const GetDate = () => {
 }
 
 export default class HomeTab extends Component{
-
   render() {
     return (
         <View style={styles.date}>
