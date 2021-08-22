@@ -30,17 +30,13 @@ app.use(cookieParser());
 app.use('/', routes); 
 
 const io = socketio(server)
-// require('./middleware/socket')(io)
-// const io = socketio(server, { path: '/io' })
-// io.adapter(redisAdapter({ host: 'localhost', port: 6379 }))
-// require('./middleware/socket')(io)
 
-io.on('connection', function (socket) {
+io.on('connection', socket =>  {
     console.log('today connected')
-    socket.emit('news', { hello: 'world' })
 
-    socket.on('my other event', function (data) {
-        console.log(data)
+    socket.on('message', message =>  {
+        console.log(message[0].text);
+        io.emit("message", message);
     })
 })
 

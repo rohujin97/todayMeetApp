@@ -4,7 +4,7 @@ import { StyleSheet, View, Text, ScrollView }  from 'react-native';
 import Icon from 'react-native-vector-icons/Ionicons';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import { createStackNavigator } from '@react-navigation/stack';
-import io from 'socket.io-client';
+
 // 하단 탭에 들어갈 컴포넌트들
 import HomeTab from './AppTabNavigator/HomeTab'
 import MapTab from './AppTabNavigator/MapTab'
@@ -79,11 +79,7 @@ const MyTabs = () => {
   );
 }
 
-const socket = io("http://172.30.1.29:3001"); // server 포트 사용
 export default function MainScreen() {
-      useEffect(function () {
-          io("http://172.30.1.17:3001")
-      }, []);
       
     return (
       <MyTabs />
