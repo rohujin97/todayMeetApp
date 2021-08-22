@@ -1,10 +1,13 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 import React from 'react';
 import { StyleSheet, View, Text, ScrollView, Dimensions } from 'react-native';
 =======
 =======
 >>>>>>> b62a2012 (use ChatListStyles)
+=======
+>>>>>>> 54193eb1 (Update App.js)
 <<<<<<< HEAD
 import React from 'react';
 import { StyleSheet, View, Text, ScrollView } from 'react-native';
@@ -98,6 +101,17 @@ const deviceWidth = Dimensions.get('window').width;
 >>>>>>> 3c57a5a8 (use ChatListStyles)
 >>>>>>> b62a2012 (use ChatListStyles)
 
+=======
+import React from ‘react’;
+import { StyleSheet, View, Text, ScrollView, Dimensions } from ‘react-native’;
+import MainScreen from ‘./src/component/MainScreen’;
+import { NavigationContainer } from ‘@react-navigation/native’;
+import { createStackNavigator } from ‘@react-navigation/stack’;
+import * as Location from ‘expo-location’;
+import Icon from ‘react-native-vector-icons/Ionicons’;
+
+const deviceWidth = Dimensions.get(‘window’).width;
+>>>>>>> a578b8d1 (Update App.js)
 const Title = () => {
   return (
     <View style={styles.title}>
@@ -190,6 +204,7 @@ const styles = StyleSheet.create({
   },
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> 645ebf9b (현재 위치 표시)
 <<<<<<< HEAD
 >>>>>>> e924ffea (현재 위치 표시)
@@ -205,4 +220,10 @@ const styles = StyleSheet.create({
 =======
 });
 >>>>>>> 11d516c4 (still move page from chatlist to chatroom)
+<<<<<<< HEAD
 >>>>>>> 8c273178 (still move page from chatlist to chatroom)
+=======
+=======
+});
+>>>>>>> a578b8d1 (Update App.js)
+>>>>>>> 54193eb1 (Update App.js)
