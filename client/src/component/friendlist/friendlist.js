@@ -2,6 +2,7 @@ import React, {Component} from 'react';
 import { StyleSheet, Text, View, Image, TouchableOpacity, ScrollView, TextInput,SafeAreaView} from 'react-native';
 import { StatusBar } from 'expo-status-bar';
 import { SearchBar } from 'react-native-elements';
+import data from '../../../data.json'
 
 let imagePath = require('./chunsikfriend.png');
 
@@ -10,14 +11,17 @@ class FriendListScreen extends Component{
         search:'',
     };
 
+    
+
     updateSearch= (search) =>{
         this.setState({search})
     };
     render(){
+        let friendinfo = data.freindInfo
         const {search} = this.state; 
         return(
                  
-            <ScrollView style="container">
+            <ScrollView style="container"> 
                 <StatusBar style="black" /> 
                 <Text style={styles.topLetter}>TodayMeet</Text>
                 <View style={{
@@ -30,14 +34,28 @@ class FriendListScreen extends Component{
                 <View style={styles.searchBarContainer}>
                     <SearchBar lightTheme={true} placeholder="지인을 검색하세요" onChangeText={this.updateSearch} value={search} platform="false"/>
                 </View>
-                <View style={styles.userContainer}>
-                    <Image style={styles.userImage} source={imagePath}/>
-                    <Text style={styles.userName}>강나임</Text>
-                    <View style={styles.userDecs}>
-                        <Text style={styles.userWork}>삼성전자 무선사업부</Text>
-                        <Text style={styles.userPosition}>Developer</Text>
+                <TouchableOpacity  onPress={()=>{this.props.navigation.navigate('FriendClick')}}>
+                    <View style={styles.userContainer}>
+                        
+                        {
+                           friendinfo.map((content,i) =>{
+                               return(
+                                   <View>
+                                       <Image style={styles.userImage} source = {{uri:content.image}} />
+                                       <Text style = {styles.userName}>{content.name}</Text>
+                                       <View style = {styles.userDecs}>
+                                            <Text style = {styles.userWork}>{content.work}</Text>
+                                            <Text style = {styles.userPosition}>{content.position}</Text>   
+                                        </View>
+                                </View>
+                               )
+                           })
+                        }
+                    
+
+    
                     </View>
-                </View>
+                </TouchableOpacity>
             </ScrollView>
         )
     }
@@ -64,11 +82,9 @@ textAlign: "center"
        marginBottom:36
    },
    userContainer:{
-       width:338,
-       height:44,
+   
        marginLeft:20,
-       marginTop:36,
-       flexDirection:"row"
+       marginTop:36
    },
    userImage:{
     width:44,

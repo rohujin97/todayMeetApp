@@ -11,6 +11,7 @@ const server = http.createServer(app)
 const config = require('./config/index')
 const cors = require('cors')
 
+
 if (config.middleware.cors) app.use(cors())
 app.use(logger('dev'));
 app.use(express.json());

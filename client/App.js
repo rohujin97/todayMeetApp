@@ -1,23 +1,26 @@
 import React from 'react';
-import DetailMeetingScreen from './src/component/detailmeeting/detailmeeting';
-
-import MeetingDetailScreen from './src/component/detailmeeting/detailmeeting';
-function App(){
+// import FriendClick from './src/component/friendclick/friendclick';
+// import DetailMeeting from './src/component/detailmeeting/detailmeeting'
+// import BcThum from './src/component/bcthum/bcthum'
+import { StatusBar } from 'expo-status-bar';
+import {NavigationContainer} from '@react-navigation/native';
+import StackNavigator from './navigation/StackNavigatior'
+export default function App(){
  //getLocation = async () => {
  //  const location = await Location.getCurrentPositionAsync();
   // console.log(location);
  //};
-// componentDidMount() =>{
+// componentDidMount() =>{  
  //  this.getLocation();
  //}
  console.disableYellowBox = true;
 return(
-<DetailMeetingScreen/>)
- // return (<NavigationContainer>
+<NavigationContainer>
+    <StatusBar style="black" />
+    <StackNavigator />
+</NavigationContainer>
+    )
 
- //   <StackNavigator/>
- // </NavigationContainer>)
+ 
 
 }
-
-export default App;
