@@ -114,6 +114,7 @@ import Icon from ‘react-native-vector-icons/Ionicons’;
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 const deviceWidth = Dimensions.get(‘window’).width;
 >>>>>>> a578b8d1 (Update App.js)
 =======
@@ -131,6 +132,8 @@ function reducer(state = {}, action) {
 >>>>>>> d45f3edf (adding redux)
 
 >>>>>>> 2ac61688 (use ChatListStyles)
+=======
+>>>>>>> d0c0ef9c (little modify redux)
 const Title = () => {
   return (
     <View style={styles.title}>

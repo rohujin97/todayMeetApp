@@ -143,6 +143,7 @@ const style = StyleSheet.create({
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 5fcd1055 (still move page from chatlist to chatroom)
 =======
@@ -181,4 +182,11 @@ const style = StyleSheet.create({
 });
 >>>>>>> 9767f2b7 (use ChatListStyles)
 >>>>>>> 2ac61688 (use ChatListStyles)
+<<<<<<< HEAD
 >>>>>>> 8aa73639 (use ChatListStyles)
+=======
+=======
+});
+
+>>>>>>> d0c0ef9c (little modify redux)
+>>>>>>> 03e3a4c3 (little modify redux)
