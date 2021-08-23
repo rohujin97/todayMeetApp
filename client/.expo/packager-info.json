@@ -2,6 +2,7 @@
   "devToolsPort": 19002,
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
   "expoServerPort": 19000,
 =======
   "expoServerPort": null,
@@ -10,6 +11,10 @@
   "expoServerPort": 19000,
 >>>>>>> 8d03bd75 (front-end modified)
   "packagerPort": 19000,
+=======
+  "expoServerPort": null,
+  "packagerPort": null,
+>>>>>>> 8c8cb68b (add packager-info)
   "packagerPid": null,
   "expoServerNgrokUrl": null,
   "packagerNgrokUrl": null,
