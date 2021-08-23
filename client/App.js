@@ -7,6 +7,7 @@ import * as Location from 'expo-location';
 import Icon from 'react-native-vector-icons/Ionicons';
 const deviceWidth = Dimensions.get('window').width;
 import { createStore, applyMiddleware } from 'redux';
+import { Provider } from 'react-redux';
 import createSocketIoMiddleware from 'redux-socket.io';
 import io from 'socket.io-client';
 const socket = io("http://172.30.1.21:3001")
@@ -39,10 +40,12 @@ const Title = () => {
 
 export default function App() {
   return (
-    <NavigationContainer>
-      <Title />
-      <MainScreen />
-    </NavigationContainer>
+    <Provider store={store}>
+      <NavigationContainer>
+        <Title />
+        <MainScreen />
+      </NavigationContainer>
+    </Provider>
   );
 }
 const styles = StyleSheet.create({
