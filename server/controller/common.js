@@ -1,5 +1,5 @@
 //try catch로 error잡고 router를 통해 보낸다음 app.js의 result로 error 넘겨서 처리
-const env = require('../config/index')
+const env = require('../config')
 const pool = require('../middleware/pool')
 const CustomError = require('../util/customError')
 const config = require('../config/database')

@@ -1,56 +1,67 @@
-import React, { Component } from 'react'; 
+import React, { Component, useState } from 'react'; 
 import { View, Text, Button,StyleSheet,TextInput,Alert,Image } from 'react-native'; 
+import { useDispatch } from 'react-redux';
 let imagePath = require('./logo.jpeg');
 
 const Separator = () => (
     <View style={styles.separator} />
-  );
-  
-export default class LoginScreen extends Component { 
-    render() { 
-        return ( 
-        <View style={{backgroundColor:'white'}}> 
-            <Image
-                style={{height: 100, width: 100, alignSelf:'center', marginTop: 50}}
-                source={imagePath}
-                />
-            <Text style={{fontSize:22 ,textAlign:'center', marginTop:20,marginBottom:50}}>TodayMeet</Text>
-            
-            <TextInput style={{width:263,height:46,borderWidth:1, marginBottom:10, borderColor:"#FFF065",color:"black", alignSelf:'center',textAlign:'center'}}placeholder="E-mail address"></TextInput>
-            <TextInput style={{width:263,height:46,borderWidth:1, marginBottom:15, borderColor:"#FFF065",color:"black", alignSelf:'center',textAlign:'center'}}placeholder="Password"></TextInput>
-            
-            <Text
-                title="email save"
-                style={{marginLeft:100, marginBottom:10}}
-                onPress={() => Alert.alert('test!!!!')}>이메일 저장</Text>
-            <Button
-                
-                title="로그인"
-                color="#54D2AC"
-                onPress={() => Alert.alert('Login test!!!!')}
-            />
-           
-
-            <Text
-                title="sign up"
-                style={{marginTop:15,marginLeft:100}}
-                onPress={() => this.goSignUpScreen()}>회원가입
-                <Text>                        </Text>
-                <Text
-                title="email save"
-                style={{marginLeft:100}}
-                onPress={() => Alert.alert('test!!!!')}>비밀번호 찾기</Text>
-            
-                </Text>
-            
-        </View> 
-        
-        ); 
-    } 
-    goSignUpScreen(){ // DetailScreen으로 화면 이동 
-        this.props.navigation.navigate('SIGNUP'); 
-    } 
+    );
+    
+    const LoginScreen = ({ navigation }) => {
+      const dispatch = useDispatch();
+      const [useremail, setUseremail] = useState("");
+      return ( 
+      <View style={{ flex: 1, alignItems: 'center', justifyContent: 'center', backgroundColor:'white'}}> 
+          <Image
+              style={{height: 100, width: 100, alignSelf:'center', marginTop: 50}}
+              source={imagePath}
+              />
+          <Text style={{fontSize:22 ,textAlign:'center', marginTop:20,marginBottom:50}}>TodayMeet</Text>
+          
+          <TextInput 
+            onChangeText={text => setUseremail(text)}
+            value={useremail}
+            style={{width:263,height:46,borderWidth:1, marginBottom:10, borderColor:"#FFF065",color:"black", alignSelf:'center',textAlign:'center'}}placeholder="E-mail address"></TextInput>
+          <TextInput style={{width:263,height:46,borderWidth:1, marginBottom:15, borderColor:"#FFF065",color:"black", alignSelf:'center',textAlign:'center'}}placeholder="Password"></TextInput>
+          
+          <Text
+              title="email save"
+              style={{marginLeft:100, marginBottom:10}}
+              onPress={() => Alert.alert('test!!!!')}>이메일 저장</Text>
+          <Button
+              
+              title="로그인"
+              color="#54D2AC"
+              onPress={() => {
+                dispatch({ type: "server/join", data: useremail });
+                navigation.navigate("MyTabs");
+              }}
+          />
+         
+      
+          <Text
+              title="sign up"
+              style={{marginTop:15,marginLeft:100}}
+              onPress={() => this.goSignUpScreen()}>회원가입
+              <Text>                        </Text>
+              <Text
+              title="email save"
+              style={{marginLeft:100}}
+              onPress={() => Alert.alert('test!!!!')}>비밀번호 찾기</Text>
+          
+              </Text>
+          {/* <KeyboardAvoidingView behavior="padding" />  */}
+      </View> 
+      
+      ); 
 }
+// export default class LoginScreen extends Component { 
+//     render() { 
+//     } 
+//     goSignUpScreen(){ // DetailScreen으로 화면 이동 
+//         this.props.navigation.navigate('SIGNUP'); 
+//     } 
+// }
 
 const styles = StyleSheet.create({
     container: {
@@ -77,3 +88,5 @@ const styles = StyleSheet.create({
     },
     
   });
+
+  export default LoginScreen;

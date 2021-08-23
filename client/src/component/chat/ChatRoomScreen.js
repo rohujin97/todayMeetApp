@@ -12,7 +12,7 @@ const ChatRoomScreen = ({navigation}) => {
     const socket = useRef(null);
 
     useEffect(() => {
-      socket.current = io("http://172.30.1.21:3001")
+      socket.current = io("http://172.30.1.18:3001")
       socket.current.on("message", message => {
         setMessages(previousMessages => GiftedChat.append(...previousMessages, message));
       })
@@ -68,25 +68,19 @@ const ChatRoomScreen = ({navigation}) => {
     }
 
     return (
-      <View style={{ flex:1 }}>
-        {hasJoined ? (
-          <GiftedChat
-            renderUsernameOnMessage
-            messages={messages}
-            onSend={messages => onSend(messages)}
-            user={{
-              _id: 1,
-            }}
-            renderBubble={renderBubble}
-            alwaysShowSend
-            renderSend={renderSend}
-            scrollToBottom
-            scrollToBottomComponent={scrollToBottomComponent}
-        />
-        ) : (
-          <JoinScreen joinChat={joinChat}/>
-        )}
-      </View>
+        <GiftedChat
+          renderUsernameOnMessage
+          messages={messages}
+          onSend={messages => onSend(messages)}
+          user={{
+            _id: 1,
+          }}
+          renderBubble={renderBubble}
+          alwaysShowSend
+          renderSend={renderSend}
+          scrollToBottom
+          scrollToBottomComponent={scrollToBottomComponent}
+      />
     );
 }
 

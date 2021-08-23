@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 import { NavigationContainer } from '@react-navigation/native';
 import { StyleSheet, View, Text, ScrollView }  from 'react-native';
 import Icon from 'react-native-vector-icons/Ionicons';
@@ -9,7 +9,6 @@ import SignUpScreen from './login/signup';
 import SignUp2Screen from './login/signup2'; 
 import DoneScreen from './login/done'; 
 
-const Stack = createStackNavigator(); 
 
 // 하단 탭에 들어갈 컴포넌트들
 import HomeTab from './AppTabNavigator/HomeTab'
@@ -17,6 +16,8 @@ import MapTab from './AppTabNavigator/MapTab'
 import SetTab from './AppTabNavigator/SetTab'
 import ChatListScreen from './chat/ChatListScreen';
 import ChatRoomScreen from './chat/ChatRoomScreen';
+import JoinScreen from './chat/JoinScreen';
+import { io } from 'socket.io-client';
 // import ChatStack from '../navigation/ChatStack'
 
 const ChatStack = createStackNavigator();
@@ -83,21 +84,23 @@ const MyTabs = () => {
     </Tab.Navigator>
   );
 }
-
-export default function MainScreen() {
+const Stack = createStackNavigator();
+export default function MainScreen({ navigation }) {
+    const [hasJoined, setHasJoined] = useState(false);
+    const socket = useRef(null);
+    const signHome = useremail => {
+      socket.current.emit("signup", useremail);
+      setHasJoined(true);
+    }
     
     return (
-      // <NavigationContainer> 
-      // <Stack.Navigator initialRouteName="MAIN"> 
-      // <Stack.Screen name="LOGIN" component={LoginScreen} options={{ title: '로그인' }}/>
-      // <Stack.Screen name="SIGNUP" component={SignUpScreen} options={{ title: '회원가입1' }}/> 
-      // <Stack.Screen name="SIGNUP2" component={SignUp2Screen} options={{ title: '회원가입2' }}/> 
-      // <Stack.Screen name="DONE" component={DoneScreen} options={{ title: '완료' }}/> 
-      
-      // </Stack.Navigator> 
-      // </NavigationContainer>
-      <MyTabs />
-      
+      <Stack.Navigator initialRouteName="Home" >
+          <Stack.Screen signHome={signHome} name="LOGIN" component={LoginScreen} options={{ title: '로그인' }}/>
+          <Stack.Screen name="MyTabs" component={MyTabs} options={{headerShown: false}}/>
+          <Stack.Screen name="SIGNUP" component={SignUpScreen} options={{ title: '회원가입1' }}/> 
+          <Stack.Screen name="SIGNUP2" component={SignUp2Screen} options={{ title: '회원가입2' }}/> 
+          <Stack.Screen name="DONE" component={DoneScreen} options={{ title: '완료' }}/> 
+      </Stack.Navigator>
     );
 }
 
