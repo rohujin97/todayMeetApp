@@ -1,3 +1,4 @@
+
 import React from 'react';
 import { StyleSheet, View, Text, ScrollView, Dimensions } from 'react-native';
 import MainScreen from './src/component/MainScreen';
