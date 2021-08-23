@@ -2,6 +2,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 import React from 'react';
 import { StyleSheet, View, Text, ScrollView, Dimensions } from 'react-native';
 =======
@@ -11,6 +12,8 @@ import { StyleSheet, View, Text, ScrollView, Dimensions } from 'react-native';
 >>>>>>> 54193eb1 (Update App.js)
 =======
 >>>>>>> 7a12147d (login, signup Screen transition)
+=======
+>>>>>>> 752a4de9 (hoo)
 <<<<<<< HEAD
 import React from 'react';
 import { StyleSheet, View, Text, ScrollView } from 'react-native';
@@ -95,6 +98,8 @@ store.dispatch({type: "server/hello", data: "Hello!"})
 >>>>>>> e924ffea (현재 위치 표시)
 =======
 =======
+=======
+>>>>>>> ac2e3a7b (hoo)
 import React from 'react';
 import { StyleSheet, View, Text, ScrollView, Dimensions } from 'react-native';
 import MainScreen from './src/component/MainScreen';

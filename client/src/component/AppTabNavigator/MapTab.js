@@ -187,6 +187,12 @@ const style = StyleSheet.create({
 =======
 =======
 });
+<<<<<<< HEAD
 
 >>>>>>> d0c0ef9c (little modify redux)
+<<<<<<< HEAD
 >>>>>>> 03e3a4c3 (little modify redux)
+=======
+=======
+>>>>>>> ac2e3a7b (hoo)
+>>>>>>> 752a4de9 (hoo)
