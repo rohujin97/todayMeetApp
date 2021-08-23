@@ -125,7 +125,7 @@ import { createStore, applyMiddleware } from 'redux';
 import { Provider } from 'react-redux';
 import createSocketIoMiddleware from 'redux-socket.io';
 import io from 'socket.io-client';
-const socket = io("http://172.30.1.21:3001")
+const socket = io("http://172.30.1.18:3001")
 const socketIoMiddleware = createSocketIoMiddleware(socket, "server/");
 >>>>>>> e0618202 (re)
 
@@ -248,6 +248,7 @@ const styles = StyleSheet.create({
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> 645ebf9b (현재 위치 표시)
 <<<<<<< HEAD
 >>>>>>> e924ffea (현재 위치 표시)
@@ -310,4 +311,10 @@ function App() {
 
 export default App;
 >>>>>>> 292ae0a7 (login, signup Screen transition)
+<<<<<<< HEAD
 >>>>>>> 7a12147d (login, signup Screen transition)
+=======
+=======
+});
+>>>>>>> 77c939ac (move to MyTabs from login)
+>>>>>>> 7e036b58 (move to MyTabs from login)

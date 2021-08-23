@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 import React, { Component, useState } from 'react'; 
 import { View, Text, Button,StyleSheet,TextInput,Alert,Image } from 'react-native'; 
 import { useDispatch } from 'react-redux';
@@ -6,11 +7,19 @@ import { useDispatch } from 'react-redux';
 import React, { Component } from 'react'; 
 import { View, Text, Button,StyleSheet,TextInput,Alert,Image } from 'react-native'; 
 >>>>>>> 7a12147d (login, signup Screen transition)
+=======
+import React, { Component, useState } from 'react'; 
+import { View, Text, Button,StyleSheet,TextInput,Alert,Image } from 'react-native'; 
+import { useDispatch } from 'react-redux';
+>>>>>>> 7e036b58 (move to MyTabs from login)
 let imagePath = require('./logo.jpeg');
 
 const Separator = () => (
     <View style={styles.separator} />
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 7e036b58 (move to MyTabs from login)
     );
     
     const LoginScreen = ({ navigation }) => {
@@ -60,6 +69,7 @@ const Separator = () => (
       </View> 
       
       ); 
+<<<<<<< HEAD
 }
 // export default class LoginScreen extends Component { 
 //     render() { 
@@ -117,6 +127,16 @@ export default class LoginScreen extends Component {
     } 
 }
 >>>>>>> 7a12147d (login, signup Screen transition)
+=======
+}
+// export default class LoginScreen extends Component { 
+//     render() { 
+//     } 
+//     goSignUpScreen(){ // DetailScreen으로 화면 이동 
+//         this.props.navigation.navigate('SIGNUP'); 
+//     } 
+// }
+>>>>>>> 7e036b58 (move to MyTabs from login)
 
 const styles = StyleSheet.create({
     container: {
@@ -167,4 +187,9 @@ const styles = StyleSheet.create({
 =======
     
   });
+<<<<<<< HEAD
 >>>>>>> f2fb94ae (front-end modified)
+=======
+
+  export default LoginScreen;
+>>>>>>> 7e036b58 (move to MyTabs from login)

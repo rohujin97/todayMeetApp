@@ -3,6 +3,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
   "expoServerPort": 19000,
 =======
   "expoServerPort": null,
@@ -15,6 +16,10 @@
   "expoServerPort": null,
   "packagerPort": null,
 >>>>>>> 8c8cb68b (add packager-info)
+=======
+  "expoServerPort": 19000,
+  "packagerPort": 19000,
+>>>>>>> 77c939ac (move to MyTabs from login)
   "packagerPid": null,
   "expoServerNgrokUrl": null,
   "packagerNgrokUrl": null,

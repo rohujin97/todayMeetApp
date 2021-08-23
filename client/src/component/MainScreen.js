@@ -1,11 +1,17 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 import React, { useEffect, useRef, useState } from 'react';
 =======
 =======
 >>>>>>> 2bb49246 (make chatlist ui)
+=======
+>>>>>>> 7e036b58 (move to MyTabs from login)
 <<<<<<< HEAD
 import React, { useEffect } from 'react';
+=======
+import React, { useEffect, useRef, useState } from 'react';
+>>>>>>> 77c939ac (move to MyTabs from login)
 import { NavigationContainer } from '@react-navigation/native';
 import { StyleSheet, View, Text, ScrollView }  from 'react-native';
 =======
@@ -23,8 +29,11 @@ import SignUpScreen from './login/signup';
 import SignUp2Screen from './login/signup2'; 
 import DoneScreen from './login/done'; 
 
+<<<<<<< HEAD
 const Stack = createStackNavigator(); 
 >>>>>>> e0618202 (re)
+=======
+>>>>>>> 77c939ac (move to MyTabs from login)
 
 // 하단 탭에 들어갈 컴포넌트들
 import HomeTab from './AppTabNavigator/HomeTab'
@@ -36,6 +45,8 @@ import SetTab from './AppTabNavigator/SetTab'
 import ChatListScreen from './chat/ChatListScreen';
 >>>>>>> 3c57a5a8 (use ChatListStyles)
 import ChatRoomScreen from './chat/ChatRoomScreen';
+import JoinScreen from './chat/JoinScreen';
+import { io } from 'socket.io-client';
 // import ChatStack from '../navigation/ChatStack'
 
 const ChatStack = createStackNavigator();
@@ -260,6 +271,7 @@ const MyTabs = () => {
   );
 }
 <<<<<<< HEAD
+<<<<<<< HEAD
 const Stack = createStackNavigator();
 export default function MainScreen({ navigation }) {
     const [hasJoined, setHasJoined] = useState(false);
@@ -279,6 +291,8 @@ export default function MainScreen({ navigation }) {
       </Stack.Navigator>
     );
 =======
+=======
+>>>>>>> 7e036b58 (move to MyTabs from login)
 
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -352,6 +366,25 @@ export default function MainScreen() {
 >>>>>>> 2bb49246 (make chatlist ui)
 =======
 =======
+=======
+const Stack = createStackNavigator();
+export default function MainScreen({ navigation }) {
+    const [hasJoined, setHasJoined] = useState(false);
+    const socket = useRef(null);
+    const signHome = useremail => {
+      socket.current.emit("signup", useremail);
+      setHasJoined(true);
+    }
+    
+    return (
+      <Stack.Navigator initialRouteName="Home" >
+          <Stack.Screen signHome={signHome} name="LOGIN" component={LoginScreen} options={{ title: '로그인' }}/>
+          <Stack.Screen name="MyTabs" component={MyTabs} options={{headerShown: false}}/>
+          <Stack.Screen name="SIGNUP" component={SignUpScreen} options={{ title: '회원가입1' }}/> 
+          <Stack.Screen name="SIGNUP2" component={SignUp2Screen} options={{ title: '회원가입2' }}/> 
+          <Stack.Screen name="DONE" component={DoneScreen} options={{ title: '완료' }}/> 
+      </Stack.Navigator>
+>>>>>>> 77c939ac (move to MyTabs from login)
     );
 >>>>>>> 3c57a5a8 (use ChatListStyles)
 >>>>>>> b62a2012 (use ChatListStyles)

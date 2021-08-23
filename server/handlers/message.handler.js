@@ -12,6 +12,7 @@ function createMessage(user, messageText){
       avatar: user.userAvatar,
 =======
       name: user.username,
+      email: user.email,
       avatar: user.avatar,
 >>>>>>> 5387c5b8 (adding redux)
     }
