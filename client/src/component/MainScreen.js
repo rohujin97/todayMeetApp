@@ -16,6 +16,15 @@ import { View, Text, StyleSheet}  from 'react-native';
 import Icon from 'react-native-vector-icons/Ionicons';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import { createStackNavigator } from '@react-navigation/stack';
+<<<<<<< HEAD
+=======
+import LoginScreen from './login/login'; 
+import SignUpScreen from './login/signup'; 
+import SignUp2Screen from './login/signup2'; 
+import DoneScreen from './login/done'; 
+
+const Stack = createStackNavigator(); 
+>>>>>>> e0618202 (re)
 
 // 하단 탭에 들어갈 컴포넌트들
 import HomeTab from './AppTabNavigator/HomeTab'
@@ -286,6 +295,7 @@ const MessageStack = ({navigation}) => (
 <<<<<<< HEAD
 const socket = io("http://172.30.1.29:3001"); // server 포트 사용
 export default function MainScreen() {
+<<<<<<< HEAD
       useEffect(function () {
           io("http://172.30.1.17:3001")
       }, []);
@@ -311,6 +321,20 @@ const socket = io("http://172.30.1.29:3001"); // server 포트 사용
 =======
 >>>>>>> 0b210839 (client send messages to server)
 export default function MainScreen() {
+=======
+    
+    return (
+      // <NavigationContainer> 
+      // <Stack.Navigator initialRouteName="MAIN"> 
+      // <Stack.Screen name="LOGIN" component={LoginScreen} options={{ title: '로그인' }}/>
+      // <Stack.Screen name="SIGNUP" component={SignUpScreen} options={{ title: '회원가입1' }}/> 
+      // <Stack.Screen name="SIGNUP2" component={SignUp2Screen} options={{ title: '회원가입2' }}/> 
+      // <Stack.Screen name="DONE" component={DoneScreen} options={{ title: '완료' }}/> 
+      
+      // </Stack.Navigator> 
+      // </NavigationContainer>
+      <MyTabs />
+>>>>>>> e0618202 (re)
       
     return (
       <MyTabs />
@@ -351,6 +375,7 @@ const styles = StyleSheet.create({
   },
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 });
 <<<<<<< HEAD
 =======
@@ -370,3 +395,6 @@ export default MainScreen;
 >>>>>>> cec1bc15 (make chatlist ui)
 =======
 >>>>>>> 5fcd1055 (still move page from chatlist to chatroom)
+=======
+});
+>>>>>>> e0618202 (re)

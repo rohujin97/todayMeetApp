@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import {View, Button, TextInput, Image, Platform, KeyboardAvoidingView} from 'react-native';
 <<<<<<< HEAD
+<<<<<<< HEAD
 import { useDispatch } from 'react-redux';
 
 const JoinScreen = ({ navigation }) => {
@@ -9,6 +10,12 @@ const JoinScreen = ({ navigation }) => {
 
 export default function JoinScreen({ joinChat }){
 >>>>>>> 5387c5b8 (adding redux)
+=======
+import { useDispatch } from 'react-redux';
+
+const JoinScreen = ({ navigation }) => {
+    const dispatch = useDispatch();
+>>>>>>> 3aa3ad78 (re)
     const [username, setUsername] = useState("");
     return (
         <View>
@@ -19,6 +26,9 @@ export default function JoinScreen({ joinChat }){
                 placeholder="Enter username" 
             />
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 3aa3ad78 (re)
             <Button 
                 title="Join Chat" 
                 onPress={() => {
@@ -26,6 +36,7 @@ export default function JoinScreen({ joinChat }){
                     navigation.navigate("Chat")
                 }}
             />
+<<<<<<< HEAD
         </View>
     )
 }
@@ -37,3 +48,10 @@ export default JoinScreen;
     )
 }
 >>>>>>> 5387c5b8 (adding redux)
+=======
+        </View>
+    )
+}
+
+export default JoinScreen;
+>>>>>>> 3aa3ad78 (re)

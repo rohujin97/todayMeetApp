@@ -108,6 +108,7 @@ import { createStackNavigator } from '@react-navigation/stack';
 import * as Location from 'expo-location';
 import Icon from 'react-native-vector-icons/Ionicons';
 const deviceWidth = Dimensions.get('window').width;
+<<<<<<< HEAD
 >>>>>>> 3c57a5a8 (use ChatListStyles)
 >>>>>>> b62a2012 (use ChatListStyles)
 
@@ -119,6 +120,14 @@ import { NavigationContainer } from ‘@react-navigation/native’;
 import { createStackNavigator } from ‘@react-navigation/stack’;
 import * as Location from ‘expo-location’;
 import Icon from ‘react-native-vector-icons/Ionicons’;
+=======
+import { createStore, applyMiddleware } from 'redux';
+import { Provider } from 'react-redux';
+import createSocketIoMiddleware from 'redux-socket.io';
+import io from 'socket.io-client';
+const socket = io("http://172.30.1.21:3001")
+const socketIoMiddleware = createSocketIoMiddleware(socket, "server/");
+>>>>>>> e0618202 (re)
 
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -175,10 +184,12 @@ export default function App() {
 
 export default function App() {
   return (
-    <NavigationContainer>
-      <Title />
-      <MainScreen />
-    </NavigationContainer>
+    <Provider store={store}>
+      <NavigationContainer>
+        <Title />
+        <MainScreen />
+      </NavigationContainer>
+    </Provider>
   );
 }
 
