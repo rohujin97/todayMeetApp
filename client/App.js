@@ -10,13 +10,15 @@ import { createStore, applyMiddleware } from 'redux';
 import { Provider } from 'react-redux';
 import createSocketIoMiddleware from 'redux-socket.io';
 import io from 'socket.io-client';
-const socket = io("http://172.30.1.18:3001")
+const socket = io("http://172.30.1.39:3001")
 const socketIoMiddleware = createSocketIoMiddleware(socket, "server/");
 
 function reducer(state = {}, action) {
   switch(action.type) {
     case 'message':
       return {...state, message: action.data };
+    case "users_online":
+      return { ...state, usersOnline: action.data };
       default:
         return state;
   }
