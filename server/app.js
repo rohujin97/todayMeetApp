@@ -42,6 +42,7 @@ const io = socketio(server)
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 app.use((req, res, next) => {
     res.io = io;
@@ -53,6 +54,8 @@ app.use((req, res, next) => {
 >>>>>>> 76053e48 (client send messages to server)
 =======
 >>>>>>> 5387c5b8 (adding redux)
+=======
+>>>>>>> ad7b7fe7 (take data from db)
 <<<<<<< HEAD
 =======
 // console.log('socket io 요청 받아들일 준비가 됨')
@@ -101,7 +104,16 @@ io.on('connection', socket =>  {
                 break;
         }
     })
+<<<<<<< HEAD
 >>>>>>> e726473d (revise App.js package.json package-lock.json)
+=======
+=======
+
+app.use((req, res, next) => {
+    res.io = io;
+    next();
+>>>>>>> ab9d1c60 (take data from db)
+>>>>>>> ad7b7fe7 (take data from db)
 })
 
 const room = io.of('/room');

@@ -1,7 +1,11 @@
 const pool = require('../middleware/pool');
 const messageHandler = require("../handlers/message.handler");
 
+<<<<<<< HEAD
 let currentUserId = 0;
+=======
+let currentUserId = 2;
+>>>>>>> ad7b7fe7 (take data from db)
 const users = {};
 
 function createUserAvatarUrl() {
@@ -15,6 +19,7 @@ module.exports = (io) => {
         console.log('today connected')
         console.log(socket.id);
         users[socket.id] = { userId: currentUserId++ };
+<<<<<<< HEAD
         socket.on("join", username => { // 회원가입할때 바로 디비에 저장할 예정 여기에선 안해도 됨
             // DB에 user 정보 저장
             users[socket.id].userName = username;
@@ -25,6 +30,14 @@ module.exports = (io) => {
         // socket.on("message", message => {
         //     console.log(message)
         // })
+=======
+        socket.on("join", username => { //chatRoomScreen에서 join 하려고 했을때 (이제 사용 안함) test용
+            // DB에서 useremail과 동일한 data를 찾고 username, url을 가져와서 객체에 저장
+            users[socket.id].username = username;
+            users[socket.id].avatar = createUserAvatarUrl();
+            messageHandler.handleMessage(socket, users);
+        })
+>>>>>>> ad7b7fe7 (take data from db)
         socket.on("action", action => {
             switch(action.type){
                 case "server/hello":
@@ -34,6 +47,7 @@ module.exports = (io) => {
                 case "server/join": //로그인할때
                     async function join() {
                         try {
+<<<<<<< HEAD
                             console.log("Got join event", action.data); // action.data는 이메일
                             const query = `SELECT * FROM user WHERE user_email = "${action.data}"`
                             const result = await pool.queryParam(query);
@@ -48,6 +62,16 @@ module.exports = (io) => {
                             }
                             const values = Object.values(users);
                             const onlyWithUsernames = values.filter(u => u.userEmail !== undefined);
+=======
+                            console.log("Got join event", action.data);
+                            const query = `SELECT * FROM user WHERE user_email = "${action.data}"`
+                            const result = await pool.queryParam(query);
+                            console.log(result);
+                            users[socket.id].usereamil = action.data;
+                            users[socket.id].avatar = createUserAvatarUrl();
+                            const values = Object.values(users);
+                            const onlyWithUsernames = values.filter(u => u.useremail === undefined);
+>>>>>>> ad7b7fe7 (take data from db)
                             socket.emit("action", {
                                 type: "users_online",
                                 data: onlyWithUsernames
@@ -57,7 +81,11 @@ module.exports = (io) => {
                             throw e;
                         }
                     }
+<<<<<<< HEAD
                     join()
+=======
+                    join();
+>>>>>>> ad7b7fe7 (take data from db)
             }
         })
     })

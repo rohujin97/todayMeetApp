@@ -271,6 +271,7 @@ const styles = StyleSheet.create({
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 });
 =======
 <<<<<<< HEAD
@@ -285,3 +286,6 @@ const styles = StyleSheet.create({
 =======
 });
 >>>>>>> 2ac61688 (use ChatListStyles)
+=======
+});
+>>>>>>> ab9d1c60 (take data from db)

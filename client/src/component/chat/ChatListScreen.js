@@ -327,7 +327,13 @@ export default ChatListScreen;
 >>>>>>> e0341b59 (use ChatListStyles)
 =======
 export default ChatListScreen;
+<<<<<<< HEAD
 >>>>>>> 2ac61688 (use ChatListStyles)
 
 >>>>>>> 47d06d2f (use ChatListStyles)
+<<<<<<< HEAD
 >>>>>>> 23006285 (use ChatListStyles)
+=======
+=======
+>>>>>>> ab9d1c60 (take data from db)
+>>>>>>> ad7b7fe7 (take data from db)
