@@ -1,11 +1,48 @@
-import React, { Component } from 'react'; 
-import { View, Text, Button,StyleSheet,TextInput,Alert,Image } from 'react-native'; 
+import React, { Component,useState } from 'react'; 
+import { View, Text, Button,StyleSheet,TextInput,Alert,Image,KeyboardAvoidingView } from 'react-native'; 
+import {useDispatch,} from 'react-redux';
 let imagePath = require('./logo.jpeg');
 
 const Separator = () => (
     <View style={styles.separator} />
   );
   
+  const LoginScreen=({naviagation}) => {
+    const dispatch=useDispatch();
+    const [useremail, setUseremail] = useState("");
+    return ( 
+    <View style={{backgroundColor:'white'}}> 
+          <Image
+              style={{height: 100, width: 100, alignSelf:'center', marginTop: 50}}
+              source={imagePath}
+              />
+          <Text style={{fontSize:22 ,textAlign:'center', marginTop:20,marginBottom:50}}>TodayMeet</Text>
+          
+          <TextInput 
+            onChangeText={text => setUseremail(text)}
+            value={useremail}
+            style={{width:263,height:46,borderWidth:1, marginBottom:10, borderColor:"#FFF065",color:"black", alignSelf:'center',textAlign:'center'}}placeholder="E-mail address"></TextInput>
+          <TextInput style={{width:263,height:46,borderWidth:1, marginBottom:15, borderColor:"#FFF065",color:"black", alignSelf:'center',textAlign:'center'}}placeholder="Password"></TextInput>
+          
+          <Text
+              title="email save"
+              style={{marginLeft:100, marginBottom:10}}
+              onPress={() => Alert.alert('test!!!!')}>이메일 저장</Text>
+          <Button
+              
+              title="로그인"
+              color="#54D2AC"
+              onPress={() => {
+                dispatch({type:"server/join",data:useremail});
+                naviagation.navigate("MyTabs");
+                }}
+          />  
+        </View>
+    )
+  
+  };
+  export default LoginScreen;
+  /*
 export default class LoginScreen extends Component { 
     render() { 
         return ( 
@@ -50,7 +87,7 @@ export default class LoginScreen extends Component {
     goSignUpScreen(){ // DetailScreen으로 화면 이동 
         this.props.navigation.navigate('SIGNUP'); 
     } 
-}
+}*/
 
 const styles = StyleSheet.create({
     container: {
