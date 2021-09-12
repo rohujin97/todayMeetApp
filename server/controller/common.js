@@ -35,18 +35,18 @@ const controller = {
     async login(req, res, next){
         // checks if email exists
         User.findOne({ where : {
-            email: req.body.email, 
+            user_email: req.body.email, 
         }})
         .then(dbUser => {
             if (!dbUser) {
                 return res.status(404).json({message: "user not found"});
             } else {
                 // password hash
-                bcrypt.compare(req.body.password, dbUser.password, (err, compareRes) => {
+                bcrypt.compare(req.body.passwd, dbUser.user_passwd, (err, compareRes) => {
                     if (err) { // error while comparing
                         res.status(502).json({message: "error while checking user password"});
                     } else if (compareRes) { // password match
-                        const token = jwt.sign({ email: req.body.email }, 'secret', { expiresIn: '1h' });
+                        const token = jwt.sign({ user_email: req.body.email }, 'secret', { expiresIn: '1h' });
                         res.status(200).json({message: "user logged in", "token": token});
                     } else { // password doesnt match
                         res.status(401).json({message: "invalid credentials"});
