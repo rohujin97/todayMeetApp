@@ -25,6 +25,23 @@ module.exports = {
             }
         });
     },
+    login : async (id, password)=>{
+        const query = `SELECT * FROM user WHERE user_email="${id}"`;
+        try{
+            const result = await pool.queryParam(query);
+            var hashed = await encrypt(result[0].salt, password);
+            if(result[0].password === hashed)//password 일치
+            {
+                return true;
+            }
+            else
+            {
+                return false;
+            }
+        }catch(err){
+            throw err;
+        }
+    },
     queryParamArr: async (query) => {
         return new Promise(async (resolve, reject) => {
             try {

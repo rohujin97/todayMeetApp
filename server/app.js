@@ -1,4 +1,5 @@
 // const createError = require('http-errors');
+import sequelize from './config/database/js'
 const express = require('express');
 const path = require('path');
 const cookieParser = require('cookie-parser');
@@ -70,4 +71,9 @@ server.listen(process.env.PORT || config.port, async () => {
     const startMsg = `${ process.env.PORT || config.port } port is open!!`
     console.info(startMsg)
 })
+
+//sequelize mysql connect
+sequelize.sync();
+
 module.exports = app;
+

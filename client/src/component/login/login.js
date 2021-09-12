@@ -7,10 +7,13 @@ const Separator = () => (
     <View style={styles.separator} />
   );
   
-  const LoginScreen=({naviagation}) => {
+  const LoginScreen=({navigation}) => {
     const dispatch=useDispatch();
     const [useremail, setUseremail] = useState("");
+    
     return ( 
+      
+    <KeyboardAvoidingView style={styles.container} behavior="padding" enabled>
     <View style={{backgroundColor:'white'}}> 
           <Image
               style={{height: 100, width: 100, alignSelf:'center', marginTop: 50}}
@@ -32,15 +35,27 @@ const Separator = () => (
               
               title="로그인"
               color="#54D2AC"
+              
               onPress={() => {
                 dispatch({type:"server/join",data:useremail});
-                naviagation.navigate("MyTabs");
+                navigation.navigate("MyTabs");
                 }}
           />  
+          <Separator/>
+          <Button
+              
+              title="회원가입"
+              color="#54D2AC"
+              onPress={() => {
+                navigation.navigate("SIGNUP");
+              }}
+          />  
         </View>
+        </KeyboardAvoidingView>
     )
-  
+    
   };
+
   export default LoginScreen;
   /*
 export default class LoginScreen extends Component { 
