@@ -7,9 +7,8 @@ function createMessage(user, messageText){
     createdAt: new Date(),
     user: {
       _id: user.userId,
-      name: user.username,
-      email: user.email,
-      avatar: user.avatar,
+      name: user.userName,
+      avatar: user.userAvatar,
     }
   };
 }
@@ -18,6 +17,7 @@ function handleMessage(socket, users) {
     socket.on('message', messageText =>  {
         const user = users[socket.id];
         const message = createMessage(user, messageText);
+        console.log(socket.id, user)
         console.log(message);
         socket.broadcast.emit("message", message);
     });

@@ -1,7 +1,7 @@
 const pool = require('../middleware/pool');
 const messageHandler = require("../handlers/message.handler");
 
-let currentUserId = 2;
+let currentUserId = 0;
 const users = {};
 
 function createUserAvatarUrl() {
@@ -15,12 +15,16 @@ module.exports = (io) => {
         console.log('today connected')
         console.log(socket.id);
         users[socket.id] = { userId: currentUserId++ };
-        socket.on("join", username => { //chatRoomScreen에서 join 하려고 했을때 (이제 사용 안함) test용
-            // DB에서 useremail과 동일한 data를 찾고 username, url을 가져와서 객체에 저장
-            users[socket.id].username = username;
-            users[socket.id].avatar = createUserAvatarUrl();
-            messageHandler.handleMessage(socket, users);
+        socket.on("join", username => { // 회원가입할때 바로 디비에 저장할 예정 여기에선 안해도 됨
+            // DB에 user 정보 저장
+            users[socket.id].userName = username;
+            users[socket.id].userEmail =
+            users[socket.id].userAvatar = createUserAvatarUrl();
         })
+        messageHandler.handleMessage(socket, users);
+        // socket.on("message", message => {
+        //     console.log(message)
+        // })
         socket.on("action", action => {
             switch(action.type){
                 case "server/hello":
@@ -30,14 +34,20 @@ module.exports = (io) => {
                 case "server/join": //로그인할때
                     async function join() {
                         try {
-                            console.log("Got join event", action.data);
+                            console.log("Got join event", action.data); // action.data는 이메일
                             const query = `SELECT * FROM user WHERE user_email = "${action.data}"`
                             const result = await pool.queryParam(query);
                             console.log(result);
-                            users[socket.id].usereamil = action.data;
-                            users[socket.id].avatar = createUserAvatarUrl();
+                            for (let i = 0; i < result.length; i++){
+                                if (result[i].user_email === action.data) {
+                                    users[socket.id].userId = result[i].user_id;
+                                    users[socket.id].name = result[i].user_name;
+                                    users[socket.id].userEmail = action.data;
+                                    users[socket.id].avatar = createUserAvatarUrl();
+                                }
+                            }
                             const values = Object.values(users);
-                            const onlyWithUsernames = values.filter(u => u.useremail === undefined);
+                            const onlyWithUsernames = values.filter(u => u.userEmail !== undefined);
                             socket.emit("action", {
                                 type: "users_online",
                                 data: onlyWithUsernames
@@ -47,7 +57,7 @@ module.exports = (io) => {
                             throw e;
                         }
                     }
-                    join();
+                    join()
             }
         })
     })

@@ -88,8 +88,8 @@ const Stack = createStackNavigator();
 export default function MainScreen({ navigation }) {
     const [hasJoined, setHasJoined] = useState(false);
     const socket = useRef(null);
-    const signHome = useremail => {
-      socket.current.emit("signup", useremail);
+    const signHome = userEmail => {
+      socket.current.emit("signup", userEmail);
       setHasJoined(true);
     }
     

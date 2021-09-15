@@ -7,26 +7,21 @@ import { io } from 'socket.io-client'
 
 const ChatRoomScreen = ({navigation}) => {
     const [messages, setMessages] = useState([]);
-    const [hasJoined, setHasJoined] = useState(false);
     const socket = useRef(null);
 
     useEffect(() => {
-      socket.current = io("http://172.30.1.39:3001")
+      socket.current = io("http://172.30.1.60:3001")
       socket.current.on("message", message => {
-        setMessages(previousMessages => GiftedChat.append(...previousMessages, message));
+          console.log(message, "useEffect")
+          setMessages(previousMessages => GiftedChat.append(...previousMessages, message));
       })
       }, [])
       
     const onSend = useCallback((messages = []) => {
-      console.log(messages);
-      socket.current.emit("message", messages[0].text);
-      setMessages(previousMessages => GiftedChat.append(previousMessages, messages));
+        console.log(messages, "onSend")
+        socket.current.emit("message", messages[0].text);
+        setMessages(previousMessages => GiftedChat.append(previousMessages, messages));
     }, [])
-
-    // const joinChat = username => {
-    //   socket.current.emit("join", username);
-    //   setHasJoined(true);
-    // }
     
     const renderBubble = (props) => {
         return (
@@ -72,7 +67,7 @@ const ChatRoomScreen = ({navigation}) => {
           messages={messages}
           onSend={messages => onSend(messages)}
           user={{
-            _id: 1,
+            _id: 1, //본인
           }}
           renderBubble={renderBubble}
           alwaysShowSend
