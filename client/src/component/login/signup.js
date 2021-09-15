@@ -65,4 +65,8 @@ const styles = StyleSheet.create({
         borderBottomWidth: StyleSheet.hairlineWidth,
     },
 
+<<<<<<< HEAD
 });
+=======
+});
+>>>>>>> 274113618ed9ae2b6c76c0dac38e03197f43c59c
