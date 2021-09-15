@@ -2,6 +2,7 @@ import React from 'react';
 import {View, Text, StyleSheet, ScrollView, Dimensions, TouchableOpacity} from 'react-native';
 import Icon from 'react-native-vector-icons/Ionicons';
 import { Component } from 'react/cjs/react.production.min';
+import BtnS from './BtnS'
 
 const deviceWidth = Dimensions.get('window').width;
 const MeetingList = () => {
@@ -29,7 +30,6 @@ const GetDate = () => {
 }
 
 export default class HomeTab extends Component{
-
   render() {
     return (
         <View style={styles.date}>
@@ -37,6 +37,7 @@ export default class HomeTab extends Component{
             <ScrollView>
               <MeetingList />
             </ScrollView>
+            <BtnS />
         </View>
     );
 }
