@@ -8,6 +8,7 @@ function createMessage(user, messageText){
     user: {
       _id: user.userId,
 <<<<<<< HEAD
+<<<<<<< HEAD
       name: user.userName,
       avatar: user.userAvatar,
 =======
@@ -15,6 +16,10 @@ function createMessage(user, messageText){
       email: user.email,
       avatar: user.avatar,
 >>>>>>> 5387c5b8 (adding redux)
+=======
+      name: user.userName,
+      avatar: user.userAvatar,
+>>>>>>> 3366c2e7 (little change)
     }
   };
 }
@@ -24,9 +29,13 @@ function handleMessage(socket, users) {
         const user = users[socket.id];
         const message = createMessage(user, messageText);
 <<<<<<< HEAD
+<<<<<<< HEAD
         console.log(socket.id, user)
 =======
 >>>>>>> 5387c5b8 (adding redux)
+=======
+        console.log(socket.id, user)
+>>>>>>> 3366c2e7 (little change)
         console.log(message);
         socket.broadcast.emit("message", message);
     });

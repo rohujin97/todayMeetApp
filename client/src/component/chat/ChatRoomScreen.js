@@ -81,21 +81,22 @@ const ChatRoomScreen = ({navigation}) => {
 =======
 >>>>>>> 5387c5b8 (adding redux)
     const [messages, setMessages] = useState([]);
-    const [hasJoined, setHasJoined] = useState(false);
     const socket = useRef(null);
 
     useEffect(() => {
-      socket.current = io("http://172.30.1.39:3001")
+      socket.current = io("http://172.30.1.60:3001")
       socket.current.on("message", message => {
-        setMessages(previousMessages => GiftedChat.append(...previousMessages, message));
+          console.log(message, "useEffect")
+          setMessages(previousMessages => GiftedChat.append(...previousMessages, message));
       })
       }, [])
       
     const onSend = useCallback((messages = []) => {
-      console.log(messages);
-      socket.current.emit("message", messages[0].text);
-      setMessages(previousMessages => GiftedChat.append(previousMessages, messages));
+        console.log(messages, "onSend")
+        socket.current.emit("message", messages[0].text);
+        setMessages(previousMessages => GiftedChat.append(previousMessages, messages));
     }, [])
+<<<<<<< HEAD
 <<<<<<< HEAD
 >>>>>>> b62a2012 (use ChatListStyles)
     return (
@@ -121,6 +122,8 @@ const ChatRoomScreen = ({navigation}) => {
     //   socket.current.emit("join", username);
     //   setHasJoined(true);
     // }
+=======
+>>>>>>> 3366c2e7 (little change)
     
     const renderBubble = (props) => {
         return (
@@ -203,7 +206,7 @@ const ChatRoomScreen = ({navigation}) => {
           messages={messages}
           onSend={messages => onSend(messages)}
           user={{
-            _id: 1,
+            _id: 1, //본인
           }}
           renderBubble={renderBubble}
           alwaysShowSend
