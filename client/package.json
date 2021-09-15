@@ -10,65 +10,22 @@
   },
   "proxy": "http://localhost:3001",
   "dependencies": {
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-
-=======
->>>>>>> 7a12147d (login, signup Screen transition)
     "@react-native-community/masked-view": "^0.1.11",
     "@react-native-masked-view/masked-view": "^0.2.6",
     "@react-navigation/bottom-tabs": "^5.11.13",
-=======
-<<<<<<< HEAD
-    "@react-navigation/bottom-tabs": "^6.0.5",
->>>>>>> b62a2012 (use ChatListStyles)
     "@react-navigation/native": "^6.0.2",
     "@react-navigation/stack": "^6.0.7",
-<<<<<<< HEAD
-
-=======
-    "debug": "^4.3.2",
-=======
-=======
->>>>>>> a7009bf8 (chat ui 95% complete)
-    "@react-native-community/masked-view": "^0.1.10",
-=======
-    "@react-native-community/masked-view": "^0.1.11",
-    "@react-native-masked-view/masked-view": "^0.2.6",
->>>>>>> 5387c5b8 (adding redux)
-    "@react-navigation/bottom-tabs": "^5.11.13",
-    "@react-navigation/native": "^6.0.2",
-    "@react-navigation/stack": "^6.0.7",
-<<<<<<< HEAD
->>>>>>> 3c57a5a8 (use ChatListStyles)
-<<<<<<< HEAD
->>>>>>> b62a2012 (use ChatListStyles)
-=======
-=======
->>>>>>> 0c539009 (chat ui 95% complete)
-<<<<<<< HEAD
->>>>>>> a7009bf8 (chat ui 95% complete)
-=======
-=======
-    "@react-navigation/native": "^6.0.2",
-    "@react-navigation/stack": "^6.0.4",
->>>>>>> 292ae0a7 (login, signup Screen transition)
->>>>>>> 7a12147d (login, signup Screen transition)
     "expo": "~41.0.1",
     "expo-location": "^12.1.2",
     "expo-status-bar": "~1.0.4",
     "promise-mysql": "^5.0.3",
-<<<<<<< HEAD
-<<<<<<< HEAD
-
     "react": "^17.0.2",
     "react-dom": "^16.13.1",
     "react-native": "https://github.com/expo/react-native/archive/sdk-39.0.4.tar.gz",
     "react-native-gesture-handler": "~1.10.2",
     "react-native-gifted-chat": "^0.16.3",
     "react-native-kakao-maps": "^0.1.2",
+    "react-native-keyboard-aware-scroll-view": "^0.9.4",
     "react-native-maps": "0.27.1",
     "react-native-nmap": "0.0.66",
     "react-native-reanimated": "~2.1.0",
@@ -80,58 +37,8 @@
     "react-redux": "^7.2.4",
     "redux": "^4.1.1",
     "redux-socket.io": "^1.4.0",
-=======
-=======
->>>>>>> 5387c5b8 (adding redux)
-    "react": "16.13.1",
-    "react-dom": "16.13.1",
-    "react-native": "https://github.com/expo/react-native/archive/sdk-41.0.0.tar.gz",
-<<<<<<< HEAD
-=======
-    "react": "^17.0.2",
-    "react-dom": "^16.13.1",
-    "react-native": "https://github.com/expo/react-native/archive/sdk-39.0.4.tar.gz",
->>>>>>> d45f3edf (adding redux)
-    "react-native-gesture-handler": "~1.10.2",
-    "react-native-gifted-chat": "^0.16.3",
-    "react-native-kakao-maps": "^0.1.2",
-    "react-native-maps": "0.27.1",
-    "react-native-nmap": "0.0.66",
-    "react-native-reanimated": "~2.1.0",
-    "react-native-safe-area-context": "^3.2.0",
-    "react-native-screens": "~3.0.0",
-    "react-native-web": "~0.13.12",
-    "react-native-webview": "11.2.3",
-<<<<<<< HEAD
-<<<<<<< HEAD
->>>>>>> 3c57a5a8 (use ChatListStyles)
-<<<<<<< HEAD
->>>>>>> b62a2012 (use ChatListStyles)
-=======
-=======
->>>>>>> 0c539009 (chat ui 95% complete)
-<<<<<<< HEAD
->>>>>>> a7009bf8 (chat ui 95% complete)
-=======
-=======
-    "react-navigation": "^4.4.4",
-    "react-redux": "^7.2.4",
-    "redux": "^4.1.1",
-    "redux-socket.io": "^1.4.0",
->>>>>>> d45f3edf (adding redux)
->>>>>>> 5387c5b8 (adding redux)
     "socket.io-client": "^4.1.3",
     "styled-components": "^5.3.0"
-<<<<<<< HEAD
-
-=======
-=======
-    "react-native-gesture-handler": "^1.10.3",
-    "react-native-safe-area-context": "^3.2.0",
-    "react-native-screens": "^3.5.0",
-    "react-native-web": "~0.13.12"
->>>>>>> 292ae0a7 (login, signup Screen transition)
->>>>>>> 7a12147d (login, signup Screen transition)
   },
   "devDependencies": {
     "@babel/core": "^7.9.0",
