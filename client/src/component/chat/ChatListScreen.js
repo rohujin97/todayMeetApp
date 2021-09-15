@@ -1,24 +1,5 @@
-<<<<<<< HEAD
-<<<<<<< HEAD
 import React from 'react';
 import { FlatList } from 'react-native';
-=======
-=======
->>>>>>> b62a2012 (use ChatListStyles)
-import React, { Component } from 'react';
-<<<<<<< HEAD
-<<<<<<< HEAD
-import { View, Text, Button, StyleSheet, TextInput, Image, FlatList } from 'react-native';
-import { NavigationContainer } from '@react-navigation/native';
-import { createNativeStackNavigator } from '@react-navigation/stack';
-<<<<<<< HEAD
->>>>>>> 395d211b (db connect with pool and get data from todaymeet schema)
-=======
-=======
-import React from 'react';
-import { FlatList } from 'react-native';
->>>>>>> 3c57a5a8 (use ChatListStyles)
->>>>>>> b62a2012 (use ChatListStyles)
 import 'react-native-gesture-handler';
 import {
     Container,
@@ -31,8 +12,6 @@ import {
     MessageText,
     TextSection,
     UserInfoText,
-<<<<<<< HEAD
-<<<<<<< HEAD
 } from '../styles/ChatListStyles';
 
 const Lists = [
@@ -73,7 +52,6 @@ const Lists = [
     }
 ];
 
-<<<<<<< HEAD
 const ChatListScreen = ({navigation}) => {
     return (
         <Container>
@@ -81,10 +59,10 @@ const ChatListScreen = ({navigation}) => {
                 data={Lists}
                 keyExtractor={item=>item.id}
                 renderItem={({item}) => (
-                    <Card onPress={() => 
-                            navigation.navigate('Chat', {
+                    <Card onPress={() =>
+                        navigation.navigate('Chat', {
                             userName: item.userName
-                            })}>
+                        })}>
                         <UserInfo>
                             <UserImgWrapper>
                                 <UserImg source={item.userImg}/>
@@ -105,235 +83,3 @@ const ChatListScreen = ({navigation}) => {
 }
 
 export default ChatListScreen;
-=======
-export default class ChatListScreen extends Component {
-    // navigationOptions 코드
-    static navigationOptions={
-=======
-import { View, Text, Button, StyleSheet, TextInput, Image } from 'react-native';
-=======
-import { View, Text, Button, StyleSheet, TextInput, Image, FlatList } from 'react-native';
->>>>>>> cec1bc15 (make chatlist ui)
-import { NavigationContainer } from '@react-navigation/native';
-import { createNativeStackNavigator } from '@react-navigation/stack';
-import 'react-native-gesture-handler';
-import ChatRoomScreen from './ChatRoomScreen';
-=======
-} from '../styles/ChatRoomStyles';
->>>>>>> d09848b7 (use ChatListStyles)
-=======
-} from '../styles/ChatListStyles';
->>>>>>> 3c57a5a8 (use ChatListStyles)
-
-const Lists = [
-    {
-        id: '1',
-        userName: '노유진',
-        userImg: require('../../assets/zing.jpg'),
-        messageTime: '4 mins ago',
-        messageText: 'Hey there, this is my test for a post of my social app in React Native'
-    },
-    {
-        id: '2',
-        userName: '김지후',
-        userImg: require('../../assets/bob.jpg'),
-        messageTime: '2 hourss ago',
-        messageText: 'Hey there, this is my test for a post of my social app in React Native'
-    },
-    {
-        id: '3',
-        userName: '김민정',
-        userImg: require('../../assets/chicken.jpg'),
-        messageTime: '8 mins ago',
-        messageText: 'Hey there, this is my test for a post of my social app in React Native'
-    },
-    {
-        id: '4',
-        userName: '강나임',
-        userImg: require('../../assets/person.jpg'),
-        messageTime: '3 hours ago',
-        messageText: 'Hey there, this is my test for a post of my social app in React Native'
-    },
-    {
-        id: '5',
-        userName: '윤건희',
-        userImg: require('../../assets/bear.jpg'),
-        messageTime: '4 days ago',
-        messageText: 'Hey there, this is my test for a post of my social app in React Native'
-    }
-];
-
-<<<<<<< HEAD
-export default class ChatListScreen extends Component {
-    // navigationOptions 코드
-<<<<<<< HEAD
-    static navigationOptions ={
->>>>>>> 9cbf13ff (db connect with pool and get data from todaymeet schema)
-=======
-    static navigationOptions={
->>>>>>> 11d516c4 (still move page from chatlist to chatroom)
-        title: 'TodayMeet'
-    }
-    
-    render(){
-        return (
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-            <Container>
-                <FlatList
-                    data={Lists}
-                    keyExtractor={item=>item.id}
-                    renderItem={({item}) => (
-                        <Card onPress={() => this.props.navigation.navigate('Chat', {userName: item.userName})}>
-                            <UserInfo>
-                                <UserImgWrapper>
-                                    <UserImg source={item.userImg}/>
-                                </UserImgWrapper>
-                                <TextSection>
-                                    <UserInfoText>
-                                        <UserName>{item.userName}</UserName>
-                                        <PostTime>{item.messageTime}</PostTime>
-                                    </UserInfoText>
-                                    <MessageText>{item.messageText}</MessageText>
-                                </TextSection>
-                            </UserInfo>
-                        </Card>
-                    )}
-                />
-            </Container>
-        );
-    };
-};
-
-
-const style = StyleSheet.create({
-    container: {
-        flex: 1,
-        alignItems: 'center',
-        justifyContent: 'center',
-    }
-});
-=======
-            <View>
-                <Text>ChatListScreen</Text>
-=======
-            <View style={style.container}>
-=======
-            <Container>
->>>>>>> d09848b7 (use ChatListStyles)
-                <FlatList
-                    data={Lists}
-                    keyExtractor={item=>item.id}
-                    renderItem={({item}) => (
-                        <Card onPress={() => this.props.navigation.navigate('Chat', {userName: item.userName})}>
-                            <UserInfo>
-                                <UserImgWrapper>
-                                    <UserImg source={item.userImg}/>
-                                </UserImgWrapper>
-                                <TextSection>
-                                    <UserInfoText>
-                                        <UserName>{item.userName}</UserName>
-                                        <PostTime>{item.messageTime}</PostTime>
-                                    </UserInfoText>
-                                    <MessageText>{item.messageText}</MessageText>
-                                </TextSection>
-                            </UserInfo>
-                        </Card>
-                    )}
-                />
-<<<<<<< HEAD
->>>>>>> 11d516c4 (still move page from chatlist to chatroom)
-            </View>
-=======
-            </Container>
->>>>>>> d09848b7 (use ChatListStyles)
-        );
-    };
-};
-
-<<<<<<< HEAD
-<<<<<<< HEAD
-export default ChatListScreen;
->>>>>>> 9cbf13ff (db connect with pool and get data from todaymeet schema)
-<<<<<<< HEAD
->>>>>>> 395d211b (db connect with pool and get data from todaymeet schema)
-=======
-=======
-=======
-
->>>>>>> d09848b7 (use ChatListStyles)
-const style = StyleSheet.create({
-    container: {
-        flex: 1,
-        alignItems: 'center',
-        justifyContent: 'center',
-    }
-<<<<<<< HEAD
-});
-
-export default ChatListScreen;
->>>>>>> 11d516c4 (still move page from chatlist to chatroom)
-<<<<<<< HEAD
->>>>>>> 8c273178 (still move page from chatlist to chatroom)
-=======
-=======
-});
->>>>>>> cec1bc15 (make chatlist ui)
-<<<<<<< HEAD
->>>>>>> 2bb49246 (make chatlist ui)
-=======
-=======
-const ChatListScreen = ({navigation}) => {
-    return (
-        <Container>
-            <FlatList
-                data={Lists}
-                keyExtractor={item=>item.id}
-                renderItem={({item}) => (
-                    <Card onPress={() => 
-                            navigation.navigate('Chat', {
-                            userName: item.userName
-                            })}>
-                        <UserInfo>
-                            <UserImgWrapper>
-                                <UserImg source={item.userImg}/>
-                            </UserImgWrapper>
-                            <TextSection>
-                                <UserInfoText>
-                                    <UserName>{item.userName}</UserName>
-                                    <PostTime>{item.messageTime}</PostTime>
-                                </UserInfoText>
-                                <MessageText>{item.messageText}</MessageText>
-                            </TextSection>
-                        </UserInfo>
-                    </Card>
-                )}
-            />
-        </Container>
-    );
-}
-
-<<<<<<< HEAD
-<<<<<<< HEAD
-export default ChatListScreen;
-<<<<<<< HEAD
->>>>>>> 3c57a5a8 (use ChatListStyles)
-<<<<<<< HEAD
->>>>>>> b62a2012 (use ChatListStyles)
-=======
-=======
-=======
->>>>>>> e0341b59 (use ChatListStyles)
-=======
-export default ChatListScreen;
-<<<<<<< HEAD
->>>>>>> 2ac61688 (use ChatListStyles)
-
->>>>>>> 47d06d2f (use ChatListStyles)
-<<<<<<< HEAD
->>>>>>> 23006285 (use ChatListStyles)
-=======
-=======
->>>>>>> ab9d1c60 (take data from db)
->>>>>>> ad7b7fe7 (take data from db)
