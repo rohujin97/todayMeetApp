@@ -1,6 +1,6 @@
-import { Sequelize } from 'sequelize';
+const Sequelize = require('sequelize');
 
-import sequelize from '../config/database.js';
+const sequelize = require('../config/database.js');
 
 const Friends = sequelize.define('friends', {
    friends_id:{
@@ -28,4 +28,4 @@ const Friends = sequelize.define('friends', {
    },
 });
 
-export default Friends;
+module.exports = Friends;

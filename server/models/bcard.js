@@ -1,6 +1,6 @@
-import { Sequelize } from 'sequelize';
+const Sequelize = require('sequelize');
 
-import sequelize from '../config/database.js';
+const sequelize = require('../config/database.js');
 
 const Bcard = sequelize.define('bcard', {
    bcard_id:{
@@ -37,4 +37,4 @@ const Bcard = sequelize.define('bcard', {
    
 });
 
-export default Bcard;
+module.exports = Bcard;

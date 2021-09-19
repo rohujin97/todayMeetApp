@@ -1,6 +1,7 @@
-import { Sequelize } from 'sequelize';
+// import { Sequelize } from 'sequelize';
+const Sequelize = require('sequelize');
 
-import sequelize from '../config/database.js';
+const sequelize = require('../config/database.js');
 
 const User = sequelize.define('user', {
    user_id:{
@@ -8,11 +9,6 @@ const User = sequelize.define('user', {
       autoIncrement: true,
       allowNull: false,
       primaryKey: true,
-   },
-   user_name: {
-      type: Sequelize.STRING(45),
-      allowNull: false,
-      primaryKey: false,
    },
    user_email: {
       type: Sequelize.STRING(45),
@@ -32,9 +28,15 @@ const User = sequelize.define('user', {
       allowNull: true,
    },
    location_id: {
-    type: Sequelize.INTEGER,
-    allowNull: true,
+      type: Sequelize.INTEGER,
+      allowNull: true,
+   },
+   user_name: {
+      type: Sequelize.STRING(50),
+      allowNull: false,
+      primaryKey: false,
    },
 });
 
-export default User;
+module.exports = User;
+// export default User;

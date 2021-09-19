@@ -4,9 +4,9 @@ const pool = require('../middleware/pool')
 const CustomError = require('../util/customError')
 const config = require('../config/database')
 
-import bcrypt from 'bcryptjs';
-import jwt from 'jsonwebtoken';
-import User from '../models/user.js'
+const bcrypt = require('bcryptjs');
+const jwt = require('jsonwebtoken');
+// const User = require('../models/user.js');
 
 const controller = {
     async ping(req, res, next) {
