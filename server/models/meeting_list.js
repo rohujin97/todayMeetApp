@@ -1,6 +1,8 @@
-import { Sequelize } from 'sequelize';
+//import { Sequelize } from 'sequelize';
+const Sequelize=require("sequelize")
 
-import sequelize from '../config/database.js';
+const sequelize = require('../config/database.js');
+//import sequelize from '../config/database.js';
 
 const MeetingList = sequelize.define('meeting_list', {
    meeting_id:{
