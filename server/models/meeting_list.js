@@ -4,7 +4,7 @@ const Sequelize=require("sequelize")
 const sequelize = require('../config/database.js');
 //import sequelize from '../config/database.js';
 
-const MeetingList = sequelize.define('meeting_list', {
+const MeetingList = sequelize.define('meeting_lists', {
    meeting_id:{
       type: Sequelize.INTEGER,
       autoIncrement: true,

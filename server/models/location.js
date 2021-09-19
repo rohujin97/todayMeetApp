@@ -4,7 +4,7 @@ const Sequelize=require("sequelize")
 const sequelize = require('../config/database.js');
 //import sequelize from '../config/database.js';
 
-const Location = sequelize.define('location', {
+const Location = sequelize.define('locations', {
    content:{
     type: Sequelize.STRING(200),
     autoIncrement: false,

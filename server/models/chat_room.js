@@ -4,7 +4,7 @@ const Sequelize=require("sequelize")
 const sequelize = require('../config/database.js');
 //import sequelize from '../config/database.js';
 
-const ChatRoom = sequelize.define('chat_room', {
+const ChatRoom = sequelize.define('chat_rooms', {
    title:{
     type: Sequelize.STRING(50),
     autoIncrement: false,
