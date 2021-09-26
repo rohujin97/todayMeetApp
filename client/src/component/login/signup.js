@@ -1,13 +1,78 @@
-import React, { Component } from 'react'; 
-import { View, Text,TextInput,StyleSheet,Button,Alert,Image,KeyboardAvoidingView,ScrollView } from 'react-native'; 
+import React, { Component,useState } from 'react'; 
+import { View, Text,TextInput,StyleSheet,Button,Alert,Image,KeyboardAvoidingView,Platform,ScrollView } from 'react-native'; 
 let imagePath = require('./logo.jpeg');
+import {useDispatch,} from 'react-redux';
+const API_URL = Platform.OS === 'ios' ? 'http://localhost:5000' : 'http://10.0.2.2:5000';
 
-export default class SignUpScreen extends Component { 
-    _scrollToInput = (reactNode) => {
-        this.scroll.props.scrollToFocusedInput(reactNode)
-      }
-    render() { 
+const SignUpScreen=({navigation}) => {
+    
+      const [email, setEmail] = useState('');
+      const [name, setName] = useState('');
+      const [password, setPassword] = useState('');
+      const [phone, setPhone] = useState('');
+
+      const [isError, setIsError] = useState(false);
+      const [message, setMessage] = useState('');
+
+      const onLoggedIn = token => {
+        fetch(`${API_URL}/private`, {
+            method: 'GET',
+            headers: {
+                'Content-Type': 'application/json',
+                'Authorization': `Bearer ${token}`, 
+            },
+        })
+        .then(async res => { 
+            try {
+                const jsonRes = await res.json();
+                if (res.status === 200) {
+                    setMessage(jsonRes.message);
+                }
+            } catch (err) {
+                console.log(err);
+            };
+        })
+        .catch(err => {
+            console.log(err);
+        });
+    };
+
+      const onSignUpHandler = () => {
+        const payload = {
+            email,
+            name,
+            phone,
+            password,
+        };
+        fetch(`${API_URL}/${'signup'}`, {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json',
+            },
+            body: JSON.stringify(payload),
+        })
+        .then(async res => { 
+            try {
+                const jsonRes = await res.json();
+                if (res.status !== 200) {
+                    setIsError(true);
+                    setMessage(jsonRes.message);
+                } else {
+                    onLoggedIn(jsonRes.token);
+                    setIsError(false);
+                    setMessage(jsonRes.message);
+                }
+            } catch (err) {
+                console.log(err);
+            };
+        })
+        .catch(err => {
+            console.log(err);
+        });
+      };
+
         return ( 
+          
         <KeyboardAvoidingView style={styles.container} behavior="padding" enabled>
         <ScrollView>
         <View style={{backgroundColor:'white'}}> 
@@ -17,30 +82,36 @@ export default class SignUpScreen extends Component {
                 />
             <Text style={{fontSize:22 ,textAlign:'center', margin:10,marginBottom:20}}>Sign Up</Text>
             
-            <TextInput style={{width:263,height:46,borderWidth:1, marginBottom:10, borderColor:"#FFF065",color:"black", alignSelf:'center',padding:10}}placeholder="이름"></TextInput>
-            <TextInput style={{width:263,height:46,borderWidth:1, marginBottom:10, borderColor:"#FFF065",color:"black", alignSelf:'center',padding:10}}placeholder="메일주소"></TextInput>
-            <TextInput style={{width:263,height:46,borderWidth:1, marginBottom:10, borderColor:"#FFF065",color:"black", alignSelf:'center',padding:10}}placeholder="비밀번호"></TextInput>
-            <TextInput style={{width:263,height:46,borderWidth:1, marginBottom:10, borderColor:"#FFF065",color:"black", alignSelf:'center',padding:10}}placeholder="비밀번호 확인"></TextInput>
-            <TextInput style={{width:263,height:46,borderWidth:1, marginBottom:15, borderColor:"#FFF065",color:"black", alignSelf:'center',padding:10}}placeholder="휴대폰"></TextInput>
-            
+            <TextInput style={{width:263,height:46,borderWidth:1, marginBottom:10, borderColor:"#FFF065",color:"black", alignSelf:'center',padding:10}}
+            placeholder="이름" onChangeText={setName}></TextInput>
+            <TextInput style={{width:263,height:46,borderWidth:1, marginBottom:10, borderColor:"#FFF065",color:"black", alignSelf:'center',padding:10}}
+            placeholder="메일주소" onChangeText={setEmail}></TextInput>
+            <TextInput style={{width:263,height:46,borderWidth:1, marginBottom:10, borderColor:"#FFF065",color:"black", alignSelf:'center',padding:10}}
+            placeholder="비밀번호" secureTextEntry={true} onChangeText={setPassword}></TextInput>
+            <TextInput style={{width:263,height:46,borderWidth:1, marginBottom:10, borderColor:"#FFF065",color:"black", alignSelf:'center',padding:10}}
+            placeholder="비밀번호 확인"></TextInput>
+            <TextInput style={{width:263,height:46,borderWidth:1, marginBottom:15, borderColor:"#FFF065",color:"black", alignSelf:'center',padding:10}}
+            placeholder="휴대폰" onChangeText={setPhone}></TextInput>
+            <Text style={[styles.message, {color: isError ? 'red' : 'green'}]}>{message ? getMessage() : null}</Text>
             <Text style={{textAlign:'center', margin:10}}>
                 1/2
             </Text>
             <Button
                 title="다음"
                 color="#54D2AC"
-                onPress={() => this.goNextSignUpScreen()} 
+                onPress={() => {
+                  navigation.navigate("SIGNUP2");
+                }}
             />
             
         </View> 
         </ScrollView>
         </KeyboardAvoidingView>
+        
         );
     } 
-    goNextSignUpScreen(){ // DetailScreen으로 화면 이동 
-        this.props.navigation.navigate('SIGNUP2'); 
-    }
-}
+  
+
 const styles = StyleSheet.create({
     container: {
       flex: 1,
@@ -66,3 +137,5 @@ const styles = StyleSheet.create({
     },
     
   });
+
+export default SignUpScreen;

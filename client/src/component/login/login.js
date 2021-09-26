@@ -1,7 +1,9 @@
 import React, { Component,useState } from 'react'; 
-import { View, Text, Button,StyleSheet,TextInput,Alert,Image,KeyboardAvoidingView } from 'react-native'; 
+import { View, Text, Button,StyleSheet,TextInput,Alert,Image,KeyboardAvoidingView ,Platform,TouchableOpacity} from 'react-native'; 
 import {useDispatch,} from 'react-redux';
 let imagePath = require('./logo.jpeg');
+
+const API_URL = Platform.OS === 'ios' ? 'http://localhost:5000' : 'http://10.0.2.2:5000';
 
 const Separator = () => (
     <View style={styles.separator} />
@@ -10,6 +12,7 @@ const Separator = () => (
   const LoginScreen=({navigation}) => {
     const dispatch=useDispatch();
     const [useremail, setUseremail] = useState("");
+    const [password, setPassword] = useState('');
     
     return ( 
       
