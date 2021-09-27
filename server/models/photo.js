@@ -1,8 +1,8 @@
-import { Sequelize } from 'sequelize';
+const Sequelize = require('sequelize');
 
-import sequelize from '../config/database.js';
+const sequelize = require('../config/database.js');
 
-const Photo = sequelize.define('photo', {
+const Photo = sequelize.define('photos', {
    url:{
     type: Sequelize.STRING(300),
     autoIncrement: false,
@@ -15,4 +15,4 @@ const Photo = sequelize.define('photo', {
  },
 });
 
-export default Photo;
+module.exports = Photo;

@@ -5,6 +5,8 @@ const jwt = require('jsonwebtoken');
 const User = require('../models/user.js');
 const Bcard = require('../models/bcard.js');
 const Friends = require('../models/friends.js');
+const Photo = require('../models/photo');
+const {Sequelize} = require("sequelize");
 // const Country = require('../models/ssafy_db.js');
 
 let currentUserId = 0;
@@ -18,16 +20,9 @@ function createUserAvatarUrl() {
 module.exports = (io) => {
 
     io.on('connection', socket =>  {
-        console.log('today connected')
+        console.log('a user connected')
         console.log(socket.id);
         users[socket.id] = { userId: currentUserId++ };
-        socket.on("join", username => { // 회원가입할때 바로 디비에 저장할 예정 여기에선 안해도 됨
-            // DB에 user 정보 저장
-            users[socket.id].userName = username;
-            users[socket.id].userEmail =
-                users[socket.id].userAvatar = createUserAvatarUrl();
-            })
-        messageHandler.handleMessage(socket, users);
         socket.on("action", action => {
             switch(action.type){
                 case "server/hello":
@@ -37,37 +32,48 @@ module.exports = (io) => {
                 case "server/join": //로그인할때
                 async function join() {
                     try {
-                        Friends.findAll().then(us => console.log(us))
+                        console.log("Got join event", action.data); //action.data는 이메일
                         // User.findOne({ where : {
                         //     user_email: action.data,
                         // }}).then(dbUser => {
-                        //     console.log(dbUser)
+                        //     users[socket.id].userName = dbUser.user_name;
+                        //     users[socket.id].userEmail = dbUser.user_email;
+                        //     users[socket.id].avatar = createUserAvatarUrl();
+                        //     const values = Object.values(users);
+                        //     console.log(users)
+                        //     console.log(values)
                         // })
-                        // console.log("Got join event", action.data); // action.data는 이메일
-                        // const query = `SELECT * FROM user WHERE user_email = "${action.data}"`
-                        // const result = await pool.queryParam(query);
-                        // console.log(result[0][0]);
-                        // users[socket.id].userId = result[0][0].user_id;
-                        // users[socket.id].name = result[0][0].user_name;
-                        // users[socket.id].email = action.data;
-                        // users[socket.id].avatar = createUserAvatarUrl();
-                        // const values = Object.values(users);
-                        // console.log(socket.id)
-                        // console.log(users)
-                        // const onlyWithUsernames = values.filter(u => u.userEmail !== undefined);
-                        // socket.emit("action", {
-                        //     type: "users_online",
-                        //     data: onlyWithUsernames
-                        // });
+                        User.findAll()
+                            .then(dbUser => {
+                                for (let i = 0; i < dbUser.length; i++){
+                                    users[dbUser[i].user_id] = {
+                                        userName : dbUser[i].user_name,
+                                        userEmail : dbUser[i].user_email,
+                                        avatar : null
+                                    }
+                                }
+                            })
+                        Photo.findAll()
+                            .then(dbPhoto => {
+                                for (let i = 0; i < dbPhoto.length; i++){
+                                    users[dbPhoto[i].id].avatar = createUserAvatarUrl();
+                                }
+                                console.log(users)
+                                const values = Object.values(users);
+                                console.log(values, "Photo findAll values")
+                                const onlyWithUsernames = values.filter(u => u.userEmail !== undefined);
+                                socket.emit("action", {
+                                    type: "users_friends",
+                                    data: onlyWithUsernames
+                                });
+                            })
                     } catch (e) {
                         throw e;
                     }
                 }
                     join()
             }
-        socket.on("message", action => {
-
         })
-        })
+        messageHandler.handleMessage(socket, users);
     })
 }

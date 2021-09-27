@@ -4,15 +4,13 @@ import { Bubble, GiftedChat, Send } from 'react-native-gifted-chat'
 import MaterialCommunityIcons from 'react-native-vector-icons/MaterialCommunityIcons'
 import FontAwesome from 'react-native-vector-icons/FontAwesome'
 import { io } from 'socket.io-client'
-import JoinScreen from './JoinScreen'
 
 const ChatRoomScreen = ({navigation}) => {
     const [messages, setMessages] = useState([]);
-    const [hasJoined, setHasJoined] = useState(false);
     const socket = useRef(null);
 
     useEffect(() => {
-      socket.current = io("http://172.30.1.60:3001")
+      socket.current = io("http://172.30.1.36:3001")
       socket.current.on("message", message => {
         setMessages(previousMessages => GiftedChat.append(...previousMessages, message));
       })
