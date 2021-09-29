@@ -3,8 +3,8 @@
   "expoServerPort": 19000,
   "packagerPort": 19000,
   "packagerPid": null,
-  "expoServerNgrokUrl": "https://e3-3ny.anonymous.client.exp.direct",
-  "packagerNgrokUrl": "https://packager.e3-3ny.anonymous.client.exp.direct",
-  "ngrokPid": 4861,
-  "webpackServerPort": 19006
+  "expoServerNgrokUrl": null,
+  "packagerNgrokUrl": null,
+  "ngrokPid": null,
+  "webpackServerPort": null
 }
