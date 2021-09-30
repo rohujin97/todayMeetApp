@@ -1,5 +1,3 @@
-// const createError = require('http-errors');
-// import sequelize from './config/database/js'
 const sequelize = require('./config/database.js')
 const express = require('express');
 const path = require('path');
@@ -53,7 +51,8 @@ server.listen(process.env.PORT || config.port, async () => {
 })
 
 // sequelize mysql connect
-sequelize.sync().then(() => {
+sequelize.sync({ force: false }) // 서버 실행할때 마다 테이블 재생성 막음
+  .then(() => {
     console.log("db connected!!!!")
 }).catch(e =>{
     console.log("db not connected....")

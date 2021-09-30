@@ -55,13 +55,13 @@ import {
 
 
 const ChatListScreen = ({navigation}) => {
-    const userFriends = useSelector(state => state.userFriends);
-    console.log(userFriends[0].avatar);
+    const usersOnline = useSelector(state => state.usersOnline);
+    // console.log(usersOnline[0].avatar);
 
     return (
         <Container>
             <FlatList
-                data={userFriends}
+                data={usersOnline}
                 keyExtractor={item=>item.id}
                 renderItem={({item}) => (
                     <Card onPress={() => 
@@ -71,7 +71,9 @@ const ChatListScreen = ({navigation}) => {
                         <UserInfo>
                             <UserImgWrapper>
                                 {/*<UserImg source={require('../../assets/bob.jpg')}/>*/}
-                                <UserImg source={{ url: item.avatar }}/>
+                                <UserImg
+                                  source={{uri: item.avatar}}
+                                  style={{width: 50, height: 50}}/>
                             </UserImgWrapper>
                             <TextSection>
                                 <UserInfoText>
