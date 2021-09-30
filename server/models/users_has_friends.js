@@ -4,18 +4,19 @@ const Sequelize=require("sequelize")
 const sequelize = require('../config/database.js');
 //import sequelize from '../config/database.js';
 
-const MeetingList = sequelize.define('meeting_lists', {
-   meeting_id:{
+const UsersHasFriends = sequelize.define('users_has_friends', {
+   users_user_id:{
       type: Sequelize.INTEGER,
-      autoIncrement: true,
+      autoIncrement: false,
       allowNull: false,
       primaryKey: true,
    },
-   friends_id:{
+   friends_friends_id:{
     type: Sequelize.INTEGER,
     autoIncrement: false,
     allowNull: false,
+    primaryKey: true,
  },
 });
 
-module.exports = MeetingList;
+module.exports = UsersHasFriends;

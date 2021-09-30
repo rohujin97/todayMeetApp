@@ -32,4 +32,4 @@ const Meeting = sequelize.define('meetings', {
  },
 });
 
-export default Meeting;
+module.exports = Meeting;

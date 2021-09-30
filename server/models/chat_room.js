@@ -22,4 +22,4 @@ const ChatRoom = sequelize.define('chat_rooms', {
    },
 });
 
-export default ChatRoom;
+module.exports = ChatRoom;

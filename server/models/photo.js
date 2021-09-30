@@ -17,4 +17,4 @@ const Photo = sequelize.define('photos', {
  },
 });
 
-export default Photo;
+module.exports = Photo;

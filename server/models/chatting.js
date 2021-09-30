@@ -43,4 +43,4 @@ const Chatting = sequelize.define('chattings', {
    },
 });
 
-export default Chatting;
+module.exports = Chatting;

@@ -27,4 +27,4 @@ const ChatMember = sequelize.define('chat_members', {
    },
 });
 
-export default ChatMember;
+module.exports = ChatMember;

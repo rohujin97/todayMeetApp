@@ -27,4 +27,4 @@ const ChatMsg = sequelize.define('chat_msgs', {
    },
 });
 
-export default ChatMsg;
+module.exports = ChatMsg;

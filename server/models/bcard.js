@@ -39,4 +39,4 @@ const Bcard = sequelize.define('bcards', {
    
 });
 
-export default Bcard;
+module.exports = Bcard;

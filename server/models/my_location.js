@@ -26,4 +26,4 @@ const MyLocation = sequelize.define('my_locations', {
  },
 });
 
-export default MyLocation;
+module.exports = MyLocation;
