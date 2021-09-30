@@ -30,12 +30,7 @@ const Separator = () => (
             style={{width:263,height:46,borderWidth:1, marginBottom:10, borderColor:"#FFF065",color:"black", alignSelf:'center',textAlign:'center'}}placeholder="E-mail address"></TextInput>
           <TextInput style={{width:263,height:46,borderWidth:1, marginBottom:15, borderColor:"#FFF065",color:"black", alignSelf:'center',textAlign:'center'}}placeholder="Password"></TextInput>
           
-          <Text
-              title="email save"
-              style={{marginLeft:100, marginBottom:10}}
-              onPress={() => Alert.alert('test!!!!')}>이메일 저장</Text>
           <Button
-              
               title="로그인"
               color="#54D2AC"
               

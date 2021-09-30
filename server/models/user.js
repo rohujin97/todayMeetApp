@@ -29,14 +29,7 @@ const User = sequelize.define('users', {
       type: Sequelize.STRING(45),
       allowNull: false,
    },
-   bcard_id: {
-      type: Sequelize.INTEGER,
-      allowNull: true,
-   },
-   location_id: {
-    type: Sequelize.INTEGER,
-    allowNull: true,
-   },
+   
 });
 
 export default User;
