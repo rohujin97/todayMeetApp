@@ -21,4 +21,4 @@ const Friends = sequelize.define('friends', {
    },
 });
 
-export default Friends;
+module.exports = Friends;
