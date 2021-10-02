@@ -1,31 +1,55 @@
 
 import React from 'react';
-import { StyleSheet, View, Text, ScrollView, Dimensions } from 'react-native';
+import { StyleSheet, View, Text, ScrollView, Dimensions, StatusBar } from 'react-native';
 import MainScreen from './src/component/MainScreen';
 import { NavigationContainer } from '@react-navigation/native';
 import { createStackNavigator } from '@react-navigation/stack';
 import * as Location from 'expo-location';
 import Icon from 'react-native-vector-icons/Ionicons';
-import UserList from './src/component/UserList/UserList'
-
 const deviceWidth = Dimensions.get('window').width;
+import { createStore, applyMiddleware } from 'redux';
+import createSocketIoMiddleware from 'redux-socket.io';
+import io from 'socket.io-client';
+import { Provider } from 'react-redux';
+const socket = io("http://172.30.1.21:3001")
+const socketIoMiddleware = createSocketIoMiddleware(socket, "server/");
+
+function reducer(state = {}, action) {
+  switch(action.type) {
+    case 'message':
+      return {...state, message: action.data };
+      default:
+        return state;
+  }
+}
+
+const store = applyMiddleware(socketIoMiddleware)(createStore)(reducer);
+
+store.subscribe(() => {
+  console.log("new state", store.getState());
+})
+store.dispatch({type: "server/hello", data: "Hello!"})
+
 const Title = () => {
   return (
     <View style={styles.title}>
+      <StatusBar barStyle="dark-content" />
       <Text style={styles.text}>TodayMeet</Text>
-      <Icon name="location-outline" size={30} style={{ paddingLeft: deviceWidth - 190 }}></Icon>
+      <Icon name='location-outline' size={30} style={{ paddingLeft: deviceWidth - 190 }}></Icon>
     </View>
   );
 };
+
 export default function App() {
   return (
-    <NavigationContainer>
+    <Provider store={store}>
+    <NavigationContainer independent={true}>
       <Title />
       <MainScreen />
     </NavigationContainer>
+    </Provider>
   );
 }
-
 const styles = StyleSheet.create({
   container: {
     flex: 1,
