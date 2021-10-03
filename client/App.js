@@ -11,17 +11,43 @@ import { createStore, applyMiddleware } from 'redux';
 import createSocketIoMiddleware from 'redux-socket.io';
 import io from 'socket.io-client';
 import { Provider } from 'react-redux';
-const socket = io("http://172.30.1.36:3001")
+const socket = io("http://172.30.1.56:3001")
 const socketIoMiddleware = createSocketIoMiddleware(socket, "server/");
 
-function reducer(state = {}, action) {
+function reducer(state = { conversations: {}}, action) {
   switch(action.type) {
-    case 'message':
-      return {...state, message: action.data };
     case 'users_online':
-      return {...state, usersOnline: action.data };
-      default:
-        return state;
+      const conversations = {...state.conversations};
+      const usersOnline = action.data;
+      for(let i = 0; i < usersOnline.length; i++){
+        const userId = usersOnline[i].userId
+        if (conversations[userId] === undefined){
+          conversations[userId] = {
+            messages: [],
+            userName: usersOnline[i].userName
+          }
+        }
+      }
+      return {...state, usersOnline, conversations };
+    case 'private_message' :
+      const conversationId = action.data.conversationId;
+      return {
+        ...state,
+        conversations : {
+          ...state.conversations,
+          [conversationId] : {
+            ...state.conversations[conversationId],
+            messages : [
+              action.data.message,
+              ...state.conversations[conversationId].messages,
+            ]
+          }
+        }
+      };
+    case 'self_user' :
+      return {...state, selfUser: action.data };
+    default:
+      return state;
   }
 }
 // 미들웨어 파싱 -> 스토어 생성 -> 리듀서 
@@ -30,7 +56,6 @@ const store = applyMiddleware(socketIoMiddleware)(createStore)(reducer);
 store.subscribe(() => {
   console.log("new state", store.getState());
 })
-store.dispatch({type: "server/hello", data: "Hello!"})
 
 const Title = () => {
   return (

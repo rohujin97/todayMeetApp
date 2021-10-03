@@ -1,27 +1,19 @@
 import React, { useState, useCallback, useEffect, useRef } from 'react'
+import { useDispatch, useSelector } from "react-redux";
 import { View } from 'react-native'
 import { Bubble, GiftedChat, Send } from 'react-native-gifted-chat'
 import MaterialCommunityIcons from 'react-native-vector-icons/MaterialCommunityIcons'
 import FontAwesome from 'react-native-vector-icons/FontAwesome'
 import { io } from 'socket.io-client'
 
-const ChatRoomScreen = ({navigation}) => {
-    const [messages, setMessages] = useState([]);
-    const socket = useRef(null);
+const ChatRoomScreen = ({ navigation, route }) => {
 
-    useEffect(() => {
-      socket.current = io("http://172.30.1.36:3001")
-      socket.current.on("message", message => {
-        setMessages(previousMessages => GiftedChat.append(...previousMessages, message));
-      })
-      }, [])
-      
-    const onSend = useCallback((messages = []) => {
-      console.log(messages);
-      socket.current.emit("message", messages[0].text);
-      setMessages(previousMessages => GiftedChat.append(previousMessages, messages));
-    }, [])
-    
+  const dispatch = useDispatch();
+  const selfUser = useSelector(state => state.selfUser);
+  const conversations = useSelector(state => state.conversations);
+  const userId = route.params.userId; //채팅방 주인 id
+  const messages = conversations[userId].messages;
+
     const renderBubble = (props) => {
         return (
         <Bubble 
@@ -65,9 +57,19 @@ const ChatRoomScreen = ({navigation}) => {
           <GiftedChat
             renderUsernameOnMessage
             messages={messages}
-            onSend={messages => onSend(messages)}
+            onSend={messages => {
+              dispatch({
+                type: "private_message",
+                data: {message: messages[0], conversationId: userId}
+              });
+              dispatch({
+                type: "server/private_message",
+                data: {message: messages[0], conversationId: userId}
+              })
+              }
+            }
             user={{
-              _id: 1,
+              _id: selfUser.userId,
             }}
             renderBubble={renderBubble}
             alwaysShowSend
