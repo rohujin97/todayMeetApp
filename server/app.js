@@ -1,5 +1,5 @@
 // const createError = require('http-errors');
-import sequelize from './config/database/js'
+const sequelize =require('./config/database.js')
 const express = require('express');
 const path = require('path');
 const cookieParser = require('cookie-parser');

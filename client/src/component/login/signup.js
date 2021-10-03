@@ -100,7 +100,8 @@ const SignUpScreen=({navigation}) => {
                 title="다음"
                 color="#54D2AC"
                 onPress={() => {
-                  navigation.navigate("SIGNUP2");
+                    onSignUpHandler
+                  //navigation.navigate("SIGNUP2");
                 }}
             />
             
