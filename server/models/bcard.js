@@ -36,7 +36,16 @@ const Bcard = sequelize.define('bcards', {
     autoIncrement: false,
     allowNull: true,
    },
-   
+   bcard_color:{
+      type: Sequelize.STRING(10),
+      autoIncrement: false,
+      allowNull: true,
+     },
+   bcard_fontcolor:{
+    type: Sequelize.STRING(10),
+    autoIncrement: false,
+    allowNull: true,
+   },
 });
 
 module.exports = Bcard;

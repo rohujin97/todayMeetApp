@@ -82,16 +82,16 @@ const SignUp2Screen=({navigation}) => {
                 />
             <Text style={{fontSize:22 ,textAlign:'center', margin:10,marginBottom:20}}>Sign Up</Text>
             
-            <TextInput style={{width:263,height:46,borderWidth:1, marginBottom:10, borderColor:"#FFF065",color:"black", alignSelf:'center',padding:10}}
-            placeholder="회사이름" onChangeText={setCompany}></TextInput>
-            <TextInput style={{width:263,height:46,borderWidth:1, marginBottom:10, borderColor:"#FFF065",color:"black", alignSelf:'center',padding:10}}
-            placeholder="부서" onChangeText={setDepartment}></TextInput>
-            <TextInput style={{width:263,height:46,borderWidth:1, marginBottom:10, borderColor:"#FFF065",color:"black", alignSelf:'center',padding:10}}
-            placeholder="직업/직급" onChangeText={setLevel}></TextInput>
-            <TextInput style={{width:263,height:46,borderWidth:1, marginBottom:10, borderColor:"#FFF065",color:"black", alignSelf:'center',padding:10}}
-            placeholder="회사번호" onChangeText={setTelnum}></TextInput>
-            <TextInput style={{width:263,height:46,borderWidth:1, marginBottom:15, borderColor:"#FFF065",color:"black", alignSelf:'center',padding:10}}
-            placeholder="팩스번호" onChangeText={setFax}></TextInput>
+            <TextInput style={{width:263,height:46,borderWidth:1,borderRadius: 50, marginBottom:10, borderColor:"#FFF065",color:"black", alignSelf:'center',padding:10}}
+            placeholder="회사이름" placeholderTextColor="#000000" onChangeText={setCompany}></TextInput>
+            <TextInput style={{width:263,height:46,borderWidth:1,borderRadius: 50, marginBottom:10, borderColor:"#FFF065",color:"black", alignSelf:'center',padding:10}}
+            placeholder="부서" placeholderTextColor="#000000" onChangeText={setDepartment}></TextInput>
+            <TextInput style={{width:263,height:46,borderWidth:1,borderRadius: 50, marginBottom:10, borderColor:"#FFF065",color:"black", alignSelf:'center',padding:10}}
+            placeholder="직업/직급"placeholderTextColor="#000000" onChangeText={setLevel}></TextInput>
+            <TextInput style={{width:263,height:46,borderWidth:1,borderRadius: 50, marginBottom:10, borderColor:"#FFF065",color:"black", alignSelf:'center',padding:10}}
+            placeholder="회사번호" placeholderTextColor="#000000" onChangeText={setTelnum}></TextInput>
+            <TextInput style={{width:263,height:46,borderWidth:1,borderRadius: 50, marginBottom:15, borderColor:"#FFF065",color:"black", alignSelf:'center',padding:10}}
+            placeholder="팩스번호" placeholderTextColor="#000000" onChangeText={setFax}></TextInput>
             
             <Text style={{textAlign:'center', margin:10}}>
                 2/2
@@ -114,7 +114,6 @@ const styles = StyleSheet.create({
     container: {
       flex: 1,
       justifyContent: 'center',
-      marginHorizontal: 16,
       backgroundColor:'white'
     },
     title: {

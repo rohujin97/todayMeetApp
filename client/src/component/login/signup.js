@@ -82,16 +82,16 @@ const SignUpScreen=({navigation}) => {
                 />
             <Text style={{fontSize:22 ,textAlign:'center', margin:10,marginBottom:20}}>Sign Up</Text>
             
-            <TextInput style={{width:263,height:46,borderWidth:1, marginBottom:10, borderColor:"#FFF065",color:"black", alignSelf:'center',padding:10}}
-            placeholder="이름" onChangeText={setName}></TextInput>
-            <TextInput style={{width:263,height:46,borderWidth:1, marginBottom:10, borderColor:"#FFF065",color:"black", alignSelf:'center',padding:10}}
-            placeholder="메일주소" onChangeText={setEmail}></TextInput>
-            <TextInput style={{width:263,height:46,borderWidth:1, marginBottom:10, borderColor:"#FFF065",color:"black", alignSelf:'center',padding:10}}
-            placeholder="비밀번호" secureTextEntry={true} onChangeText={setPassword}></TextInput>
-            <TextInput style={{width:263,height:46,borderWidth:1, marginBottom:10, borderColor:"#FFF065",color:"black", alignSelf:'center',padding:10}}
-            placeholder="비밀번호 확인"></TextInput>
-            <TextInput style={{width:263,height:46,borderWidth:1, marginBottom:15, borderColor:"#FFF065",color:"black", alignSelf:'center',padding:10}}
-            placeholder="휴대폰" onChangeText={setPhone}></TextInput>
+            <TextInput style={{width:263,height:46,borderWidth:1,borderRadius: 50, marginBottom:10, borderColor:"#FFF065",color:"black", alignSelf:'center',padding:10}}
+            placeholder="이름" placeholderTextColor="#000000" onChangeText={setName}></TextInput>
+            <TextInput style={{width:263,height:46,borderWidth:1,borderRadius: 50, marginBottom:10, borderColor:"#FFF065",color:"black", alignSelf:'center',padding:10}}
+            placeholder="메일주소"placeholderTextColor="#000000"  onChangeText={setEmail}></TextInput>
+            <TextInput style={{width:263,height:46,borderWidth:1,borderRadius: 50, marginBottom:10, borderColor:"#FFF065",color:"black", alignSelf:'center',padding:10}}
+            placeholder="비밀번호" placeholderTextColor="#000000" secureTextEntry={true} onChangeText={setPassword}></TextInput>
+            <TextInput style={{width:263,height:46,borderWidth:1,borderRadius: 50, marginBottom:10, borderColor:"#FFF065",color:"black", alignSelf:'center',padding:10}}
+            placeholder="비밀번호 확인" secureTextEntry={true} placeholderTextColor="#000000" ></TextInput>
+            <TextInput style={{width:263,height:46,borderWidth:1,borderRadius: 50, marginBottom:15, borderColor:"#FFF065",color:"black", alignSelf:'center',padding:10}}
+            placeholder="휴대폰" placeholderTextColor="#000000" onChangeText={setPhone}></TextInput>
             <Text style={[styles.message, {color: isError ? 'red' : 'green'}]}>{message ? getMessage() : null}</Text>
             <Text style={{textAlign:'center', margin:10}}>
                 1/2
@@ -100,8 +100,7 @@ const SignUpScreen=({navigation}) => {
                 title="다음"
                 color="#54D2AC"
                 onPress={() => {
-                    onSignUpHandler
-                  //navigation.navigate("SIGNUP2");
+                  navigation.navigate("SIGNUP2");
                 }}
             />
             
@@ -117,8 +116,9 @@ const styles = StyleSheet.create({
     container: {
       flex: 1,
       justifyContent: 'center',
-      marginHorizontal: 16,
-      backgroundColor:'white'
+      
+      backgroundColor:'white',
+      
     },
     title: {
       textAlign: 'center',

@@ -11,7 +11,7 @@ import { createStore, applyMiddleware } from 'redux';
 import createSocketIoMiddleware from 'redux-socket.io';
 import io from 'socket.io-client';
 import { Provider } from 'react-redux';
-const socket = io("http://172.30.1.21:3001")
+const socket = io("http://192.168.10.5:3001")
 const socketIoMiddleware = createSocketIoMiddleware(socket, "server/");
 
 function reducer(state = {}, action) {

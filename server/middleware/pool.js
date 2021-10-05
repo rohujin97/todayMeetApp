@@ -25,12 +25,12 @@ module.exports = {
             }
         });
     },
-    login : async (id, passwd)=>{
-        const query = `SELECT * FROM users WHERE user_email="${id}"`;
+    login : async (id, password)=>{
+        const query = `SELECT * FROM user WHERE user_email="${id}"`;
         try{
             const result = await pool.queryParam(query);
-            var hashed = await encrypt(result[0].salt, passwd);
-            if(result[0].passwd === hashed)//password 일치
+            var hashed = await encrypt(result[0].salt, password);
+            if(result[0].password === hashed)//password 일치
             {
                 return true;
             }

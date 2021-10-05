@@ -12,7 +12,7 @@ const Separator = () => (
   const LoginScreen=({navigation}) => {
     const dispatch=useDispatch();
 
-    const [email, setEmail] = useState('');
+    const [useremail, setUseremail] = useState('');
     const [password, setPassword] = useState('');
     const [isError, setIsError] = useState(false);
     const [message, setMessage] = useState('');
@@ -43,7 +43,7 @@ const Separator = () => (
   }
     const onSubmitHandler = () => {
       const payload = {
-          email,
+          useremail,
           password,
       };
       fetch(`${API_URL}/${'login'}`, {
@@ -88,32 +88,34 @@ const Separator = () => (
           <Text style={{fontSize:22 ,textAlign:'center', marginTop:20,marginBottom:50}}>TodayMeet</Text>
           
           <TextInput 
-            onChangeText={text => setEmail(text)}
-            value={email}
-            style={{width:263,height:46,borderWidth:1, marginBottom:10, borderColor:"#FFF065",color:"black", alignSelf:'center',textAlign:'center'}}placeholder="E-mail address"></TextInput>
+            onChangeText={text => setUseremail(text)}
+            value={useremail}
+            style={{width:263,height:46,borderWidth:1,borderRadius: 50, marginBottom:10, borderColor:"#FFF065",color:"black", alignSelf:'center',textAlign:'center'}}
+            placeholder="E-mail address" placeholderTextColor="black"></TextInput>
           <TextInput 
             onChangeText={setPassword}
             value={password}
-            style={{width:263,height:46,borderWidth:1, marginBottom:15, borderColor:"#FFF065",color:"black", alignSelf:'center',textAlign:'center'}}placeholder="Password"></TextInput>
+            style={{width:263,height:46,borderWidth:1,borderRadius: 50, marginBottom:15, borderColor:"#FFF065",color:"black", alignSelf:'center',textAlign:'center'}}placeholder="Password"
+            placeholderTextColor="black" secureTextEntry={true}></TextInput>
            
            <TouchableOpacity style={styles.button} onPress={() => {
+                  dispatch({type:"server/join",data:useremail});
                   navigation.navigate("MyTabs");
                 }}>
                             <Text style={styles.buttonText}>로그인</Text>
                         </TouchableOpacity>
             
-          <Separator/>
           <View style={{ flexDirection: "row" }}>
           <Text
               numberOfLines={1}
-              style={{flex: 1,color:"black" ,marginHorizontal:50,textAlign: "left"}}
+              style={{flex: 1,color:"black" ,marginHorizontal:40,marginTop:20,textAlign: "center"}}
               title="회원가입"
               color="black"
               onPress={() => {
                 navigation.navigate("SIGNUP");
               }}>회원가입</Text>
           <Text
-              style={{color:"black" ,textAlign: "right",marginHorizontal:50}}
+              style={{color:"black" ,textAlign: "center",marginTop:20,marginHorizontal:60}}
               title="비밀번호 찾기"
               color="black"
               onPress={() => {
@@ -179,7 +181,6 @@ const styles = StyleSheet.create({
     container: {
       flex: 1,
       justifyContent: 'center',
-      marginHorizontal: 16,
       backgroundColor:'white'
     },
     title: {
