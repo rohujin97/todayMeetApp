@@ -18,7 +18,7 @@ import {
 
 const ChatListScreen = ({navigation}) => {
     const usersOnline = useSelector(state => state.usersOnline);
-
+  console.log(usersOnline, "usersOnline")
     return (
         <Container>
             <FlatList
@@ -28,7 +28,8 @@ const ChatListScreen = ({navigation}) => {
                     <Card onPress={() => 
                             navigation.navigate('Chat', {
                               userId: item.userId,
-                            userName: item.userName
+                              userName: item.userName,
+                              roomId: item.userId,
                             })}>
                         <UserInfo>
                             <UserImgWrapper>

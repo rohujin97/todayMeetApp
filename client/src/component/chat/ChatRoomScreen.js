@@ -12,7 +12,9 @@ const ChatRoomScreen = ({ navigation, route }) => {
   const selfUser = useSelector(state => state.selfUser);
   const conversations = useSelector(state => state.conversations);
   const userId = route.params.userId; //채팅방 주인 id
+  // const roomId = route.params.roomId;
   const messages = conversations[userId].messages;
+  console.log(messages, "messages");
 
     const renderBubble = (props) => {
         return (
