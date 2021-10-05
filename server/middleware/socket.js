@@ -9,14 +9,14 @@ const Photo = require('../models/photo')(sequelize, DataTypes);
 const UsersHasFriends = require('../models/users_has_friends')(sequelize, DataTypes);
 const {Sequelize} = require("sequelize");
 const redis = require('redis');
-const client = redis.createClient({
-  host : "127.0.0.1",
-  port : 6379
-})
-
-client.on("ready", () => {
-  console.log("redis is ready");
-})
+// const client = redis.createClient({
+//   host : "127.0.0.1",
+//   port : 6379
+// })
+//
+// client.on("ready", () => {
+//   console.log("redis is ready");
+// })
 
 let currentUserId = 0;
 const users = {};
