@@ -1,8 +1,8 @@
-constpool= require('../middleware/pool');
-constmessageHandler= require("../handlers/message.handler");
-constbcrypt= require('bcryptjs');
-constjwt= require('jsonwebtoken');
-constsequelize= require('../config/database')
+const pool= require('../middleware/pool');
+const messageHandler= require("../handlers/message.handler");
+const bcrypt= require('bcryptjs');
+const jwt= require('jsonwebtoken');
+const sequelize= require('../config/database')
 const {DataTypes} = require('sequelize')
 const User = require('../models/user.js')(sequelize, DataTypes);
 const Photo = require('../models/photo')(sequelize, DataTypes);
