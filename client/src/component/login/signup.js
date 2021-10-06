@@ -91,12 +91,12 @@ const SignUpScreen=({navigation}) => {
             <TextInput style={{width:263,height:46,borderWidth:1,borderRadius: 50, marginBottom:10, borderColor:"#FFF065",color:"black", alignSelf:'center',padding:10}}
             placeholder="비밀번호 확인" secureTextEntry={true} placeholderTextColor="#000000" ></TextInput>
             <TextInput style={{width:263,height:46,borderWidth:1,borderRadius: 50, marginBottom:15, borderColor:"#FFF065",color:"black", alignSelf:'center',padding:10}}
-            placeholder="휴대폰" placeholderTextColor="#000000" onChangeText={setPhone}></TextInput>
+            placeholder="휴대폰" placeholderTextColor="#000000" onChangeText={setPhone} keyboardType="number-pad"></TextInput>
             <Text style={[styles.message, {color: isError ? 'red' : 'green'}]}>{message ? getMessage() : null}</Text>
             <Text style={{textAlign:'center', margin:10}}>
                 1/2
             </Text>
-            <Button
+            <Button 
                 title="다음"
                 color="#54D2AC"
                 onPress={() => {
@@ -136,7 +136,17 @@ const styles = StyleSheet.create({
       borderBottomColor: '#737373',
       borderBottomWidth: StyleSheet.hairlineWidth,
     },
-    
+    button: {
+        width: '50%',
+        backgroundColor: '#FFFFFF',
+        height: 40,
+        borderRadius: 50,
+        borderColor:'white',
+        justifyContent: 'center',
+        alignSelf:'center',
+        alignItems: 'center',
+        marginVertical: 5,
+    },
   });
 
 export default SignUpScreen;
