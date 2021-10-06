@@ -1,34 +1,21 @@
 import React, { useState, useCallback, useEffect, useRef } from 'react'
+import { useDispatch, useSelector } from "react-redux";
 import { View } from 'react-native'
 import { Bubble, GiftedChat, Send } from 'react-native-gifted-chat'
 import MaterialCommunityIcons from 'react-native-vector-icons/MaterialCommunityIcons'
 import FontAwesome from 'react-native-vector-icons/FontAwesome'
 import { io } from 'socket.io-client'
-import JoinScreen from './JoinScreen'
 
-const ChatRoomScreen = ({navigation}) => {
-    const [messages, setMessages] = useState([]);
-    const [hasJoined, setHasJoined] = useState(false);
-    const socket = useRef(null);
+const ChatRoomScreen = ({ navigation, route }) => {
 
-    useEffect(() => {
-      socket.current = io("http://172.30.1.21:3001")
-      socket.current.on("message", message => {
-        setMessages(previousMessages => GiftedChat.append(...previousMessages, message));
-      })
-      }, [])
-      
-    const onSend = useCallback((messages = []) => {
-      console.log(messages);
-      socket.current.emit("message", messages[0].text);
-      setMessages(previousMessages => GiftedChat.append(previousMessages, messages));
-    }, [])
+  const dispatch = useDispatch();
+  const selfUser = useSelector(state => state.selfUser);
+  const conversations = useSelector(state => state.conversations);
+  const userId = route.params.userId; //채팅방 주인 id
+  // const roomId = route.params.roomId;
+  const messages = conversations[userId].messages;
+  console.log(messages, "messages");
 
-    const joinChat = username => {
-      socket.current.emit("join", username);
-      setHasJoined(true);
-    }
-    
     const renderBubble = (props) => {
         return (
         <Bubble 
@@ -69,13 +56,22 @@ const ChatRoomScreen = ({navigation}) => {
 
     return (
       <View style={{ flex:1 }}>
-        {hasJoined ? (
           <GiftedChat
             renderUsernameOnMessage
             messages={messages}
-            onSend={messages => onSend(messages)}
+            onSend={messages => {
+              dispatch({
+                type: "private_message",
+                data: {message: messages[0], conversationId: userId}
+              });
+              dispatch({
+                type: "server/private_message",
+                data: {message: messages[0], conversationId: userId}
+              })
+              }
+            }
             user={{
-              _id: 1,
+              _id: selfUser.userId,
             }}
             renderBubble={renderBubble}
             alwaysShowSend
@@ -83,9 +79,6 @@ const ChatRoomScreen = ({navigation}) => {
             scrollToBottom
             scrollToBottomComponent={scrollToBottomComponent}
         />
-        ) : (
-          <JoinScreen joinChat={joinChat}/>
-        )}
       </View>
     );
 }

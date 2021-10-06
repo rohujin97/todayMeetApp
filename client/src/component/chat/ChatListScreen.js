@@ -1,5 +1,6 @@
 import React from 'react';
 import { FlatList } from 'react-native';
+import { useSelector } from 'react-redux';
 import 'react-native-gesture-handler';
 import {
     Container,
@@ -14,65 +15,35 @@ import {
     UserInfoText,
 } from '../styles/ChatListStyles';
 
-const Lists = [
-    {
-        id: '1',
-        userName: '노유진',
-        userImg: require('../../assets/zing.jpg'),
-        messageTime: '4 mins ago',
-        messageText: 'Hey there, this is my test for a post of my social app in React Native'
-    },
-    {
-        id: '2',
-        userName: '김지후',
-        userImg: require('../../assets/bob.jpg'),
-        messageTime: '2 hourss ago',
-        messageText: 'Hey there, this is my test for a post of my social app in React Native'
-    },
-    {
-        id: '3',
-        userName: '이민정',
-        userImg: require('../../assets/chicken.jpg'),
-        messageTime: '8 mins ago',
-        messageText: 'Hey there, this is my test for a post of my social app in React Native'
-    },
-    {
-        id: '4',
-        userName: '강나임',
-        userImg: require('../../assets/person.jpg'),
-        messageTime: '3 hours ago',
-        messageText: 'Hey there, this is my test for a post of my social app in React Native'
-    },
-    {
-        id: '5',
-        userName: '윤건희',
-        userImg: require('../../assets/bear.jpg'),
-        messageTime: '4 days ago',
-        messageText: 'Hey there, this is my test for a post of my social app in React Native'
-    }
-];
 
 const ChatListScreen = ({navigation}) => {
+    const usersOnline = useSelector(state => state.usersOnline);
+  console.log(usersOnline, "usersOnline")
     return (
         <Container>
             <FlatList
-                data={Lists}
+                data={usersOnline}
                 keyExtractor={item=>item.id}
                 renderItem={({item}) => (
                     <Card onPress={() => 
                             navigation.navigate('Chat', {
-                            userName: item.userName
+                              userId: item.userId,
+                              userName: item.userName,
+                              roomId: item.userId,
                             })}>
                         <UserInfo>
                             <UserImgWrapper>
-                                <UserImg source={item.userImg}/>
+                                {/*<UserImg source={require('../../assets/bob.jpg')}/>*/}
+                                <UserImg
+                                  source={{uri: item.avatar}}
+                                  style={{width: 50, height: 50}}/>
                             </UserImgWrapper>
                             <TextSection>
                                 <UserInfoText>
                                     <UserName>{item.userName}</UserName>
-                                    <PostTime>{item.messageTime}</PostTime>
+                                    {/*<PostTime>{item.}</PostTime>*/}
                                 </UserInfoText>
-                                <MessageText>{item.messageText}</MessageText>
+                                {/*<MessageText>{item.messageText}</MessageText>*/}
                             </TextSection>
                         </UserInfo>
                     </Card>

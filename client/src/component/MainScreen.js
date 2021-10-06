@@ -42,7 +42,8 @@ const Tab = createBottomTabNavigator();
 const MyTabs = () => {
   const getTabBarVisibility = (route) => {
     const routeName = route.state ? route.state.routes[route.state.index].name : '';
-    if(routeName === 'Chat'){
+    console.log(routeName)
+    if(routeName === 'Chat' || routeName === 'List'){
       return false;
     }
     return true;
@@ -93,9 +94,9 @@ export default function MainScreen() {
     }
     return (
       
-      <Stack.Navigator initialRouteName="Home"> 
+      <Stack.Navigator initialRouteName="Home" screenOptions={{ headerShown: false }}>
           <Stack.Screen signHome={signHome} name="LOGIN" component={LoginScreen} options={{ title: '로그인' }}/>
-          <Stack.Screen name="MyTabs" component={MyTabs} />
+          <Stack.Screen name="MyTabs" component={MyTabs}/>
           <Stack.Screen name="SIGNUP" component={SignUpScreen} options={{ title: '회원가입1' }}/> 
           <Stack.Screen name="SIGNUP2" component={SignUp2Screen} options={{ title: '회원가입2' }}/> 
           <Stack.Screen name="DONE" component={DoneScreen} options={{ title: '완료' }}/> 
