@@ -10,7 +10,11 @@ import SignUpScreen from './login/signup';
 import SignUp2Screen from './login/signup2'; 
 import DoneScreen from './login/done'; 
 
+import MeetCreateScreen from './Meeting/MeetingCreate';
+import MeetingDetail from './Meeting/MeetingDetail';
 const Stack = createStackNavigator(); 
+
+
 
 // 하단 탭에 들어갈 컴포넌트들
 import HomeTab from './AppTabNavigator/HomeTab'
@@ -36,7 +40,16 @@ const ChatStackScreen = ({navigation}) => {
     </ChatStack.Navigator>
   )
 };
+const MeetingStack = createStackNavigator();
 
+const MeetingStackScreen = ({navigation}) => {
+  return(
+    <MeetingStack.Navigator>
+      <MeetingStack.Screen name = "create" component = {MeetCreateScreen}/>
+      <MeetingStack.Screen name = "detail" component = {MeetingDetail}/>
+    </MeetingStack.Navigator>
+  )
+};
 
 const Tab = createBottomTabNavigator();
 const MyTabs = () => {
@@ -57,6 +70,7 @@ const MyTabs = () => {
           ),
         }}
       />
+      <Tab.Screen name ="create" component = {MeetingStackScreen} />
       <Tab.Screen name="Map" component={MapTab} options={{
           tabBarLabel: 'Map',
           tabBarIcon: ({ color }) => (
@@ -64,6 +78,7 @@ const MyTabs = () => {
           ),
         }}
       />
+
       <Tab.Screen 
         name="Messages" 
         component={ChatStackScreen} 

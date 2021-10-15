@@ -1,15 +1,18 @@
 import React from 'react';
-import {View, Text, StyleSheet, ScrollView, Dimensions, TouchableOpacity} from 'react-native';
+import {View, Text, StyleSheet, ScrollView, Button,Dimensions, TouchableOpacity} from 'react-native';
 import Icon from 'react-native-vector-icons/Ionicons';
 import { Component } from 'react/cjs/react.production.min';
 
+import MeetingCreate from '../Meeting/MeetingCreate';
 const deviceWidth = Dimensions.get('window').width;
 const MeetingList = () => {
   const data=[1,2,3]
   const meetList=data.map((item,index) =>(
     <TouchableOpacity style={styles.row} key={index} activeOpacity={0.75}>
       <Icon name="people-outline" size={70} style={{ paddingRight: 12}}></Icon>
+      
       <Text style={{ fontWeight: 'bold', paddingTop: 12}}>Meeting {item}</Text>
+      
       <Text>미팅 장소</Text>
       <Text>미팅 시간</Text>
     </TouchableOpacity>
@@ -23,23 +26,39 @@ const GetDate = () => {
   return (
     <View style={styles.getD}>
       <Text style={styles.text}>{month} / {date}  Meeting</Text>
+      
       <Icon name="thunderstorm-outline" size={30} style={{ paddingLeft: deviceWidth - 235}}></Icon>
+      
     </View>
   );
 }
-
-export default class HomeTab extends Component{
-  render() {
-    return (
-        <View style={styles.date}>
-            <GetDate />
-            <ScrollView>
-              <MeetingList />
-            </ScrollView>
-        </View>
-    );
+const HomeTab = ({navigation}) => {
+  return(
+    <View style={styles.date}>
+             <GetDate />
+             <Button title="미팅추가" color="#54D2AC" onPress={() => {
+                navigation.navigate("create");
+              }}/>
+             <ScrollView>
+             <MeetingList />
+             </ScrollView>
+    </View>
+  )
 }
-}
+export default HomeTab;
+// export default class HomeTab extends Component{
+//   render() {
+//     return (
+//         <View style={styles.date}>
+//             <GetDate />
+//             <Button title="미팅추가" color="#54D2AC"/>
+//             <ScrollView>
+//               <MeetingList />
+//             </ScrollView>
+//         </View>
+//     );
+// }
+// }
 
 const styles = StyleSheet.create({
   container: {

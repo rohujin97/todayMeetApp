@@ -96,6 +96,17 @@ const controller = {
             console.log('error', err);
         });
     },
+    async MeetCreate(req, res, next){
+        Meeting.create(({
+            meeting_loc : req.body.location,
+            meeting_time : req.body.time,
+            meeting_cont : req.body.cont,
+            user_id : req.body.id
+        }))
+
+        return res.status(200).json('meeting is created');
+        
+    },
 }
 
 module.exports = controller;
