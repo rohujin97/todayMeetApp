@@ -83,4 +83,3 @@ const ChatListScreen = ({navigation}) => {
 }
 
 export default ChatListScreen;
-

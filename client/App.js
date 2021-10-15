@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { StyleSheet, View, Text, ScrollView, Dimensions } from 'react-native';
 import MainScreen from './src/component/MainScreen';
@@ -8,15 +7,18 @@ import * as Location from 'expo-location';
 import Icon from 'react-native-vector-icons/Ionicons';
 const deviceWidth = Dimensions.get('window').width;
 import { createStore, applyMiddleware } from 'redux';
+import { Provider } from 'react-redux';
 import createSocketIoMiddleware from 'redux-socket.io';
 import io from 'socket.io-client';
-const socket = io("http://172.30.1.21:3001")
+const socket = io("http://192.168.0.203:3001")
 const socketIoMiddleware = createSocketIoMiddleware(socket, "server/");
 
 function reducer(state = {}, action) {
   switch(action.type) {
     case 'message':
       return {...state, message: action.data };
+    case "users_online":
+      return { ...state, usersOnline: action.data };
       default:
         return state;
   }
@@ -40,10 +42,12 @@ const Title = () => {
 
 export default function App() {
   return (
-    <NavigationContainer>
-      <Title />
-      <MainScreen />
-    </NavigationContainer>
+    <Provider store={store}>
+      <NavigationContainer>
+        <Title />
+        <MainScreen />
+      </NavigationContainer>
+    </Provider>
   );
 }
 const styles = StyleSheet.create({

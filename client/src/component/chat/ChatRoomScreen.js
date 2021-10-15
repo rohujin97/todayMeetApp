@@ -4,7 +4,6 @@ import { Bubble, GiftedChat, Send } from 'react-native-gifted-chat'
 import MaterialCommunityIcons from 'react-native-vector-icons/MaterialCommunityIcons'
 import FontAwesome from 'react-native-vector-icons/FontAwesome'
 import { io } from 'socket.io-client'
-import JoinScreen from './JoinScreen'
 
 const ChatRoomScreen = ({navigation}) => {
     const [messages, setMessages] = useState([]);
@@ -12,7 +11,7 @@ const ChatRoomScreen = ({navigation}) => {
     const socket = useRef(null);
 
     useEffect(() => {
-      socket.current = io("http://172.30.1.21:3001")
+      socket.current = io("http://172.30.1.39:3001")
       socket.current.on("message", message => {
         setMessages(previousMessages => GiftedChat.append(...previousMessages, message));
       })
@@ -24,10 +23,10 @@ const ChatRoomScreen = ({navigation}) => {
       setMessages(previousMessages => GiftedChat.append(previousMessages, messages));
     }, [])
 
-    const joinChat = username => {
-      socket.current.emit("join", username);
-      setHasJoined(true);
-    }
+    // const joinChat = username => {
+    //   socket.current.emit("join", username);
+    //   setHasJoined(true);
+    // }
     
     const renderBubble = (props) => {
         return (
@@ -68,25 +67,19 @@ const ChatRoomScreen = ({navigation}) => {
     }
 
     return (
-      <View style={{ flex:1 }}>
-        {hasJoined ? (
-          <GiftedChat
-            renderUsernameOnMessage
-            messages={messages}
-            onSend={messages => onSend(messages)}
-            user={{
-              _id: 1,
-            }}
-            renderBubble={renderBubble}
-            alwaysShowSend
-            renderSend={renderSend}
-            scrollToBottom
-            scrollToBottomComponent={scrollToBottomComponent}
-        />
-        ) : (
-          <JoinScreen joinChat={joinChat}/>
-        )}
-      </View>
+        <GiftedChat
+          renderUsernameOnMessage
+          messages={messages}
+          onSend={messages => onSend(messages)}
+          user={{
+            _id: 1,
+          }}
+          renderBubble={renderBubble}
+          alwaysShowSend
+          renderSend={renderSend}
+          scrollToBottom
+          scrollToBottomComponent={scrollToBottomComponent}
+      />
     );
 }
 

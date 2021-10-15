@@ -11,7 +11,9 @@ import { useNavigation } from '@react-navigation/native';
 const deviceWidth = Dimensions.get('window').width
 
 const SetScreen=({})=>{
-        const navigation1 = useNavigation(); 
+        const navigation = useNavigation(); 
+        const navigation_c = useNavigation(); 
+        const navigation_s=useNavigation();
         let friendClick = data.friendClick
         return (
             <ScrollView>
@@ -37,21 +39,30 @@ const SetScreen=({})=>{
             </View>
             <Button title="수정하기"
                 color="#54D2AC"
-                onPress={() => navigation1.navigate('MODIFY')}
+                onPress={() => navigation.navigate('MODIFY')}
             />
+
             <Icon name="notifications-outline" size={70} style={styles.alarm}
-            
+                onPress={() => navigation.navigate('ALARM')}
             ></Icon>
+
             <Icon name="toggle-outline" size={70} style={styles.mode}
-            onPress={() => navigation1.navigate('ALARM')}
+                onPress={() => navigation.navigate('ALARM')}
             ></Icon>
-            <AntDesign name="idcard" size={70} style={styles.id_card}/>
+
+            <AntDesign name="idcard" size={70} style={styles.id_card}
+                onPress={() => navigation.navigate('CUSTOM')}
+            />
             <Text style={styles.font6}>명함</Text>
             <Text style={styles.font4}>알림</Text>
             <Text style={styles.font7}>모드</Text>
-            <Icon name="calendar-outline" size={70} style={styles.calender}></Icon>
-            <Icon name="information-circle-outline" size={70} style={styles.information}></Icon>
-            <Icon name="shield-outline" size={70} style={styles.security}></Icon>
+            <Icon name="calendar-outline" size={70} style={styles.calender}
+            onPress={() => navigation.navigate('ALARM')}></Icon>
+            
+            <Icon name="information-circle-outline" size={70} style={styles.information}
+            onPress={() => navigation.navigate('ALARM')}/>
+            <Icon name="shield-outline" size={70} style={styles.security}
+            onPress={() => navigation.navigate('ALARM')}></Icon>
             <Text style={styles.font3}>개인정보</Text>
             <Text style={styles.font4}>달력</Text>
             <Text style={styles.font5}>고객센터</Text>

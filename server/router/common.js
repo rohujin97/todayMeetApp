@@ -5,5 +5,8 @@ const common = require('../controller/common')
 
 router.get('/', common.ping)
 router.get('/home', common.home)
+router.get('/login', common.login)
+router.get('/signup', common.signup)
+router.get('/set',common.set)
 
 module.exports = router;

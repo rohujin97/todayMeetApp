@@ -1,33 +1,81 @@
-import React, {Component} from 'react';
+import React, {Component,useState, useEffect } from 'react';
 import {
-  Dimensions,ScrollView,View,Button,
-    StyleSheet,Text
+  Dimensions,ScrollView,TouchableOpacity,Button,Platform ,Image,
+    StyleSheet,Text,TextInput
 } from 'react-native';
 import Entypo from 'react-native-vector-icons/Entypo';
 import { useNavigation } from '@react-navigation/native';
+import * as ImagePicker from 'expo-image-picker';
 
 const deviceWidth = Dimensions.get('window').width
 
 const ModifyScreen=({})=>{
+  // state={
+  //   job_name:""
+  // };
+  const [image, setImage] = useState(null);
+  useEffect(() => {
+    (async () => {
+      if (Platform.OS !== 'web') {
+        const { status } = await ImagePicker.requestMediaLibraryPermissionsAsync();
+        if (status !== 'granted') {
+          alert('Sorry, we need camera roll permissions to make this work!');
+        }
+      }
+    })();
+  }, []);
+
+  const pickImage = async () => {
+    let result = await ImagePicker.launchImageLibraryAsync({
+      mediaTypes: ImagePicker.MediaTypeOptions.All,
+      allowsEditing: true,
+      aspect: [4, 3],
+      quality: 1,
+    });
+
+    console.log(result);
+
+    if (!result.cancelled) {
+      setImage(result.uri);
+    }
+  };
     const navigation2 = useNavigation(); 
         return (
             <ScrollView style={styles.container}>
-        <Text style={styles.name}>성명</Text>
+        <Text style={styles.name} >성명</Text>
         <Entypo name="circle" size={90} style={styles.circle}/>
-        <Entypo name="image" size={25} style={styles.image}/>
-        <View style={styles.container3}></View>
-        <Text style={styles.job}>직업</Text>
-        <View style={styles.container4}></View>
-        <Text style={styles.depart}>회사/부서</Text>
-        <View style={styles.container5}></View>
-        <Text style={styles.depart}>이메일</Text>
-        <View style={styles.container5}></View>
-        <Text style={styles.depart}>회사번호</Text>
-        <View style={styles.container5}></View>
-        <Text style={styles.depart}>전화번호</Text>
-        <View style={styles.container5}></View>
-        <Button title="저장" style={styles.correct} onPress={() => navigation2.navigate('SetPage')}></Button>
+        {image && <Image source={{ uri: image }} style={styles.imageIm} />}
+        <Entypo name="image" size={25} style={styles.imageICON}
+        onPress={pickImage} />
         
+        
+        <TextInput style={styles.container3} 
+        placeholder="Name"
+        />
+        <Text style={styles.job}>직업</Text>
+        <TextInput style={styles.container4} 
+        placeholder="Job Name"
+        // onChangeText={text=>this.setState({job_name:text})}
+        ></TextInput>
+        <Text style={styles.depart}>회사/부서</Text>
+        <TextInput style={styles.container5} 
+        placeholder="Company/ Department"
+        />
+        <Text style={styles.depart}>이메일</Text>
+        <TextInput style={styles.container5}
+        placeholder="  Email"/>
+        <Text style={styles.depart}>회사번호</Text>
+        <TextInput style={styles.container5}
+        placeholder="Company number"/>
+        <Text style={styles.depart}>전화번호</Text>
+        <TextInput style={styles.container5}
+        placeholder="Phone number"/>
+
+        
+        <TouchableOpacity style={[styles.correct_container, {backgroundColor:'#54D2AC'}]} 
+        onPress={() => navigation2.navigate('SetPage')}>
+          <Text style={styles.correct}>저장하기</Text>
+        </TouchableOpacity>
       </ScrollView>
         );
     
@@ -38,7 +86,13 @@ const styles = StyleSheet.create({
       marginTop:-10,
       marginLeft:30,
     },
-    image:{
+    imageIm:{
+      width: 100, 
+      height: 100,
+      marginTop:-100,
+      marginLeft:20,
+    },
+    imageICON:{
       marginTop:-20,
       marginLeft:95,
     },
@@ -92,8 +146,18 @@ const styles = StyleSheet.create({
       borderRadius:15,
     },
     correct:{
-      marginTop:10,
-      marginLeft:40,
+      fontSize:20,
+      marginTop:9,
+      marginLeft:(deviceWidth/4+deviceWidth/8)/11,
+      color:'white',
+    },
+    correct_container:{
+      marginTop:30,
+      height: 40,
+      width: deviceWidth/4,
+      marginLeft:deviceWidth/4+deviceWidth/8,
+      borderRadius:15,
+
     }
   });
 export default ModifyScreen;

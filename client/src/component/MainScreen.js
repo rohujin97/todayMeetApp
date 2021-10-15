@@ -1,25 +1,28 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 import { NavigationContainer } from '@react-navigation/native';
 import { StyleSheet, View, Text, ScrollView }  from 'react-native';
 import Icon from 'react-native-vector-icons/Ionicons';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import { createStackNavigator } from '@react-navigation/stack';
-
-import * as React from 'react'; import { NavigationContainer } from '@react-navigation/native'; 
-import { createStackNavigator } from '@react-navigation/stack'; 
 import LoginScreen from './login/login'; 
 import SignUpScreen from './login/signup'; 
 import SignUp2Screen from './login/signup2'; 
 import DoneScreen from './login/done'; 
 
-const Stack = createStackNavigator(); 
+
 
 // 하단 탭에 들어갈 컴포넌트들
 import HomeTab from './AppTabNavigator/HomeTab'
 import MapTab from './AppTabNavigator/MapTab'
-import SetTab from './AppTabNavigator/SetTab'
 import ChatListScreen from './chat/ChatListScreen';
 import ChatRoomScreen from './chat/ChatRoomScreen';
+import JoinScreen from './chat/JoinScreen';
+import SetScreen from './set/SetScreen';
+import ModifyScreen from './set/ModifyScreen';
+import AlarmScreen from './set/AlarmScreen';
+import CardCustom from './set/CardCustom';
+import Service from './set/Service';
+import { io } from 'socket.io-client';
 // import ChatStack from '../navigation/ChatStack'
 
 const ChatStack = createStackNavigator();
@@ -39,6 +42,33 @@ const ChatStackScreen = ({navigation}) => {
   )
 };
 
+const SetStack=createStackNavigator();
+
+const SettingStackScreen = ({navigation}) => {
+  return(
+    <SetStack.Navigator initialRouteName="SettingTab">
+      <SetStack.Screen name="SetPage" component={SetScreen} options={{headerShown: false}}/>
+      <SetStack.Screen name="MODIFY" component={ModifyScreen}/>
+      <SetStack.Screen name="ALARM" component={AlarmScreen} options={{headerShown: false}}/>
+      <SetStack.Screen name="CUSTOM" component={CardCustom} options={{headerShown: false}}/>
+      <SetStack.Screen name="SERVICE" component={Service} options={{title: 'Service', headerShown: false}}/>
+    </SetStack.Navigator>
+  )
+}
+
+
+
+const HomeStack = createStackNavigator();
+const HomeStackScreen = ({navigation}) => {
+  return(
+    <HomeStack.Navigator initialRouteName="HomeTab" >
+      <HomeStack.Screen name="HomeTab" component={HomeTab} options={{headerShown: false}}/>
+      <HomeStack.Screen name="MeetCreate" component={MeetCreate} />
+      <HomeStack.Screen name="MeetDetail" component={MeetDetail} />
+      <HomeStack.Screen name="Calendars" component={Calendars} />
+    </HomeStack.Navigator>
+  )
+};
 
 const Tab = createBottomTabNavigator();
 const MyTabs = () => {
@@ -47,6 +77,7 @@ const MyTabs = () => {
     if(routeName === 'Chat'){
       return false;
     }
+    
     return true;
   };
   return (
@@ -76,7 +107,7 @@ const MyTabs = () => {
           ),
         })}
       />
-      <Tab.Screen name="Settings" component={SetTab}  options={{
+      <Tab.Screen name="Settings" component={SettingStackScreen} options={{
           tabBarLabel: 'Settings',
           tabBarIcon: ({ color }) => (
             <Icon name='person-outline' size={22} color={color} />
@@ -86,23 +117,27 @@ const MyTabs = () => {
     </Tab.Navigator>
   );
 }
-
-export default function MainScreen() {
+const Stack = createStackNavigator();
+export default function MainScreen({ navigation }) {
+    const [hasJoined, setHasJoined] = useState(false);
+    const socket = useRef(null);
+    const signHome = useremail => {
+      socket.current.emit("signup", useremail);
+      setHasJoined(true);
+    }
     
     return (
-      <NavigationContainer> 
-      <Stack.Navigator initialRouteName="MAIN"> 
-      <Stack.Screen name="LOGIN" component={LoginScreen} options={{ title: '로그인' }}/>
-      <Stack.Screen name="SIGNUP" component={SignUpScreen} options={{ title: '회원가입1' }}/> 
-      <Stack.Screen name="SIGNUP2" component={SignUp2Screen} options={{ title: '회원가입2' }}/> 
-      <Stack.Screen name="DONE" component={DoneScreen} options={{ title: '완료' }}/> 
-      
-      </Stack.Navigator> 
-      <MyTabs />
-      </NavigationContainer>
-      
+      <Stack.Navigator initialRouteName="Home" >
+          <Stack.Screen signHome={signHome} name="LOGIN" component={LoginScreen} options={{ title: '로그인' }}/>
+          <Stack.Screen name="MyTabs" component={MyTabs} options={{headerShown: false}}/>
+          <Stack.Screen name="SIGNUP" component={SignUpScreen} options={{ title: '회원가입1' }}/> 
+          <Stack.Screen name="SIGNUP2" component={SignUp2Screen} options={{ title: '회원가입2' }}/> 
+          <Stack.Screen name="DONE" component={DoneScreen} options={{ title: '완료' }}/> 
+      </Stack.Navigator>
     );
 }
+
+
 
 const styles = StyleSheet.create({
   container: {

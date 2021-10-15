@@ -36,5 +36,17 @@
             "position":"팀장"
         }
 
-    ]
+    ],
+
+    "friendClick":[
+        {
+            "userJobImage" :"https://search.pstatic.net/common/?src=http%3A%2F%2Fimgnews.naver.net%2Fimage%2F5380%2F2017%2F02%2F09%2F0000202762_001_20170209083552075.jpg&type=sc960_832",
+            "userName" : "노유진",
+            "userworkAddress" : "경기도 성남시 분당구 판교역로 235",
+            "userTelNum" : "02 123 4567",
+            "userMobNum" : "02 123 4567",
+            "userEmail" : "rohujin97@kakao.com"
+        }
+            ]
+    
 }
